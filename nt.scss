@@ -1,0 +1,548 @@
+/* ========================================
+MIXINS
+======================================== */
+
+@mixin cf() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    & {
+        *zoom: 1;
+    }
+}
+
+
+
+
+/* ========================================
+RESET
+======================================== */
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ========================================
+ROOT
+======================================== */
+
+$green: #360;
+$yellow: #cc0;
+
+$body-font: "fira-sans";
+$heading-font: "fira-sans";
+// fira-sans
+// freight-sans-pro
+// ff-dagny-web-pro
+// ff-enzo-web
+// nudista-web
+
+$lap: 600px;
+$desk: 1000px;
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 100%;
+    font: normal 100%/1.5 $body-font;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+
+    @media only screen and (min-width: $lap) {
+        font-size: 112.5%;
+    }
+}
+
+
+
+
+/* ========================================
+BASE STYLES
+======================================== */
+
+.wrapper {
+    /*overflow: hidden;*/
+    width: 100%;
+}
+.fill--black {
+    background: black;
+    color: white;
+}
+.fill--black a {
+    color: white;
+}
+.fill--green {
+    background: $green;
+    color: white;
+}
+.fill--green a {
+    color: white;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: $desk;
+
+    @media only screen and (min-width: $lap) {
+        padding: 40px;
+    }
+}
+
+h1, h2, h3, p, ul {
+    margin-bottom: 10px;
+}
+h1, h2, h3 {
+    padding-top: 10px;
+    line-height: 1.25;
+    font-family: $heading-font;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 24px;
+
+    @media only screen and (min-width: $lap) {
+        // font-size: 36px;
+    }
+}
+h3 {
+    font-size: 18px;
+
+    @media only screen and (min-width: $lap) {
+        // font-size: 24px;
+    }
+}
+
+a {
+    color: $green;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: $green;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover, &:focus {
+        background: darken($green, 5%);
+        text-decoration: none;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.cf {
+    @include cf;
+}
+
+
+
+
+/* ========================================
+INTRO
+======================================== */
+
+.intro {
+    & :last-child {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        padding-top: 20px;
+    //     font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    @media only screen and (min-width: $desk) {
+        h1 {
+            font-size: 48px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+}
+
+
+
+
+/* ========================================
+NEXT EVENT
+======================================== */
+
+.next {
+    // margin-top: -80px;
+
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid $yellow;
+    // padding: 20px;
+    background: white;
+    color: black;
+    // border-radius: 2px;
+    // box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+    .summary {
+        @include cf;
+        padding: 20px;
+        background: $yellow;
+
+        & :last-child {
+            margin-bottom: 0;
+        }
+    }
+    .details {
+        @include cf;
+        list-style: none;
+
+        li {
+            float: left;
+            margin-right: 10px;
+
+            // + li:before {
+            //     content: "\2022";
+            //     float: left;
+            // }
+        }
+
+        a {
+            color: #000;
+        }
+    }
+    .date {
+        // font-weight: bold;
+        // font-size: 18px;
+    }
+    .time {
+        clear: left;
+    }
+    .venue {}
+    .price {}
+    .rsvp {
+        .button {
+            // width: 100%;
+        }
+    }
+
+    .speaker {
+        @include cf;
+        padding: 20px;
+        background: #fff;
+
+        & :last-child {
+            margin-bottom: 0;
+        }
+
+        img {
+            float: left;
+            width: 100px;
+            margin-right: 20px;
+        }
+        div {
+            overflow: hidden;
+        }
+        h3 {
+            // color: #666;
+            // font-weight: normal;
+            // font-size: 16px;
+
+            // strong {
+            //     color: #000;
+                font-size: 24px;
+            // }
+        }
+        p {
+        }
+    }
+
+    @media only screen and (min-width: $lap) {
+        margin-bottom: 40px;
+
+        .details {
+            margin-bottom: 0;
+            float: left;
+            width: 50%;
+        }
+
+        .rsvp {
+            float: right;
+            width: 50%;
+            text-align: right;
+        }
+
+        .speaker {
+            // float: right;
+            // width: 75%;
+
+            h3 {
+                // font-size: 18px;
+
+                // strong {
+                //     // display: block;
+                //     font-size: 24px;
+                // }
+            }
+
+            p {
+                overflow: hidden;
+            }
+        }
+    }
+
+    @media only screen and (min-width: $desk) {
+        position: relative;
+
+        .summary {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25%;
+            height: 100%;
+            // float: left;
+            // width: 25%;
+        }
+
+        .details {
+            margin-bottom: 10px;
+            float: none;
+            width: auto;
+
+            li {
+                float: none;
+                display: inline-block;
+            }
+        }
+
+        .rsvp {
+            float: none;
+            width: auto;
+            text-align: left;
+        }
+
+        .speaker {
+            float: right;
+            padding: 20px 40px;
+            width: 75%;
+
+            h3 {
+                // margin-bottom: 20px;
+                // font-size: 18px;
+
+                // strong {
+                //     display: block;
+                // font-size: 36px;
+                // }
+            }
+
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+
+
+
+/* ========================================
+SPONSORS
+======================================== */
+
+.sponsors {
+    // h2 {
+    //     margin-bottom: 10px;
+    //     padding-top: 10px;
+    // }
+    ul {
+        @include cf;
+        list-style: none;
+    }
+    li {
+        @include cf;
+        margin-bottom: 10px;
+    }
+    img {
+        max-width: 200px;
+    }
+    @media only screen and (min-width: $lap) {
+        img {
+            float: left;
+            margin-right: 40px;
+        }
+        p {
+            padding-top: 10px;
+            overflow: hidden;
+        }
+    }
+    @media only screen and (min-width: $desk) {
+        ul {
+            margin-left: -40px;
+        }
+        li {
+            float: left;
+            padding-left: 40px;
+            width: 33.33333%;
+        }
+        img {
+            float: none;
+            margin: 0;
+            width: 50%;
+        }
+        p {
+            padding-top: 0;
+        }
+    }
+}
+
+
+
+
+/* ========================================
+SPONSORS
+======================================== */
+
+.about {
+    margin-bottom: 20px;
+}
+
+
+
+
+/* ========================================
+PAST EVENTS
+======================================== */
+
+.past {
+    background: black;
+    color: white;
+}
+// .past h2 {
+//     margin-bottom: 10px;
+//     padding-top: 10px;
+// }
+.past ul {
+    list-style: none;
+}
+.past li {
+    overflow: auto;
+    border-top: 1px solid #333;
+    transition: opacity 0.6s ease;
+}
+.past li:hover {
+    /*opacity: 1;*/
+}
+.past img {
+    display: none;
+    opacity: 0.75;
+}
+.past div {
+    overflow: hidden;
+    padding: 20px 0;
+}
+.past time {
+    display: block;
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Fira Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.past h3 {
+    font-weight: normal;
+    /*font-style: italic;*/
+    font-size: 18px;
+    /*color: #999;*/
+}
+.past h3 strong {
+    /*font-style: normal;*/
+    /*color: white;*/
+}
+.past h3 a {
+    /*display: inline-block;
+    border-bottom: 1px solid #333;
+    color: inherit;
+    line-height: 1;*/
+}
+.past h3 a:hover, .past h3 a:focus {
+    border-color: #330;
+    color: $yellow;
+}
+@media only screen and (min-width: $lap) {
+    .past li {
+        margin-bottom: 10px;
+        border-top: 0;
+    }
+    .past img {
+        display: block;
+        float: left;
+        width: 100px;
+        width: 150px;
+    }
+    .past div {
+        padding: 20px;
+    }
+    .past h3 {
+        /*overflow: hidden;*/
+        /*text-overflow: ellipsis;*/
+        /*white-space: nowrap;*/
+    }
+    .past h3 strong {
+        display: block;
+        font-size: 24px;
+    }
+}
+@media only screen and (min-width: $desk) {
+    .past li {
+        margin-bottom: 20px;
+    }
+    .past img {
+        // width: 200px;
+    }
+    .past div {
+        padding: 20px 40px;
+    }
+    .past h3 {
+        padding-top: 10px;
+        font-size: 24px;
+    }
+    .past h3 strong {
+        font-size: 36px;
+    }
+}
