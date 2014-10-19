@@ -147,15 +147,23 @@ EVENT DETAILS
   color: white;
   text-align: center; }
   .summary .title {
-    color: #1acd55; }
+    margin-bottom: 0;
+    padding-top: 0;
+    color: #1acd55;
+    font-size: 18px;
+    line-height: 1.5; }
   .summary .details {
-    list-style: none; }
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 18px; }
     .summary .details a {
       color: white;
       font-weight: normal; }
     .summary .details li {
       display: inline-block;
       margin: 0 5px; }
+  .summary .rsvp {
+    margin: 20px 0 0; }
   @media only screen and (min-width: 600px) {
     .summary {
       text-align: left; }
@@ -164,17 +172,20 @@ EVENT DETAILS
       .summary .rsvp {
         position: absolute;
         right: 20px;
-        top: 50%;
-        margin-bottom: 0;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%); } }
+        top: 20px;
+        margin-top: 0; } }
   @media only screen and (min-width: 1000px) {
+    .summary:before, .summary:after {
+      content: " ";
+      display: table; }
+    .summary:after {
+      clear: both; }
+    .summary {
+      *zoom: 1; }
     .summary .title,
     .summary .details {
-      display: inline-block; }
+      float: left;
+      padding: 10px 0; }
     .summary .details {
       font-size: 18px; }
       .summary .details li {
