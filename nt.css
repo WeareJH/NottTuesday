@@ -1,3 +1,4 @@
+/*!* Nott Tuesday by Joseph Russell and Chris Bailey at JH */
 /* ========================================
 MIXINS
 ======================================== */
@@ -17,7 +18,7 @@ html {
   overflow-y: scroll;
   overflow-x: hidden;
   min-height: 100%;
-  font: normal 100%/1.5 "fira-sans";
+  font: normal 100%/1.5 "alwyn-new-web";
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -26,9 +27,14 @@ html {
 body {
   font-size: 100%;
   text-rendering: optimizeLegibility; }
-  @media only screen and (min-width: 600px) {
-    body {
-      font-size: 112.5%; } }
+
+a {
+  color: #1acd55;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease; }
+  a:hover, a:focus {
+    text-decoration: underline; }
 
 /* ========================================
 BASE STYLES
@@ -37,65 +43,47 @@ BASE STYLES
   /*overflow: hidden;*/
   width: 100%; }
 
-.fill--black {
-  background: black;
-  color: white; }
-
-.fill--black a {
-  color: white; }
-
-.fill--green {
-  background: #360;
-  color: white; }
-
-.fill--green a {
-  color: white; }
-
 .container {
   position: relative;
   margin: 0 auto;
   padding: 20px;
-  max-width: 1000px; }
-  @media only screen and (min-width: 600px) {
-    .container {
-      padding: 40px; } }
+  max-width: 800px; }
 
-h1, h2, h3, p, ul {
+h1, h2, h3,
+p,
+ul {
   margin-bottom: 10px; }
 
 h1, h2, h3 {
-  padding-top: 10px;
-  line-height: 1.25;
-  font-family: "fira-sans"; }
+  line-height: 1;
+  font-family: "alwyn-new-web"; }
 
 h1 {
   font-size: 36px; }
 
 h2 {
+  padding-top: 10px;
+  font-weight: normal;
   font-size: 24px; }
 
 h3 {
   font-size: 18px; }
 
-a {
-  color: #360;
-  text-decoration: none;
-  transition: all 0.3s ease; }
-  a:hover, a:focus {
-    text-decoration: underline; }
-
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background: #360;
-  color: #fff;
+  background: #1acd55;
+  color: white;
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
   text-align: center;
-  border-radius: 5px; }
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
   .button:hover, .button:focus {
-    background: #264d00;
+    background: #17b64c;
     text-decoration: none; }
 
 img {
@@ -111,256 +99,130 @@ img {
   *zoom: 1; }
 
 /* ========================================
-INTRO
+HEADER
 ======================================== */
-.intro :last-child {
-  margin-bottom: 0; }
-.intro h1 {
-  padding-top: 20px; }
-.intro p {
-  font-size: 18px; }
-@media only screen and (min-width: 1000px) {
-  .intro h1 {
-    font-size: 48px; }
-  .intro p {
-    font-size: 24px; } }
-
-/* ========================================
-NEXT EVENT
-======================================== */
-.next {
-  overflow: hidden;
-  margin-bottom: 20px;
-  border: 2px solid #cc0;
-  background: white;
-  color: black; }
-  .next .summary {
-    padding: 20px;
-    background: #cc0; }
-    .next .summary:before, .next .summary:after {
-      content: " ";
-      display: table; }
-    .next .summary:after {
-      clear: both; }
-    .next .summary {
-      *zoom: 1; }
-    .next .summary :last-child {
-      margin-bottom: 0; }
-  .next .details {
-    list-style: none; }
-    .next .details:before, .next .details:after {
-      content: " ";
-      display: table; }
-    .next .details:after {
-      clear: both; }
-    .next .details {
-      *zoom: 1; }
-    .next .details li {
-      float: left;
-      margin-right: 10px; }
-    .next .details a {
-      color: #000; }
-  .next .time {
-    clear: left; }
-  .next .speaker {
-    padding: 20px;
-    background: #fff; }
-    .next .speaker:before, .next .speaker:after {
-      content: " ";
-      display: table; }
-    .next .speaker:after {
-      clear: both; }
-    .next .speaker {
-      *zoom: 1; }
-    .next .speaker :last-child {
-      margin-bottom: 0; }
-    .next .speaker img {
-      float: left;
-      width: 100px;
-      margin-right: 20px; }
-    .next .speaker div {
-      overflow: hidden; }
-    .next .speaker h3 {
-      font-size: 24px; }
-  @media only screen and (min-width: 600px) {
-    .next {
-      margin-bottom: 40px; }
-      .next .details {
-        margin-bottom: 0;
-        float: left;
-        width: 50%; }
-      .next .rsvp {
-        float: right;
-        width: 50%;
-        text-align: right; }
-      .next .speaker p {
-        overflow: hidden; } }
+.site-header {
+  background: #040405;
+  color: white;
+  text-align: center; }
+  .site-header .logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px; }
+  .site-header h1 {
+    font-size: 30px; }
   @media only screen and (min-width: 1000px) {
-    .next {
-      position: relative; }
-      .next .summary {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 25%;
-        height: 100%; }
-      .next .details {
-        margin-bottom: 10px;
-        float: none;
-        width: auto; }
-        .next .details li {
-          float: none;
-          display: inline-block; }
-      .next .rsvp {
-        float: none;
-        width: auto;
-        text-align: left; }
-      .next .speaker {
-        float: right;
-        padding: 20px 40px;
-        width: 75%; }
-        .next .speaker img {
-          width: 150px; } }
+    .site-header h1 {
+      font-size: 48px; }
+    .site-header p {
+      font-size: 24px; } }
+
+/* ========================================
+MAIN
+======================================== */
+/* ========================================
+EVENT DETAILS
+======================================== */
+.event {
+  margin-bottom: 20px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
+
+.summary {
+  padding: 20px;
+  background: #181d24;
+  color: white;
+  text-align: center; }
+  .summary h2 {
+    padding-top: 0;
+    color: #1acd55; }
+  .summary ul {
+    list-style: none; }
+    .summary ul a {
+      color: white;
+      font-weight: normal; }
+  .summary li {
+    display: inline-block;
+    margin: 0 5px; }
+
+.speaker {
+  padding: 20px; }
+  .speaker:before, .speaker:after {
+    content: " ";
+    display: table; }
+  .speaker:after {
+    clear: both; }
+  .speaker {
+    *zoom: 1; }
+
+.speaker__photo {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 25%; }
+
+.speaker__topic {
+  font-weight: normal; }
+  .speaker__topic strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 24px; }
 
 /* ========================================
 SPONSORS
 ======================================== */
-.sponsors ul {
+.sponsor-list {
+  margin-bottom: 0;
   list-style: none; }
-  .sponsors ul:before, .sponsors ul:after {
+  .sponsor-list:before, .sponsor-list:after {
     content: " ";
     display: table; }
-  .sponsors ul:after {
+  .sponsor-list:after {
     clear: both; }
-  .sponsors ul {
+  .sponsor-list {
     *zoom: 1; }
-.sponsors li {
-  margin-bottom: 10px; }
-  .sponsors li:before, .sponsors li:after {
-    content: " ";
-    display: table; }
-  .sponsors li:after {
-    clear: both; }
-  .sponsors li {
-    *zoom: 1; }
-.sponsors img {
-  max-width: 200px; }
-@media only screen and (min-width: 600px) {
-  .sponsors img {
-    float: left;
-    margin-right: 40px; }
-  .sponsors p {
-    padding-top: 10px;
-    overflow: hidden; } }
-@media only screen and (min-width: 1000px) {
-  .sponsors ul {
-    margin-left: -40px; }
-  .sponsors li {
-    float: left;
-    padding-left: 40px;
-    width: 33.33333%; }
-  .sponsors img {
-    float: none;
-    margin: 0;
-    width: 50%; }
-  .sponsors p {
-    padding-top: 0; } }
 
+.sponsor {
+  margin-bottom: 10px; }
+
+.sponsor__logo {
+  width: 50%;
+  max-width: 200px; }
+
+@media only screen and (min-width: 600px) {
+  .sponsor-list {
+    margin-left: -4%; }
+
+  .sponsor {
+    float: left;
+    padding-left: 4%;
+    width: 50%; }
+    .sponsor:nth-child(odd) {
+      clear: left; } }
 /* ========================================
-SPONSORS
+FOOTER
 ======================================== */
+.site-footer {
+  background: #181d24;
+  color: white; }
+
 .about {
   margin-bottom: 20px; }
 
-/* ========================================
-PAST EVENTS
-======================================== */
-.past {
-  background: black;
-  color: white; }
+.contact {
+  margin-bottom: 20px; }
 
-.past ul {
-  list-style: none; }
+.legal {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.5); }
 
-.past li {
-  overflow: auto;
-  border-top: 1px solid #333;
-  transition: opacity 0.6s ease; }
-
-.past li:hover {
-  /*opacity: 1;*/ }
-
-.past img {
-  display: none;
-  opacity: 0.75; }
-
-.past div {
-  overflow: hidden;
-  padding: 20px 0; }
-
-.past time {
-  display: block;
-  color: #666;
-  font-weight: bold;
-  font-size: 14px;
-  font-family: "Fira Mono", monospace;
-  text-transform: uppercase;
-  letter-spacing: 0.2em; }
-
-.past h3 {
-  font-weight: normal;
-  /*font-style: italic;*/
-  font-size: 18px;
-  /*color: #999;*/ }
-
-.past h3 strong {
-  /*font-style: normal;*/
-  /*color: white;*/ }
-
-.past h3 a {
-  /*display: inline-block;
-  border-bottom: 1px solid #333;
-  color: inherit;
-  line-height: 1;*/ }
-
-.past h3 a:hover, .past h3 a:focus {
-  border-color: #330;
-  color: #cc0; }
-
-@media only screen and (min-width: 600px) {
-  .past li {
-    margin-bottom: 10px;
-    border-top: 0; }
-
-  .past img {
-    display: block;
-    float: left;
-    width: 100px;
-    width: 150px; }
-
-  .past div {
-    padding: 20px; }
-
-  .past h3 {
-    /*overflow: hidden;*/
-    /*text-overflow: ellipsis;*/
-    /*white-space: nowrap;*/ }
-
-  .past h3 strong {
-    display: block;
-    font-size: 24px; } }
 @media only screen and (min-width: 1000px) {
-  .past li {
-    margin-bottom: 20px; }
+  .about {
+    float: left;
+    width: 48%; }
 
-  .past div {
-    padding: 20px 40px; }
+  .contact {
+    float: right;
+    width: 48%; }
 
-  .past h3 {
-    padding-top: 10px;
-    font-size: 24px; }
-
-  .past h3 strong {
-    font-size: 36px; } }
-
-/*# sourceMappingURL=nt.css.map */
+  .legal {
+    clear: both; } }

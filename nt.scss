@@ -1,3 +1,8 @@
+/*!* Nott Tuesday by Joseph Russell and Chris Bailey at JH */
+
+
+
+
 /* ========================================
 MIXINS
 ======================================== */
@@ -37,16 +42,26 @@ RESET
 ROOT
 ======================================== */
 
-$green: #360;
-$yellow: #cc0;
+$purple: #181d24;
+$green: #1acd55;
+// $green: #0BDA51;
+$blue: #0074b4;
 
-$body-font: "fira-sans";
-$heading-font: "fira-sans";
-// fira-sans
-// freight-sans-pro
-// ff-dagny-web-pro
-// ff-enzo-web
+$mirage: #161928;
+$tangaroa: #0c1c36;
+
+$malachite: #0BDA51;
+
+$french: #0074b4;
+
+$body-font: "alwyn-new-web";
+$heading-font: "alwyn-new-web";
+// alwyn-new-web
 // nudista-web
+// fira-sans
+
+$space: 10px;
+
 
 $lap: 600px;
 $desk: 1000px;
@@ -66,12 +81,22 @@ body {
     font-size: 100%;
     text-rendering: optimizeLegibility;
 
-    @media only screen and (min-width: $lap) {
-        font-size: 112.5%;
-    }
+    // @media only screen and (min-width: $lap) {
+    //     font-size: 112.5%;
+    // }
 }
 
+a {
+    color: $green;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
 
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
 
 
 /* ========================================
@@ -82,43 +107,36 @@ BASE STYLES
     /*overflow: hidden;*/
     width: 100%;
 }
-.fill--black {
-    background: black;
-    color: white;
-}
-.fill--black a {
-    color: white;
-}
-.fill--green {
-    background: $green;
-    color: white;
-}
-.fill--green a {
-    color: white;
-}
+
 .container {
     position: relative;
     margin: 0 auto;
     padding: 20px;
-    max-width: $desk;
+    // max-width: $desk;
+    max-width: 800px;
 
     @media only screen and (min-width: $lap) {
-        padding: 40px;
+        // padding: 40px;
     }
 }
 
-h1, h2, h3, p, ul {
-    margin-bottom: 10px;
+h1, h2, h3,
+p,
+ul {
+    margin-bottom: $space;
 }
+
 h1, h2, h3 {
-    padding-top: 10px;
-    line-height: 1.25;
+    // padding-top: 10px;
+    line-height: 1;
     font-family: $heading-font;
 }
 h1 {
     font-size: 36px;
 }
 h2 {
+    padding-top: $space;
+    font-weight: normal;
     font-size: 24px;
 
     @media only screen and (min-width: $lap) {
@@ -133,25 +151,21 @@ h3 {
     }
 }
 
-a {
-    color: $green;
-    text-decoration: none;
-    transition: all 0.3s ease;
 
-    &:hover, &:focus {
-        text-decoration: underline;
-    }
-}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
     background: $green;
-    color: #fff;
+    color: white;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
     text-align: center;
-    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 
     &:hover, &:focus {
         background: darken($green, 5%);
@@ -172,27 +186,30 @@ img {
 
 
 /* ========================================
-INTRO
+HEADER
 ======================================== */
 
-.intro {
-    & :last-child {
-        margin-bottom: 0;
+.site-header {
+    background: darken($purple, 10%);
+    color: white;
+    text-align: center;
+
+    .logo {
+        display: block;
+        margin: 0 auto 2*$space;
+        width: 150px;
     }
 
     h1 {
-        padding-top: 20px;
-    //     font-size: 36px;
-    }
-
-    p {
-        font-size: 18px;
+        // font-weight: normal;
+        font-size: 30px;
     }
 
     @media only screen and (min-width: $desk) {
         h1 {
             font-size: 48px;
         }
+
         p {
             font-size: 24px;
         }
@@ -203,232 +220,133 @@ INTRO
 
 
 /* ========================================
-NEXT EVENT
+MAIN
 ======================================== */
 
-.next {
-    // margin-top: -80px;
+.site-main {}
 
-    overflow: hidden;
-    margin-bottom: 20px;
-    border: 2px solid $yellow;
-    // padding: 20px;
-    background: white;
-    color: black;
-    // border-radius: 2px;
-    // box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 
-    .summary {
-        @include cf;
-        padding: 20px;
-        background: $yellow;
 
-        & :last-child {
-            margin-bottom: 0;
-        }
+
+/* ========================================
+EVENT DETAILS
+======================================== */
+
+.event {
+    margin-bottom: 2*$space;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+
+.summary {
+    padding: 2*$space;
+    background: $purple;
+    color: white;
+    text-align: center;
+
+    a {
+
     }
-    .details {
-        @include cf;
+
+    h2 {
+        padding-top: 0;
+        color: $green;
+    }
+    ul {
         list-style: none;
-
-        li {
-            float: left;
-            margin-right: 10px;
-
-            // + li:before {
-            //     content: "\2022";
-            //     float: left;
-            // }
-        }
 
         a {
-            color: #000;
+            color: white;
+            font-weight: normal;
         }
-    }
-    .date {
-        // font-weight: bold;
-        // font-size: 18px;
-    }
-    .time {
-        clear: left;
-    }
-    .venue {}
-    .price {}
-    .rsvp {
-        .button {
-            // width: 100%;
-        }
-    }
-
-    .speaker {
-        @include cf;
-        padding: 20px;
-        background: #fff;
-
-        & :last-child {
-            margin-bottom: 0;
-        }
-
-        img {
-            float: left;
-            width: 100px;
-            margin-right: 20px;
-        }
-        div {
-            overflow: hidden;
-        }
-        h3 {
-            // color: #666;
-            // font-weight: normal;
-            // font-size: 16px;
-
-            // strong {
-            //     color: #000;
-                font-size: 24px;
-            // }
-        }
-        p {
-        }
-    }
-
-    @media only screen and (min-width: $lap) {
-        margin-bottom: 40px;
-
-        .details {
-            margin-bottom: 0;
-            float: left;
-            width: 50%;
-        }
-
-        .rsvp {
-            float: right;
-            width: 50%;
-            text-align: right;
-        }
-
-        .speaker {
-            // float: right;
-            // width: 75%;
-
-            h3 {
-                // font-size: 18px;
-
-                // strong {
-                //     // display: block;
-                //     font-size: 24px;
-                // }
-            }
-
-            p {
-                overflow: hidden;
-            }
-        }
-    }
-
-    @media only screen and (min-width: $desk) {
-        position: relative;
-
-        .summary {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 25%;
-            height: 100%;
-            // float: left;
-            // width: 25%;
-        }
-
-        .details {
-            margin-bottom: 10px;
-            float: none;
-            width: auto;
-
-            li {
-                float: none;
-                display: inline-block;
-            }
-        }
-
-        .rsvp {
-            float: none;
-            width: auto;
-            text-align: left;
-        }
-
-        .speaker {
-            float: right;
-            padding: 20px 40px;
-            width: 75%;
-
-            h3 {
-                // margin-bottom: 20px;
-                // font-size: 18px;
-
-                // strong {
-                //     display: block;
-                // font-size: 36px;
-                // }
-            }
-
-            img {
-                width: 150px;
-            }
-        }
-    }
-}
-
-
-
-
-/* ========================================
-SPONSORS
-======================================== */
-
-.sponsors {
-    // h2 {
-    //     margin-bottom: 10px;
-    //     padding-top: 10px;
-    // }
-    ul {
-        @include cf;
-        list-style: none;
     }
     li {
-        @include cf;
-        margin-bottom: 10px;
-    }
-    img {
-        max-width: 200px;
-    }
-    @media only screen and (min-width: $lap) {
-        img {
-            float: left;
-            margin-right: 40px;
-        }
-        p {
-            padding-top: 10px;
-            overflow: hidden;
-        }
-    }
-    @media only screen and (min-width: $desk) {
-        ul {
-            margin-left: -40px;
-        }
-        li {
-            float: left;
-            padding-left: 40px;
-            width: 33.33333%;
-        }
-        img {
-            float: none;
-            margin: 0;
-            width: 50%;
-        }
-        p {
-            padding-top: 0;
-        }
+        display: inline-block;
+        margin: 0 $space/2;
     }
 }
+
+.speaker {
+    @include cf;
+    padding: 2*$space;
+}
+.speaker__photo {
+    float: left;
+    margin: 0 $space $space 0;
+    width: 25%;
+}
+.speaker__topic {
+    font-weight: normal;
+
+    strong {
+        display: block;
+        margin-bottom: $space/2;
+        font-size: 24px;
+    }
+}
+
+// .next {
+//     margin: -40px 0 20px;
+//     border: 1px solid $purple;
+//     background: white;
+//     box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+
+//     .details {
+//         @include cf;
+//         padding: 20px;
+//         background: $purple;
+//         color: white;
+//         text-align: center;
+
+//         a {
+//             color: white;
+//         }
+
+//         h2 {}
+
+//         ul {
+//             margin: 0;
+//             list-style: none;
+//         }
+//         li {}
+
+//         .icon {
+//             // display: inline-block;
+//             // margin-right: 2px;
+//             // width: 24px;
+//             // height: 24px;
+//             // vertical-align: middle;
+//             // background: $green;
+//         }
+//     }
+//     .date {}
+//     .time {}
+//     .venue {}
+//     .rsvp {
+//         margin-top: 10px;
+//     }
+// }
+
+// .speaker {
+//     @include cf;
+//     padding: 20px;
+// }
+// .speaker__photo {
+//     float: left;
+//     width: 25%;
+//     margin: 0 20px 10px 0;
+// }
+// .speaker__topic {
+//     font-weight: normal;
+
+//     strong {
+//         display: block;
+//     }
+// }
+// .speaker__bio {
+//     & :last-child {
+//         margin-bottom: 0;
+//     }
+// }
 
 
 
@@ -437,112 +355,78 @@ SPONSORS
 SPONSORS
 ======================================== */
 
-.about {
-    margin-bottom: 20px;
+.sponsors {}
+
+.sponsor-list {
+    @include cf;
+    margin-bottom: 0;
+    list-style: none;
+}
+.sponsor {
+    margin-bottom: $space;
+
+}
+.sponsor__logo {
+    // margin-bottom: $space;
+    width: 50%;
+    max-width: 200px;
+}
+
+@media only screen and (min-width: $lap) {
+    .sponsor-list {
+        margin-left: -4%;
+    }
+
+    .sponsor {
+        float: left;
+        padding-left: 4%;
+        width: 50%;
+
+        &:nth-child(odd) {
+            clear: left;
+        }
+    }
 }
 
 
 
 
 /* ========================================
-PAST EVENTS
+FOOTER
 ======================================== */
 
-.past {
-    background: black;
+.site-footer {
+    background: $purple;
     color: white;
 }
-// .past h2 {
-//     margin-bottom: 10px;
-//     padding-top: 10px;
-// }
-.past ul {
-    list-style: none;
+
+.about {
+    margin-bottom: 2*$space;
 }
-.past li {
-    overflow: auto;
-    border-top: 1px solid #333;
-    transition: opacity 0.6s ease;
+
+.contact {
+    margin-bottom: 2*$space;
 }
-.past li:hover {
-    /*opacity: 1;*/
+
+.legal {
+    // margin-bottom: 0;
+    border-top: 1px solid rgba(white, 0.1);
+    padding-top: 2*$space;
+    color: rgba(white, 0.5);
 }
-.past img {
-    display: none;
-    opacity: 0.75;
-}
-.past div {
-    overflow: hidden;
-    padding: 20px 0;
-}
-.past time {
-    display: block;
-    color: #666;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: "Fira Mono", monospace;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
-.past h3 {
-    font-weight: normal;
-    /*font-style: italic;*/
-    font-size: 18px;
-    /*color: #999;*/
-}
-.past h3 strong {
-    /*font-style: normal;*/
-    /*color: white;*/
-}
-.past h3 a {
-    /*display: inline-block;
-    border-bottom: 1px solid #333;
-    color: inherit;
-    line-height: 1;*/
-}
-.past h3 a:hover, .past h3 a:focus {
-    border-color: #330;
-    color: $yellow;
-}
-@media only screen and (min-width: $lap) {
-    .past li {
-        margin-bottom: 10px;
-        border-top: 0;
-    }
-    .past img {
-        display: block;
-        float: left;
-        width: 100px;
-        width: 150px;
-    }
-    .past div {
-        padding: 20px;
-    }
-    .past h3 {
-        /*overflow: hidden;*/
-        /*text-overflow: ellipsis;*/
-        /*white-space: nowrap;*/
-    }
-    .past h3 strong {
-        display: block;
-        font-size: 24px;
-    }
-}
+
 @media only screen and (min-width: $desk) {
-    .past li {
-        margin-bottom: 20px;
+    .about {
+        float: left;
+        width: 48%;
     }
-    .past img {
-        // width: 200px;
+
+    .contact {
+        float: right;
+        width: 48%;
     }
-    .past div {
-        padding: 20px 40px;
-    }
-    .past h3 {
-        padding-top: 10px;
-        font-size: 24px;
-    }
-    .past h3 strong {
-        font-size: 36px;
+
+    .legal {
+        clear: both;
     }
 }
