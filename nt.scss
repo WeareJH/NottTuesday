@@ -21,6 +21,13 @@ MIXINS
     }
 }
 
+@mixin prefix($property, $value...){
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
 
 
 
@@ -90,7 +97,7 @@ a {
     color: $green;
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 
     &:hover,
     &:focus {
@@ -113,7 +120,7 @@ BASE STYLES
     margin: 0 auto;
     padding: 20px;
     // max-width: $desk;
-    max-width: 800px;
+    max-width: 900px;
 
     @media only screen and (min-width: $lap) {
         // padding: 40px;
@@ -202,16 +209,28 @@ HEADER
 
     h1 {
         // font-weight: normal;
-        font-size: 30px;
+        font-size: 24px;
     }
 
-    @media only screen and (min-width: $desk) {
+    @media only screen and (min-width: $lap) {
+        padding-bottom: 6*$space;
+
         h1 {
-            font-size: 48px;
+            font-size: 32px;
         }
 
         p {
-            font-size: 24px;
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (min-width: $desk) {
+        .logo {
+            margin: 2*$space auto 4*$space;
+        }
+
+        h1 {
+            font-size: 40px;
         }
     }
 }
@@ -234,53 +253,117 @@ EVENT DETAILS
 
 .event {
     margin-bottom: 2*$space;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 1px rgba(0,0,0,0.25), 0 1px 10px rgba(0,0,0,0.1);
+
+    @media only screen and (min-width: $lap) {
+        margin: -8*$space 0 2*$space;
+    }
+
+    @media only screen and (min-width: $desk) {
+        margin: -8*$space -2*$space 2*$space;
+    }
 }
 
 .summary {
+    position: relative;
     padding: 2*$space;
     background: $purple;
     color: white;
     text-align: center;
 
-    a {
-
-    }
-
-    h2 {
-        padding-top: 0;
+    .title {
+        // padding-top: 0;
         color: $green;
     }
-    ul {
+    .details {
         list-style: none;
 
         a {
             color: white;
             font-weight: normal;
         }
+
+        li {
+            display: inline-block;
+            margin: 0 $space/2;
+        }
     }
-    li {
-        display: inline-block;
-        margin: 0 $space/2;
+
+    @media only screen and (min-width: $lap) {
+        text-align: left;
+
+        .details {
+            li {
+                margin: 0 $space/2 0 0;
+            }
+        }
+        .rsvp {
+            position: absolute;
+            right: 2*$space;
+            top: 50%;
+            margin-bottom: 0;
+            @include prefix(transform, translateY(-50%));
+        }
+    }
+
+    @media only screen and (min-width: $desk) {
+        .title,
+        .details {
+            display: inline-block;
+            // margin: 0 $space;
+        }
+        .details {
+            font-size: 18px;
+
+            li {
+                margin: 0 0 0 $space;
+            }
+        }
+        .rsvp {
+            position: static;
+            float: right;
+            @include prefix(transform, none);
+        }
     }
 }
 
 .speaker {
     @include cf;
     padding: 2*$space;
-}
-.speaker__photo {
-    float: left;
-    margin: 0 $space $space 0;
-    width: 25%;
-}
-.speaker__topic {
-    font-weight: normal;
 
-    strong {
-        display: block;
-        margin-bottom: $space/2;
-        font-size: 24px;
+    .photo {
+        float: left;
+        margin: 0 $space $space 0;
+        width: 25%;
+    }
+    .topic {
+        font-weight: normal;
+
+        strong {
+            display: block;
+            margin-bottom: $space/2;
+            font-size: 24px;
+        }
+    }
+    .bio {
+    }
+
+    @media only screen and (min-width: $lap) {
+        .photo {
+            margin: 0 2*$space 2*$space 0;
+        }
+        .topic {
+            overflow: hidden;
+        }
+        .bio {
+            overflow: hidden;
+        }
+    }
+
+    @media only screen and (min-width: $desk) {
+        .photo {
+            margin: -2*$space 2*$space -2*$space -2*$space;
+        }
     }
 }
 

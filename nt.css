@@ -32,7 +32,7 @@ a {
   color: #1acd55;
   font-weight: bold;
   text-decoration: none;
-  transition: all 0.3s ease; }
+  transition: background 0.3s ease, color 0.3s ease; }
   a:hover, a:focus {
     text-decoration: underline; }
 
@@ -47,7 +47,7 @@ BASE STYLES
   position: relative;
   margin: 0 auto;
   padding: 20px;
-  max-width: 800px; }
+  max-width: 900px; }
 
 h1, h2, h3,
 p,
@@ -110,12 +110,19 @@ HEADER
     margin: 0 auto 20px;
     width: 150px; }
   .site-header h1 {
-    font-size: 30px; }
+    font-size: 24px; }
+  @media only screen and (min-width: 600px) {
+    .site-header {
+      padding-bottom: 60px; }
+      .site-header h1 {
+        font-size: 32px; }
+      .site-header p {
+        font-size: 20px; } }
   @media only screen and (min-width: 1000px) {
+    .site-header .logo {
+      margin: 20px auto 40px; }
     .site-header h1 {
-      font-size: 48px; }
-    .site-header p {
-      font-size: 24px; } }
+      font-size: 40px; } }
 
 /* ========================================
 MAIN
@@ -125,24 +132,61 @@ EVENT DETAILS
 ======================================== */
 .event {
   margin-bottom: 20px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 10px rgba(0, 0, 0, 0.1); }
+  @media only screen and (min-width: 600px) {
+    .event {
+      margin: -80px 0 20px; } }
+  @media only screen and (min-width: 1000px) {
+    .event {
+      margin: -80px -20px 20px; } }
 
 .summary {
+  position: relative;
   padding: 20px;
   background: #181d24;
   color: white;
   text-align: center; }
-  .summary h2 {
-    padding-top: 0;
+  .summary .title {
     color: #1acd55; }
-  .summary ul {
+  .summary .details {
     list-style: none; }
-    .summary ul a {
+    .summary .details a {
       color: white;
       font-weight: normal; }
-  .summary li {
-    display: inline-block;
-    margin: 0 5px; }
+    .summary .details li {
+      display: inline-block;
+      margin: 0 5px; }
+  @media only screen and (min-width: 600px) {
+    .summary {
+      text-align: left; }
+      .summary .details li {
+        margin: 0 5px 0 0; }
+      .summary .rsvp {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        margin-bottom: 0;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%); } }
+  @media only screen and (min-width: 1000px) {
+    .summary .title,
+    .summary .details {
+      display: inline-block; }
+    .summary .details {
+      font-size: 18px; }
+      .summary .details li {
+        margin: 0 0 0 10px; }
+    .summary .rsvp {
+      position: static;
+      float: right;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none; } }
 
 .speaker {
   padding: 20px; }
@@ -153,18 +197,26 @@ EVENT DETAILS
     clear: both; }
   .speaker {
     *zoom: 1; }
-
-.speaker__photo {
-  float: left;
-  margin: 0 10px 10px 0;
-  width: 25%; }
-
-.speaker__topic {
-  font-weight: normal; }
-  .speaker__topic strong {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 24px; }
+  .speaker .photo {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 25%; }
+  .speaker .topic {
+    font-weight: normal; }
+    .speaker .topic strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 24px; }
+  @media only screen and (min-width: 600px) {
+    .speaker .photo {
+      margin: 0 20px 20px 0; }
+    .speaker .topic {
+      overflow: hidden; }
+    .speaker .bio {
+      overflow: hidden; } }
+  @media only screen and (min-width: 1000px) {
+    .speaker .photo {
+      margin: -20px 20px -20px -20px; } }
 
 /* ========================================
 SPONSORS

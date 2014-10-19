@@ -45,8 +45,8 @@
 
         <div class="event">
             <div class="summary">
-                <h2>Next Event:</h2>
-                <ul>
+                <h2 class="title">Next Event:</h2>
+                <ul class="details">
                     <li class="date"><i class="icon"></i> 16th September</li>
                     <li class="time"><i class="icon"></i> 6:30 &ndash; 8:30pm</li>
                     <li class="venue"><i class="icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
@@ -54,9 +54,9 @@
                 <p class="rsvp"><a class="button" href="">RSVP on Meetup</a></p>
             </div>
             <div class="speaker">
-                <img class="speaker__photo" src="face6.jpg" alt="Jane Smith">
-                <h3 class="speaker__topic"><strong>Business and Numbers</strong> with Jane Smith</h3>
-                <div class="speaker__bio">
+                <img class="photo" src="face6.jpg" alt="Jane Smith">
+                <h3 class="topic"><strong>Business and Numbers</strong> with Jane Smith</h3>
+                <div class="bio">
                     <p><a href="" target="_blank">Jane Smith</a> is co-founder of Acme Inc. and lectures at Nottingham University. She will be talking about how business and numbers are the foundation of every successful company. Jane will look at how to apply these build a new business around these keystones.</p>
                     <p><a href="">More details on Meetup &rarr;</a></p>
                 </div>
