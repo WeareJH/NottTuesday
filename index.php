@@ -53,7 +53,7 @@
                 <h2 class="title">Next Event:</h2>
                 <ul class="details">
                     <li class="date"><i class="date-icon"></i> 21 October</li>
-                    <li class="time"><i class="icon time-icon"></i> 6:30&ndash;8:30pm</li>
+                    <li class="time"><i class="icon time-icon"></i> 6:30&ndash;10:30pm</li>
                     <li class="venue"><i class="icon location-icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
                 </ul>
                 <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/204661282/">RSVP on Meetup</a></p>

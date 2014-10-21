@@ -18,7 +18,7 @@ html {
   overflow-y: scroll;
   overflow-x: hidden;
   min-height: 100%;
-  font: normal 100%/1.5 "gesta";
+  font: normal 100%/1.5 "gesta", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -59,7 +59,7 @@ ul {
 
 h1, h2, h3 {
   line-height: 1;
-  font-family: "gesta"; }
+  font-family: "gesta", Helvetica, Arial, sans-serif; }
 
 h1 {
   font-size: 38px; }
