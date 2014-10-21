@@ -16,6 +16,11 @@
     <!-- ICONS -->
     <link href="favicon.ico" rel="icon" type="image/ico">
 
+    <!-- ICONS -->
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" href="favicon-152.png">
+
     <!-- CSS -->
     <script src="//use.typekit.net/gpq2kyz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -30,7 +35,7 @@
 </head>
 <body>
 
-<header class="wrapper site-header" role="banner">
+<header class="wrapper site-header header__bg" role="banner">
     <div class="container">
 
         <img class="logo" src="logo.png" alt="Nott Tuesday">
@@ -47,41 +52,50 @@
             <div class="summary">
                 <h2 class="title">Next Event:</h2>
                 <ul class="details">
-                    <li class="date"><i class="icon"></i> 16 September</li>
-                    <li class="time"><i class="icon"></i> 6:30&ndash;8:30pm</li>
-                    <li class="venue"><i class="icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
+                    <li class="date"><i class="date-icon"></i> 21 October</li>
+                    <li class="time"><i class="icon time-icon"></i> 6:30&ndash;8:30pm</li>
+                    <li class="venue"><i class="icon location-icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
                 </ul>
-                <p class="rsvp"><a class="button" href="">RSVP on Meetup</a></p>
+                <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/204661282/">RSVP on Meetup</a></p>
             </div>
             <div class="speaker">
-                <img class="photo" src="face6.jpg" alt="Jane Smith">
-                <h3 class="topic"><strong>Business and Numbers</strong> with Jane Smith</h3>
+                <img class="photo" src="mhm.png" alt="Jane Smith">
+                <h3 class="topic"><strong>Urgency Rules</strong> with Martin Holm Mortensen</h3>
                 <div class="bio">
-                    <p><a href="" target="_blank">Jane Smith</a> is co-founder of Acme Inc. and lectures at Nottingham University. She will be talking about how business and numbers are the foundation of every successful company. Jane will look at how to apply these build a new business around these keystones.</p>
-                    <p><a href="">More details on Meetup &rarr;</a></p>
+<!--                    <p><a href="" target="_blank">Jane Smith</a> is co-founder of Acme Inc. and lectures at Nottingham University. She will be talking about how business and numbers are the foundation of every successful company. Jane will look at how to apply these build a new business around these keystones.</p>-->
+
+                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/204661282/" target="_blank">Martin Holm Mortensen</a> is a Business Accelerator & Investor at Accelerace Management A/S as well as a Digital Coach at Nottingham based Next Business Generation.</p>
+
+                    <p>He has been involved in several start-ups and spin-offs in various roles; part-owner, founder and as a C-level manager. Martin’s professional career focus has been on Business Development, Sales and Marketing with many years of both strategic and operational responsibility in companies such as MondoSoft, Computer People and CapaSystems in Denmark and the US.</p>
+
+                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/204661282/">More details on Meetup &rarr;</a></p>
                 </div>
             </div>
         </div>
 
         <div class="sponsors">
-            <h2>Our Sponsors</h2>
+<!--            <h2>Our Sponsor</h2>-->
             <ul class="sponsor-list">
+
                 <li class="sponsor">
-                    <a href="" target="_blank"><img class="sponsor__logo" src="paypal.png" alt="PayPal"></a>
-                    <a href="" target="_blank">PayPal</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
+                    <h2>Our event sponsor</h2>
                 </li>
                 <li class="sponsor">
-                    <a href="" target="_blank"><img class="sponsor__logo" src="mailchimp.png" alt="MailChimp"></a>
-                    <a href="" target="_blank">MailChimp</a> is used by more than 6 million people to design and send beautiful email marketing campaigns, then track results to see how their business is affected.
+                    <a href="https://www.paypal.com/" target="_blank"><img class="sponsor__logo" src="paypal.png" alt="PayPal"></a>
+                    <a href="https://www.paypal.com/" target="_blank">PayPal</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
                 </li>
-                <li class="sponsor">
-                    <a href="" target="_blank"><img class="sponsor__logo" src="github.png" alt="GitHub"></a>
-                    <a href="" target="_blank">GitHub</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
-                </li>
-                <li class="sponsor">
-                    <a href="" target="_blank"><img class="sponsor__logo" src="github.png" alt="GitHub"></a>
-                    <a href="" target="_blank">GitHub</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
-                </li>
+                <?php /* <li class="sponsor">
+                     <a href="" target="_blank"><img class="sponsor__logo" src="mailchimp.png" alt="MailChimp"></a>
+                     <a href="" target="_blank">MailChimp</a> is used by more than 6 million people to design and send beautiful email marketing campaigns, then track results to see how their business is affected.
+                 </li>
+                 <li class="sponsor">
+                     <a href="" target="_blank"><img class="sponsor__logo" src="github.png" alt="GitHub"></a>
+                     <a href="" target="_blank">GitHub</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
+                 </li>
+                 <li class="sponsor">
+                     <a href="" target="_blank"><img class="sponsor__logo" src="github.png" alt="GitHub"></a>
+                     <a href="" target="_blank">GitHub</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
+                 </li> */ ?>
             </ul>
         </div>
 
@@ -94,7 +108,7 @@
 
         <div class="about">
             <h2>About Nott Tuesday</h2>
-            <p># REWRITE #. Each month we have stimulating speakers giving talks on the challenges of starting and running a technology business, practical guidance on operating a business such as finding funding and exploring future technologies for new opportunities.</p>
+            <p>Each month we have stimulating speakers giving talks on the challenges of starting and running a technology business, practical guidance on operating a business such as finding funding and exploring future technologies for new opportunities.</p>
             <p>The goal of our group is bring together technology people, startups and companies. Our vision is to fill the Nottingham tech scene with networking and opportunities.</p>
         </div>
 

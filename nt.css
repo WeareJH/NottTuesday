@@ -18,7 +18,7 @@ html {
   overflow-y: scroll;
   overflow-x: hidden;
   min-height: 100%;
-  font: normal 100%/1.5 "alwyn-new-web";
+  font: normal 100%/1.5 "gesta";
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -27,6 +27,9 @@ html {
 body {
   font-size: 100%;
   text-rendering: optimizeLegibility; }
+  @media only screen and (min-width: 1000px) {
+    body {
+      padding: 20px; } }
 
 a {
   color: #1acd55;
@@ -56,18 +59,18 @@ ul {
 
 h1, h2, h3 {
   line-height: 1;
-  font-family: "alwyn-new-web"; }
+  font-family: "gesta"; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 38px; }
 
 h2 {
   padding-top: 10px;
   font-weight: normal;
-  font-size: 24px; }
+  font-size: 26px; }
 
 h3 {
-  font-size: 18px; }
+  font-size: 22px; }
 
 .button {
   display: inline-block;
@@ -81,7 +84,8 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: background-color .3s ease; }
   .button:hover, .button:focus {
     background: #17b64c;
     text-decoration: none; }
@@ -117,12 +121,17 @@ HEADER
       .site-header h1 {
         font-size: 32px; }
       .site-header p {
-        font-size: 20px; } }
+        font-size: 22px; } }
   @media only screen and (min-width: 1000px) {
     .site-header .logo {
       margin: 20px auto 40px; }
     .site-header h1 {
-      font-size: 40px; } }
+      font-size: 48px;
+      font-weight: normal; } }
+
+.header__bg {
+  background: url("bg.png") right center no-repeat;
+  background-size: cover; }
 
 /* ========================================
 MAIN
@@ -150,12 +159,12 @@ EVENT DETAILS
     margin-bottom: 0;
     padding-top: 0;
     color: #1acd55;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5; }
   .summary .details {
     margin-bottom: 0;
     list-style: none;
-    font-size: 18px; }
+    font-size: 20px; }
     .summary .details a {
       color: white;
       font-weight: normal; }
@@ -187,7 +196,7 @@ EVENT DETAILS
       float: left;
       padding: 10px 0; }
     .summary .details {
-      font-size: 18px; }
+      font-size: 20px; }
       .summary .details li {
         margin: 0 0 0 10px; }
     .summary .rsvp {
@@ -211,13 +220,13 @@ EVENT DETAILS
   .speaker .photo {
     float: left;
     margin: 0 10px 10px 0;
-    width: 25%; }
+    width: 30%; }
   .speaker .topic {
     font-weight: normal; }
     .speaker .topic strong {
       display: block;
       margin-bottom: 5px;
-      font-size: 24px; }
+      font-size: 30px; }
   @media only screen and (min-width: 600px) {
     .speaker .photo {
       margin: 0 20px 20px 0; }
@@ -245,9 +254,15 @@ SPONSORS
 
 .sponsor {
   margin-bottom: 10px; }
+  .sponsor h2 {
+    text-align: left; }
+    @media only screen and (min-width: 600px) {
+      .sponsor h2 {
+        text-align: right;
+        margin-top: 32px; } }
 
 .sponsor__logo {
-  width: 50%;
+  width: 100%;
   max-width: 200px; }
 
 @media only screen and (min-width: 600px) {
@@ -289,3 +304,5 @@ FOOTER
 
   .legal {
     clear: both; } }
+
+/*# sourceMappingURL=nt.css.map */

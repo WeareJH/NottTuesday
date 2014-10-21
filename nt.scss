@@ -61,8 +61,11 @@ $malachite: #0BDA51;
 
 $french: #0074b4;
 
-$body-font: "alwyn-new-web";
-$heading-font: "alwyn-new-web";
+
+$body-font: "gesta";
+$heading-font: "gesta";
+//$body-font: "alwyn-new-web";
+//$heading-font: "alwyn-new-web";
 // alwyn-new-web
 // nudista-web
 // fira-sans
@@ -88,9 +91,14 @@ body {
     font-size: 100%;
     text-rendering: optimizeLegibility;
 
-    // @media only screen and (min-width: $lap) {
-    //     font-size: 112.5%;
-    // }
+//    @media only screen and (min-width: $lap) {
+//         font-size: 112.5%;
+//    }
+
+    @media only screen and (min-width: $desk) {
+        padding: 20px;
+    }
+
 }
 
 a {
@@ -139,19 +147,19 @@ h1, h2, h3 {
     font-family: $heading-font;
 }
 h1 {
-    font-size: 36px;
+    font-size: 38px;
 }
 h2 {
     padding-top: $space;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 26px;
 
     @media only screen and (min-width: $lap) {
         // font-size: 36px;
     }
 }
 h3 {
-    font-size: 18px;
+    font-size: 22px;
 
     @media only screen and (min-width: $lap) {
         // font-size: 24px;
@@ -172,7 +180,9 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    //box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    transition: background-color .3s ease;
 
     &:hover, &:focus {
         background: darken($green, 5%);
@@ -220,7 +230,7 @@ HEADER
         }
 
         p {
-            font-size: 20px;
+            font-size: 22px;
         }
     }
 
@@ -230,12 +240,17 @@ HEADER
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 48px;
+            font-weight: normal;
         }
     }
 }
 
 
+.header__bg {
+    background: url('bg.png') right center no-repeat;
+    background-size: cover;
+}
 
 
 /* ========================================
@@ -275,13 +290,13 @@ EVENT DETAILS
         margin-bottom: 0;
         padding-top: 0;
         color: $green;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.5;
     }
     .details {
         margin-bottom: 0;
         list-style: none;
-        font-size: 18px;
+        font-size: 20px;
 
         a {
             color: white;
@@ -326,7 +341,7 @@ EVENT DETAILS
             // margin: 0 $space;
         }
         .details {
-            font-size: 18px;
+            font-size: 20px;
 
             li {
                 margin: 0 0 0 $space;
@@ -338,6 +353,35 @@ EVENT DETAILS
             @include prefix(transform, none);
         }
     }
+
+//    .date-icon {
+//        background: url("date.png") 0 0 no-repeat;
+//        background-size: cover;
+//        width: 17px;
+//        height: 17px;
+//        margin-left: 8px;
+//        margin-right: 4px;
+//        display: inline-block;
+//
+//    }
+//
+//    .time-icon {
+//        background: url("time.png") 0 0 no-repeat;
+//        width: 17px;
+//        height: 17px;
+//        margin-left: 8px;
+//        margin-right: 4px;
+//        display: inline-block;
+//    }
+//
+//    .location-icon {
+//        background: url("location.png") 0 0 no-repeat;
+//        width: 13px;
+//        height: 17px;
+//        margin-left: 8px;
+//        margin-right: 4px;
+//        display: inline-block;
+//    }
 }
 
 .speaker {
@@ -347,7 +391,7 @@ EVENT DETAILS
     .photo {
         float: left;
         margin: 0 $space $space 0;
-        width: 25%;
+        width: 30%;
     }
     .topic {
         font-weight: normal;
@@ -355,7 +399,7 @@ EVENT DETAILS
         strong {
             display: block;
             margin-bottom: $space/2;
-            font-size: 24px;
+            font-size: 30px;
         }
     }
     .bio {
@@ -461,10 +505,21 @@ SPONSORS
 .sponsor {
     margin-bottom: $space;
 
+    h2 {
+        text-align: left;
+
+        @media only screen and (min-width: $lap) {
+            text-align: right;
+            margin-top: 32px;
+
+        }
+
+    }
+
 }
 .sponsor__logo {
     // margin-bottom: $space;
-    width: 50%;
+    width: 100%;
     max-width: 200px;
 }
 
