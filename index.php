@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon-precomposed" href="favicon-152.png">
 
     <!-- CSS -->
-    <script src="//use.typekit.net/gpq2kyz.js"></script>
+    <script src="//use.typekit.net/htk0tvr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="nt.css">
     <?php /*
