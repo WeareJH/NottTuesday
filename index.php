@@ -52,23 +52,76 @@
             <div class="summary">
                 <h2 class="title">Next Event:</h2>
                 <ul class="details">
-                    <li class="date"><i class="date-icon"></i> 21 October</li>
-                    <li class="time"><i class="icon time-icon"></i> 6:30&ndash;10:30pm</li>
+                    <li class="date"><i class="date-icon"></i> 18th November</li>
+                    <li class="time"><i class="icon time-icon"></i> 6:30pm&ndash;10pm</li>
                     <li class="venue"><i class="icon location-icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
                 </ul>
-                <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/204661282/">RSVP on Meetup</a></p>
+                <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">RSVP on Meetup</a></p>
             </div>
             <div class="speaker">
-                <img class="photo" src="mhm.png" alt="Jane Smith">
-                <h3 class="topic"><strong>Urgency Rules</strong> with Martin Holm Mortensen</h3>
+                <!-- <img class="photo" src="mhm.png" alt="Jane Smith"> -->
+                <h3 class="topic"><strong>Tech Startup of the Year Awards 2014</strong>Call for entries!</h3>
                 <div class="bio">
 <!--                    <p><a href="" target="_blank">Jane Smith</a> is co-founder of Acme Inc. and lectures at Nottingham University. She will be talking about how business and numbers are the foundation of every successful company. Jane will look at how to apply these build a new business around these keystones.</p>-->
 
-                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/204661282/" target="_blank">Martin Holm Mortensen</a> is a Business Accelerator & Investor at Accelerace Management A/S as well as a Digital Coach at Nottingham based Next Business Generation.</p>
+                    <p>The Nott Tuesday's Tech Start-up of the Year competition is coming soon! We’re searching for Nottingham's Most Promising Tech Startups, and it's time to get entering!</p>
 
-                    <p>He has been involved in several start-ups and spin-offs in various roles; part-owner, founder and as a C-level manager. Martin’s professional career focus has been on Business Development, Sales and Marketing with many years of both strategic and operational responsibility in companies such as MondoSoft, Computer People and CapaSystems in Denmark and the US.</p>
+<p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">RSVP to the event on Meetup here and let us know you're coming!</a></p>
 
-                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/204661282/">More details on Meetup &rarr;</a></p>
+<p>Five startups will pitch their businesses on the 18th of November 2014. On the night we'll have five experienced judges to hear the startup pitches and select two winners. As with last year we'll  have two categories: New Startup of the Year and Emerging Startup of the Year.</p>
+
+<h4>The prizes</h4>
+<p><a title="More sponsors:" href="http://notttuesday.com/2013/10/18/more-sponsors/">Last year we had over £7,500 worth of prizes for the winners including £1000’s of cash prizes</a>. We can't promise anything, but we're looking to source trophies this year on top of those prizes! Jamie (<a href="mailto:jamie@notttuesday.com">jamie@notttuesday.com</a>) is sorting out the prizes this year, so get in touch if you're looking to contribute to the prize pool for this year's awards!</p>
+<h4>The categories</h4>
+<p>Our awards are specifically for technology companies -- this includes startups with web applications, software products, mobile applications and similar IT technology services.</p>
+
+<p><strong>New Startup of the Year</strong> – This award is for fresh startups who are about to or have just launch their new service / product. The startups can pre-revenue and the emphasis here is on potential. The startups in the category should be less than one year old.</p>
+
+<p><strong>Emerging Startup of the Year</strong> – This award is for more mature  startups up to 5 years old who have got traction in their market and show further potential.</p>
+
+<p>The organisers will select which category each application will fall in.
+<h4>The format</h4>
+<p>If you're not entering, or are supporting an entrant then simply turn up as you normally would!</p>
+
+<p>For entrants the evenings format will be simple:
+<ul>
+<li>5 minutes to pitch</li>
+<li>7 mins Q&amp;A with judging panel</li>
+<li>Judges retire to deliberate</li>
+<li>Winner announced &amp; prizes given</li>
+</ul></p>
+
+<p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">RSVP to the event on Meetup here and let us know you're coming!</a></p>
+
+<h4>The panel</h4>
+<p>The judging panel will include experts in entrepreneurship, funding and legal advice. We’ll let you know who they are once all the judges have confirmed.</p>
+
+<h4>The pitch</h4>
+<p>The judges are going to want to hear about:
+<ul>
+<li>Business overview</li>
+<li>Market information i.e. opportunity and competition</li>
+<li>Management team</li>
+<li>Key achievements</li>
+<li>Growth strategy (management needed, investment &amp; exit strategy)</li>
+</ul></p>
+
+<p>The trick is to keep the application and pitch concise and punchy.</p>
+
+<h4>The judging</h4>
+
+<p>Finalist selection - an pre-assessment of the business and opportunity on all entries will be made by the judges. The judges will then select the best five startups to present on November 18th 2014. Please request an entry form with an email to <a href="mailto:nick@notttuesday.com">nick@notttuesday.com</a></p>
+
+<p>Winners – on the night all startups will be judged on the quality of their presentation. The judges will expect to hear about the elements of highlighted with the pitch above and judge the startups on their ability to handle a short questions and answers.</p>
+
+<h4>Sponsors</h4>
+
+<p>We had the best ever sponsor support last year and we need sponsors again to support the event and provide prizes for the winners. Please email <a href="mailto:jamie@notttuesday.com">jamie@notttuesday.com</a> with your ideas for prizes. As a sponsor you will be profiled on Nott Tuesday and at the award evening in front of Nottingham's tech community.
+
+<h4>How to enter</h4>
+<p>If you want to enter the awards email <a href="mailto:nick@notttuesday.com">nick@notttuesday.com</a> now for our short application form. The closing date for entries is the 4th of November. We'll be announcing the final short list the week before the awards night.</p>
+
+                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">More details on Meetup &rarr;</a></p>
                 </div>
             </div>
         </div>
@@ -114,8 +167,8 @@
 
         <div class="contact">
             <h2>Contact Us</h2>
-            <p>Nott Tuesday is organised by <a href="https://twitter.com/nickpoint">Nick Barker</a> and <a href="https://twitter.com/jhuskisson">Jamie Huskisson</a>.</p>
-            <p>If you&rsquo;d like to feedback, propose a talk or recommend a speaker, please contact <a href="mailto:hello@notttuesday.com ">hello@notttuesday.com</a> or <a href="http://twitter.com/notttuesday">@notttuesday</a>.</p>
+            <p>Nott Tuesday is organised by Nick Barker and <a href="https://twitter.com/jhuskisson">Jamie Huskisson</a>.</p>
+            <p>If you&rsquo;d like to feedback, propose a talk or recommend a speaker, please contact <a href="mailto:nick@notttuesday.com">nick@notttuesday.com</a> or <a href="http://twitter.com/notttuesday">@notttuesday</a>.</p>
         </div>
 
         <p class="legal">&copy;<?php echo date('Y'); ?> Nott Tuesday.</p>
