@@ -77,7 +77,7 @@
         <div class="info">
 
             <h3>The prizes</h3>
-            <p><a title="More sponsors:" href="http://notttuesday.com/2013/10/18/more-sponsors/">Last year we had over £7,500 worth of prizes for the winners including £1000’s of cash prizes</a>. We can't promise anything, but we're looking to source trophies this year on top of those prizes! Jamie (<a href="mailto:jamie@notttuesday.com">jamie@notttuesday.com</a>) is sorting out the prizes this year, so get in touch if you're looking to contribute to the prize pool for this year's awards!</p>
+            <p>Last year we had over £7,500 worth of prizes for the winners including £1000’s of cash prizes. We can't promise anything, but we're looking to source trophies this year on top of those prizes! Jamie (<a href="mailto:jamie@notttuesday.com">jamie@notttuesday.com</a>) is sorting out the prizes this year, so get in touch if you're looking to contribute to the prize pool for this year's awards!</p>
 
             <hr>
 
