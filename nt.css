@@ -102,6 +102,11 @@ img {
 .cf {
   *zoom: 1; }
 
+hr {
+  border-bottom: 1px solid #cccccc;
+  padding-top: 20px;
+  margin-bottom: 30px; }
+
 /* ========================================
 HEADER
 ======================================== */
@@ -237,6 +242,12 @@ EVENT DETAILS
   @media only screen and (min-width: 1000px) {
     .speaker .photo {
       margin: -20px 20px -20px -20px; } }
+
+/* ========================================
+INFO
+======================================== */
+.info ul {
+  margin-left: 20px; }
 
 /* ========================================
 SPONSORS

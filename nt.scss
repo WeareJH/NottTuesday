@@ -61,6 +61,8 @@ $malachite: #0BDA51;
 
 $french: #0074b4;
 
+$grey: #cccccc;
+
 
 $body-font: "gesta", Helvetica, Arial, sans-serif;
 $heading-font: "gesta", Helvetica, Arial, sans-serif;
@@ -199,7 +201,11 @@ img {
     @include cf;
 }
 
-
+hr {
+    border-bottom: 1px solid $grey;
+    padding-top:2*$space;
+    margin-bottom:3*$space;
+}
 
 
 /* ========================================
@@ -489,6 +495,15 @@ EVENT DETAILS
 // }
 
 
+/* ========================================
+INFO
+======================================== */
+
+.info{
+        ul{
+            margin-left: 2*$space;
+        }
+    }
 
 
 /* ========================================
