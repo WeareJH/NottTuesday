@@ -5,8 +5,8 @@
 <!--[if IE 9]>         <html class="no-js ie ie9 lt-ie10" lang="en-US"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js ffly" lang="en-US"> <!--<![endif]-->
 <head>
-    <title>Nott Tuesday: Meetup for Founders and Entrepreneurs in Nottingham</title>
-    <meta name="description" content="Presentations and conversations about starting and growing a tech business. Share, support and unwind every third Tuesday of the month.">
+    <title>Nott Tuesday: The meetup for Nottingham&rsquo;s tech scene. For founders and entrepreneurs</title>
+    <meta name="description" content="Our free, monthly event features a guest speaker and time to meet fellow founders, entrepreneurs and technologists. Come share, support and unwind with us.">
 
     <!-- META -->
     <meta charset="UTF-8" />
@@ -53,27 +53,28 @@
                 <h2 class="title">Next Event:</h2>
                 <ul class="details">
                     <li class="date"><i class="date-icon"></i> 18th November</li>
-                    <li class="time"><i class="icon time-icon"></i> 6:30pm&ndash;10pm</li>
+                    <li class="time"><i class="icon time-icon"></i> 6:30pm&ndash;11pm</li>
                     <li class="venue"><i class="icon location-icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
                 </ul>
                 <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">RSVP on Meetup</a></p>
             </div>
             <div class="speaker">
-                <!-- <img class="photo" src="mhm.png" alt="Jane Smith"> -->
-                <h3 class="topic"><strong>Tech Startup of the Year Awards 2014</strong>Call for entries!</h3>
+                <img class="photo" src="https://notttuesday.files.wordpress.com/2013/11/dsc04597-e1415202489762.jpg" alt="Tech Startup of the Year Awards 2014">
+                <h3 class="topic"><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">Tech Startup of the Year Awards 2014</a></h3>
                 <div class="bio">
 <!--                    <p><a href="" target="_blank">Jane Smith</a> is co-founder of Acme Inc. and lectures at Nottingham University. She will be talking about how business and numbers are the foundation of every successful company. Jane will look at how to apply these build a new business around these keystones.</p>-->
 
-                    <p>The Nott Tuesday's Tech Start-up of the Year competition is coming soon! We’re searching for Nottingham's Most Promising Tech Startups, and it's time to get entering!</p>
+                    <p>The Nott Tuesday's Tech Start-up of the Year competition is back! We’ve searched for Nottingham's Most Promising Tech Startups, and it's time to decide our winners! We will announce the finalists soon.</p>
 
-<p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">RSVP to the event on Meetup here and let us know you're coming!</a></p>
+                    <p>The format is straight forward: finalists will pitch their businesses to our panel of five expert judges. They will deliborate in a separate room after hearing everybody and return to announce two winners.</p>
 
-<p>Five startups will pitch their businesses on the 18th of November 2014. On the night we'll have five experienced judges to hear the startup pitches and select two winners. As with last year we'll  have two categories: New Startup of the Year and Emerging Startup of the Year.</p>
+                    <p>As with last year we'll have two categories: New Startup of the Year and Emerging Startup of the Year.</p>
 
+                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">Let us know if you're attending on the night so we have your drinks ready!</a></p>
                 </div>
             </div>
         </div>
-
+        <?php /*
         <div class="info">
 
             <h3>The prizes</h3>
@@ -146,31 +147,58 @@
                     <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">More details on Meetup &rarr;</a></p>
 
         </div>
-
+        <?php */ ?>
 
         <div class="sponsors">
-        <!--<h2>Our Sponsor</h2>-->
+            <h2>Platinum Sponsors</h2>
+            <p>These sponsors will be providing our cash prizes for the awards on the evening as well as putting money behind the bar for food and drinks throughout the evening.</p>
             <ul class="sponsor-list">
+                <li class="sponsor">
+                    <a href="http://www.nextbusinessgeneration.org/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Next Business Generation"></a>
+                     <a href="http://www.nextbusinessgeneration.org/" target="_blank">Next Business Generation</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
+                </li>
+                <li class="sponsor">
+                     <a href="http://www.g2innovation.co.uk/" target="_blank"><img class="sponsor__logo" src="g2.png" alt="G2 Innovation"></a>
+                     <a href="http://www.g2innovation.co.uk/" target="_blank">G2 Innovation</a> is used by more than 6 million people to design and send beautiful email marketing campaigns, then track results to see how their business is affected.
+                 </li>
+                 <li class="sponsor">
+                     <a href="http://www.esendex.co.uk/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Esendex"></a>
+                    <a href="http://www.esendex.co.uk/" target="_blank">Esendex</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
+                 </li>
+                 <li class="sponsor">
+                     <a href="http://www.creativequarter.com/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Creative Quarter"></a>
+                     <a href="http://www.creativequarter.com/" target="_blank">Creative Quarter</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
+                 </li>
+            </ul>
 
-                <?php /* <li class="sponsor">
-                    <h2>Our event sponsor</h2>
-                </li>
+            <hr>
+
+            <h2>Gold sponsors</h2>
+            <p>These sponsors will be providing our services-in-kind for the winners on the evening.</p>
+            <ul class="sponsor-list">
                 <li class="sponsor">
-                    <a href="https://www.paypal.com/" target="_blank"><img class="sponsor__logo" src="paypal.png" alt="PayPal"></a>
-                    <a href="https://www.paypal.com/" target="_blank">PayPal</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
-                </li>
-                <li class="sponsor">
-                     <a href="" target="_blank"><img class="sponsor__logo" src="g2.png" alt="MailChimp"></a>
-                     <a href="" target="_blank">MailChimp</a> is used by more than 6 million people to design and send beautiful email marketing campaigns, then track results to see how their business is affected.
+                     <a href="http://www.skeletonproductions.com/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Skeleton Productions"></a>
+                     <a href="http://www.skeletonproductions.com/" target="_blank">Skeleton Productions</a> will be donating an animation worth £750 to our winners.
                  </li>
                  <li class="sponsor">
-                     <a href="" target="_blank"><img class="sponsor__logo" src="github.png" alt="GitHub"></a>
-                     <a href="" target="_blank">GitHub</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
+                     <a href="http://www.shoosmiths.co.uk/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Shoosmiths"></a>
+                     <a href="http://www.shoosmiths.co.uk/" target="_blank">Shoosmiths</a> will be donating £750 worth of legal advice to our winners.
+                 </li>
+            </ul>
+
+            <hr>
+
+            <h2>Silver sponsors</h2>
+            <p>Our ongoing award sponsors, help us get great speakers each month as well as providing drinks.</p>
+            <ul class="sponsor-list">
+                <li class="sponsor">
+                     <a href="http://www.paypal.com/" target="_blank"><img class="sponsor__logo" src="paypal.png" alt="Paypal"></a>
+                     <a href="http://www.paypal.com/" target="_blank">Paypal</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
                  </li>
                  <li class="sponsor">
-                     <a href="" target="_blank"><img class="sponsor__logo" src="github.png" alt="GitHub"></a>
-                     <a href="" target="_blank">GitHub</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
-                 </li> */ ?>
+                     <a href="http://www.first-enterprise.co.uk/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="First Enterprise"></a>
+                     <a href="http://www.first-enterprise.co.uk/" target="_blank">First Enterprise</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
+                 </li>
             </ul>
         </div>
 
@@ -184,17 +212,17 @@
         <div class="about">
             <h2>About Nott Tuesday</h2>
             <p>Each month we have stimulating speakers giving talks on the challenges of starting and running a technology business, practical guidance on operating a business such as finding funding and exploring future technologies for new opportunities.</p>
-            <p>The goal of our group is bring together technology people, startups and companies. Our vision is to fill the Nottingham tech scene with networking and opportunities.</p>
+
+            <p>The goal of our meetup is to bring together technology people, startups and companies. Our vision is to fill the Nottingham tech scene with networking and opportunities.</p>
         </div>
 
         <div class="contact">
             <h2>Contact Us</h2>
             <p>Nott Tuesday is organised by Nick Barker and <a href="https://twitter.com/jhuskisson">Jamie Huskisson</a>.</p>
-            <p>If you&rsquo;d like to feedback, propose a talk or recommend a speaker, please contact <a href="mailto:nick@notttuesday.com">nick@notttuesday.com</a> or <a href="http://twitter.com/notttuesday">@notttuesday</a>.</p>
+            <p>If you&rsquo;d like to feedback, propose a talk or recommend a speaker, please contact <a href="mailto:nick@notttuesday.com">nick@notttuesday.com</a>, <a href="mailto:jamie@notttuesday.com">jamie@notttuesday.com</a> or <a href="http://twitter.com/notttuesday">@notttuesday</a>.</p>
         </div>
 
         <p class="legal">&copy;<?php echo date('Y'); ?> Nott Tuesday.</p>
-
     </div>
 </footer><!-- end .site-footer -->
 
@@ -216,4 +244,3 @@
 
 </body>
 </html>
-
