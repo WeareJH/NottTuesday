@@ -75,11 +75,11 @@
             </div>
         </div>
 
-        <p>Judges:</p>
+        <p>Judging panel:</p>
         <ul>
         <li><a href="https://www.linkedin.com/profile/view?id=1028472">Jonathan English</a> - Skeleton Productions, Managing Director</li>
         <li><a href="https://www.linkedin.com/profile/view?id=464506">Aamir Butt</a> - Next Business Generation, Programme Director</li>
-        <li><a href="https://www.linkedin.com/profile/view?id=5534028">Robert Cawdron</a> - Greant Thornton, Finance Growth Manager</li>
+        <li><a href="https://www.linkedin.com/profile/view?id=5534028">Robert Cawdron</a> - Grant Thornton, Finance Growth Manager</li>
         <li><a href="https://www.linkedin.com/profile/view?id=51164259">Aisling Duffy</a> - Shoosmiths, Head of Data Protection - "Aisling is an experienced lawyer advising clients on all matters relating to data including data protection, privacy law, freedom of information and data security."</li>
         <li><a href="https://www.linkedin.com/profile/view?id=5223403">Andrew Porter</a> - Seasoned Entrepreneur</li>
         </ul>
