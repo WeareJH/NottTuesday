@@ -159,7 +159,7 @@
                  </li>
                  <li class="sponsor">
                     <a href="http://www.wearejh.com/" target="_blank"><img class="sponsor__logo" src="img/logo-jh.png" alt="JH"></a>
-                    <a href="http://www.wearejh.com/" target="_blank">JH</a> is a web agency working with working with exciting clients on challenging projects. They specialise in producing attractive, effective ecommerce websites.
+                    <a href="http://www.wearejh.com/" target="_blank">JH</a> is a web agency working with exciting clients on challenging projects. They specialise in producing attractive, effective ecommerce websites.
                  </li>
             </ul>
         </section><!-- end .sponsors -->
