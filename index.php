@@ -140,6 +140,10 @@
                     <a href="http://www.shoosmiths.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-shoosmiths.png" alt="Shoosmiths"></a>
                     <a href="http://www.shoosmiths.co.uk/" target="_blank">Shoosmiths</a> is a major UK law firm working with startups to FTSE 250. They have donated legal advice worth &pound;750 for each winner.
                  </li>
+                 <li class="sponsor">
+                    <a href="http://www.wearejh.com/" target="_blank"><img class="sponsor__logo" src="img/logo-jh.png" alt="JH"></a>
+                    <a href="http://www.wearejh.com/" target="_blank">JH</a> is a web agency working with working with exciting clients on challenging projects. They specialise in producing attractive, effective ecommerce websites.
+                 </li>
             </ul>
         </section><!-- end .sponsors -->
 
