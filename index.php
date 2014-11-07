@@ -59,158 +59,106 @@
                 <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">RSVP on Meetup</a></p>
             </div>
             <div class="speaker">
-                <img class="photo" src="https://notttuesday.files.wordpress.com/2013/11/dsc04597-e1415202489762.jpg" alt="Tech Startup of the Year Awards 2014">
+                <!-- <img class="photo" src="img/scene.jpg" alt="Nottingham Tech Startup of the Year Awards 2014"> -->
                 <h3 class="topic"><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">Tech Startup of the Year Awards 2014</a></h3>
                 <div class="bio">
-<!--                    <p><a href="" target="_blank">Jane Smith</a> is co-founder of Acme Inc. and lectures at Nottingham University. She will be talking about how business and numbers are the foundation of every successful company. Jane will look at how to apply these build a new business around these keystones.</p>-->
-
-                    <p>The Nott Tuesday's Tech Start-up of the Year competition is back! We’ve searched for Nottingham's Most Promising Tech Startups, and it's time to decide our winners! We will announce the finalists soon.</p>
-
-                    <p>The format is straight forward: finalists will pitch their businesses to our panel of five expert judges. They will deliborate in a separate room after hearing everybody and return to announce two winners.</p>
-
-                    <p>As with last year we'll have two categories: New Startup of the Year and Emerging Startup of the Year.</p>
-
-                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">Let us know if you're attending on the night so we have your drinks ready!</a></p>
+                    <p>We&rsquo;ve been searching for Nottingham&rsquo;s most promising <em>New Startup</em> and <em>Emerging Startup</em> of the year &mdash; the finalists will be announced soon.</p>
+                    <p>On the night, contenders will pitch their business to our panel of expert judges, who then deliberate in a separate room and return to announce the winners.</p>
+                    <!-- <p>As with last year we'll have two categories: New Startup of the Year and Emerging Startup of the Year.</p> -->
+                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">Attending? RSVP and we&rsquo;ll have your drink ready.</a></p>
                 </div>
             </div>
         </div>
 
-        <p>Judging panel:</p>
-        <ul>
-        <li><a href="https://www.linkedin.com/profile/view?id=1028472">Jonathan English</a> - Skeleton Productions, Managing Director</li>
-        <li><a href="https://www.linkedin.com/profile/view?id=464506">Aamir Butt</a> - Next Business Generation, Programme Director</li>
-        <li><a href="https://www.linkedin.com/profile/view?id=5534028">Robert Cawdron</a> - Grant Thornton, Finance Growth Manager</li>
-        <li><a href="https://www.linkedin.com/profile/view?id=51164259">Aisling Duffy</a> - Shoosmiths, Head of Data Protection - "Aisling is an experienced lawyer advising clients on all matters relating to data including data protection, privacy law, freedom of information and data security."</li>
-        <li><a href="https://www.linkedin.com/profile/view?id=5223403">Andrew Porter</a> - Seasoned Entrepreneur</li>
-        </ul>
-
-        <?php /*
-        <div class="info">
-
-            <h3>The prizes</h3>
-            <p>Last year we had over £7,500 worth of prizes for the winners including £1000’s of cash prizes. We can't promise anything, but we're looking to source trophies this year on top of those prizes! Jamie (<a href="mailto:jamie@notttuesday.com">jamie@notttuesday.com</a>) is sorting out the prizes this year, so get in touch if you're looking to contribute to the prize pool for this year's awards!</p>
-
-            <hr>
-
-            <h3>The categories</h3>
-            <p>Our awards are specifically for technology companies -- this includes startups with web applications, software products, mobile applications and similar IT technology services.</p>
-
-            <p><strong>New Startup of the Year</strong> – This award is for fresh startups who are about to or have just launch their new service / product. The startups can pre-revenue and the emphasis here is on potential. The startups in the category should be less than one year old.</p>
-
-            <p><strong>Emerging Startup of the Year</strong> – This award is for more mature  startups up to 5 years old who have got traction in their market and show further potential.</p>
-
-            <p>The organisers will select which category each application will fall in.</p>
-
-            <hr>
-
-            <h3>The format</h3>
-            <p>If you're not entering, or are supporting an entrant then simply turn up as you normally would!</p>
-
-            <p>For entrants the evenings format will be simple:</p>
-            <ul>
-            <li>5 minutes to pitch</li>
-            <li>7 mins Q&amp;A with judging panel</li>
-            <li>Judges retire to deliberate</li>
-            <li>Winner announced &amp; prizes given</li>
+        <div class="judges">
+            <h2>Judging Panel</h2>
+            <ul class="judge-list">
+                <li class="judge">
+                    <a href="https://www.linkedin.com/profile/view?id=464506"><img class="judge__photo" src="img/judge-butt.jpg" alt="Aamir Butt"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=464506">Aamir Butt</a>
+                    <span class="judge__role">Programme Director, Next Business Generation</span>
+                </li>
+                <li class="judge">
+                    <a href="https://www.linkedin.com/profile/view?id=5534028"><img class="judge__photo" src="img/judge-cawdron.jpg" alt="Robert Cawdron"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=5534028">Robert Cawdron</a>
+                    <span class="judge__role">Finance Growth Manager, Grant Thornton</span>
+                </li>
+                <li class="judge">
+                    <a href="https://www.linkedin.com/profile/view?id=51164259"><img class="judge__photo" src="img/judge-duffy.jpg" alt="Aisling Duffy"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=51164259">Aisling Duffy</a>
+                    <span class="judge__role">Head of Data Protection, Shoosmiths</span>
+                </li>
+                <li class="judge">
+                    <a href="https://www.linkedin.com/profile/view?id=1028472"><img class="judge__photo" src="img/judge-english.jpg" alt="Jonathan English"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=1028472">Jonathan English</a>
+                    <span class="judge__role">Managing Director, Skeleton Productions</span>
+                </li>
+                <li class="judge">
+                    <a href="https://www.linkedin.com/profile/view?id=5223403"><img class="judge__photo" src="img/judge-porter.jpg" alt="Andrew Porter"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=5223403">Andrew Porter</a>
+                    <span class="judge__role">Seasoned Entrepreneur</span>
+                </li>
             </ul>
-
-            <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">RSVP to the event on Meetup here and let us know you're coming!</a></p>
-
-            <hr>
-
-            <h3>The panel</h3>
-            <p>The judging panel will include experts in entrepreneurship, funding and legal advice. We’ll let you know who they are once all the judges have confirmed.</p>
-
-            <hr>
-
-            <h3>The pitch</h3>
-            <p>The judges are going to want to hear about:</p>
-            <ul>
-            <li>Business overview</li>
-            <li>Market information i.e. opportunity and competition</li>
-            <li>Management team</li>
-            <li>Key achievements</li>
-            <li>Growth strategy (management needed, investment &amp; exit strategy)</li>
-            </ul>
-
-            <p>The trick is to keep the application and pitch concise and punchy.</p>
-
-            <hr>
-
-            <h3>The judging</h3>
-
-            <p>Finalist selection - an pre-assessment of the business and opportunity on all entries will be made by the judges. The judges will then select the best five startups to present on           November 18th 2014. Please request an entry form with an email to <a href="mailto:nick@notttuesday.com">nick@notttuesday.com</a></p>
-
-            <p>Winners – on the night all startups will be judged on the quality of their presentation. The judges will expect to hear about the elements of highlighted with the pitch above and judge the startups on their ability to handle a short questions and answers.</p>
-
-            <hr>
-
-            <h3>Sponsors</h3>
-
-            <p>We had the best ever sponsor support last year and we need sponsors again to support the event and provide prizes for the winners. Please email <a href="mailto:jamie@notttuesday.com">jamie@notttuesday.com</a> with your ideas for prizes. As a sponsor you will be profiled on Nott Tuesday and at the award evening in front of Nottingham's tech community.</p>
-
-            <hr>
-
-            <h3>How to enter</h3>
-            <p>If you want to enter the awards email <a href="mailto:nick@notttuesday.com">nick@notttuesday.com</a> now for our short application form. The closing date for entries is the 4th of November. We'll be announcing the final short list the week before the awards night.</p>
-
-                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">More details on Meetup &rarr;</a></p>
-
         </div>
-        <?php */ ?>
 
-        <div class="sponsors">
-            <h2>Platinum Sponsors</h2>
-            <p>These sponsors will be providing our cash prizes for the awards on the evening as well as putting money behind the bar for food and drinks throughout the evening.</p>
+        <section class="sponsors">
+            <header>
+                <h2>Platinum Sponsors</h2>
+                <p class="lede">Providing our cash prize awards and money behind the bar for food and drinks on the evening.</p>
+            </header>
             <ul class="sponsor-list">
                 <li class="sponsor">
-                    <a href="http://www.nextbusinessgeneration.org/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Next Business Generation"></a>
+                    <a href="http://www.nextbusinessgeneration.org/" target="_blank"><img class="sponsor__logo" src="img/logo-nextbusinessgeneration.png" alt="Next Business Generation"></a>
                      <a href="http://www.nextbusinessgeneration.org/" target="_blank">Next Business Generation</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
                 </li>
                 <li class="sponsor">
-                     <a href="http://www.g2innovation.co.uk/" target="_blank"><img class="sponsor__logo" src="g2.png" alt="G2 Innovation"></a>
+                     <a href="http://www.g2innovation.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-g2innovation.png" alt="G2 Innovation"></a>
                      <a href="http://www.g2innovation.co.uk/" target="_blank">G2 Innovation</a> is used by more than 6 million people to design and send beautiful email marketing campaigns, then track results to see how their business is affected.
                  </li>
                  <li class="sponsor">
-                     <a href="http://www.esendex.co.uk/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Esendex"></a>
+                     <a href="http://www.esendex.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-esendex.png" alt="Esendex"></a>
                     <a href="http://www.esendex.co.uk/" target="_blank">Esendex</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
                  </li>
                  <li class="sponsor">
-                     <a href="http://www.creativequarter.com/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Creative Quarter"></a>
+                     <a href="http://www.creativequarter.com/" target="_blank"><img class="sponsor__logo" src="img/logo-creativequarter.png" alt="Creative Quarter"></a>
                      <a href="http://www.creativequarter.com/" target="_blank">Creative Quarter</a> is the best place to share code with friends, co-workers, and complete strangers. Over five million people use GitHub to build amazing things together.
                  </li>
             </ul>
+        </section><!-- end .sponsors -->
 
-            <hr>
-
-            <h2>Gold sponsors</h2>
-            <p>These sponsors will be providing our services-in-kind for the winners on the evening.</p>
+        <section class="sponsors">
+            <header>
+                <h2>Gold Sponsors</h2>
+                <p class="lede">Providing services-in-kind to help our award winning businesses.</p>
+            </header>
             <ul class="sponsor-list">
                 <li class="sponsor">
-                     <a href="http://www.skeletonproductions.com/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Skeleton Productions"></a>
-                     <a href="http://www.skeletonproductions.com/" target="_blank">Skeleton Productions</a> will be donating an animation worth £750 to our winners.
+                    <a href="http://www.skeletonproductions.com/" target="_blank"><img class="sponsor__logo" src="img/logo-skeletonproductions.png" alt="Skeleton Productions"></a>
+                    <a href="http://www.skeletonproductions.com/" target="_blank">Skeleton Productions</a> have donated an animation worth &pound;750 for each winner.
                  </li>
                  <li class="sponsor">
-                     <a href="http://www.shoosmiths.co.uk/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="Shoosmiths"></a>
-                     <a href="http://www.shoosmiths.co.uk/" target="_blank">Shoosmiths</a> will be donating £750 worth of legal advice to our winners.
+                    <a href="http://www.shoosmiths.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-shoosmiths.png" alt="Shoosmiths"></a>
+                    <a href="http://www.shoosmiths.co.uk/" target="_blank">Shoosmiths</a> have donated legal advice worth &pound;750 for each winner.
                  </li>
             </ul>
+        </section><!-- end .sponsors -->
 
-            <hr>
-
-            <h2>Silver sponsors</h2>
-            <p>Our ongoing award sponsors, help us get great speakers each month as well as providing drinks.</p>
+        <section class="sponsors">
+            <header>
+                <h2>Silver Sponsors</h2>
+                <p class="lede">Our ongoing sponsors help us get great speakers and provide drinks on the night.</p>
+            </header>
             <ul class="sponsor-list">
                 <li class="sponsor">
                      <a href="http://www.paypal.com/" target="_blank"><img class="sponsor__logo" src="paypal.png" alt="Paypal"></a>
                      <a href="http://www.paypal.com/" target="_blank">Paypal</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
                  </li>
                  <li class="sponsor">
-                     <a href="http://www.first-enterprise.co.uk/" target="_blank"><img class="sponsor__logo" src="http://placehold.it/200x100" alt="First Enterprise"></a>
+                     <a href="http://www.first-enterprise.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-firstenterprise.png" alt="First Enterprise"></a>
                      <a href="http://www.first-enterprise.co.uk/" target="_blank">First Enterprise</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
                  </li>
             </ul>
-        </div>
+        </section><!-- end .sponsors -->
 
     </div>
 </div><!-- end .site-main -->
