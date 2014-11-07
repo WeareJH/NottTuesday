@@ -96,7 +96,7 @@
                 <li class="judge">
                     <a href="https://www.linkedin.com/profile/view?id=5223403"><img class="judge__photo" src="img/judge-porter.jpg" alt="Andrew Porter"></a>
                     <a class="judge__name" href="https://www.linkedin.com/profile/view?id=5223403">Andrew Porter</a>
-                    <span class="judge__role">Seasoned Entrepreneur</span>
+                    <span class="judge__role">Entrepreneur and Angel Investor</span>
                 </li>
             </ul>
         </div>
@@ -104,13 +104,9 @@
         <section class="sponsors">
             <header>
                 <h2>Platinum Sponsors</h2>
-                <p class="lede">Providing our cash prize awards and money behind the bar for food and drinks on the evening.</p>
+                <p class="lede">Providing our £1,000 cash prize awards for each of our categories and providing food and drinks on the evening.</p>
             </header>
             <ul class="sponsor-list">
-                <li class="sponsor">
-                    <a href="http://www.nextbusinessgeneration.org/" target="_blank"><img class="sponsor__logo" src="img/logo-nextbusinessgeneration.png" alt="Next Business Generation"></a>
-                    <a href="http://www.nextbusinessgeneration.org/" target="_blank">Next Business Generation</a> is a business-accelerator programme designed to create successful start-ups in Nottingham&rsquo;s digital, clean-tech and life sciences sectors.
-                </li>
                 <li class="sponsor">
                     <a href="http://www.g2innovation.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-g2innovation.png" alt="G2 Innovation"></a>
                     <a href="http://www.g2innovation.co.uk/" target="_blank">G2 Innovation</a> is a design innovation consultancy thats supports businesses by providing the tools and resources that take the pain out of developing new ideas.
@@ -119,6 +115,10 @@
                     <a href="http://www.esendex.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-esendex.png" alt="Esendex"></a>
                     <a href="http://www.esendex.co.uk/" target="_blank">Esendex</a> provides SMS services to thousands of businesses around the world, from retailers and financial institutions to government bodies and education providers.
                  </li>
+                 <li class="sponsor">
+                    <a href="http://www.nextbusinessgeneration.org/" target="_blank"><img class="sponsor__logo" src="img/logo-nextbusinessgeneration.png" alt="Next Business Generation"></a>
+                    <a href="http://www.nextbusinessgeneration.org/" target="_blank">Next Business Generation</a> is a business-accelerator programme designed to create successful start-ups in Nottingham&rsquo;s digital, clean-tech and life sciences sectors.
+                </li>
                  <li class="sponsor">
                     <a href="http://www.creativequarter.com/" target="_blank"><img class="sponsor__logo" src="img/logo-creativequarter.png" alt="Creative Quarter"></a>
                     <a href="http://www.creativequarter.com/" target="_blank">Creative Quarter</a> is Nottingham&rsquo;s flagship project for economic growth, enterprise and entrepreneurial spirit in and around the city&rsquo;s Lace Market and Hockley areas.
@@ -129,7 +129,7 @@
         <section class="sponsors">
             <header>
                 <h2>Gold Sponsors</h2>
-                <p class="lede">Providing services-in-kind to help our award winning businesses.</p>
+                <p class="lede">Providing services-in-kind to help the award winning businesses of each category.</p>
             </header>
             <ul class="sponsor-list">
                 <li class="sponsor">
@@ -140,17 +140,13 @@
                     <a href="http://www.shoosmiths.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-shoosmiths.png" alt="Shoosmiths"></a>
                     <a href="http://www.shoosmiths.co.uk/" target="_blank">Shoosmiths</a> is a major UK law firm working with startups to FTSE 250. They have donated legal advice worth &pound;750 for each winner.
                  </li>
-                 <li class="sponsor">
-                    <a href="http://www.wearejh.com/" target="_blank"><img class="sponsor__logo" src="img/logo-jh.png" alt="JH"></a>
-                    <a href="http://www.wearejh.com/" target="_blank">JH</a> is a web agency working with working with exciting clients on challenging projects. They specialise in producing attractive, effective ecommerce websites.
-                 </li>
             </ul>
         </section><!-- end .sponsors -->
 
         <section class="sponsors">
             <header>
                 <h2>Silver Sponsors</h2>
-                <p class="lede">Our ongoing sponsors help us get great speakers and provide drinks on the night.</p>
+                <p class="lede">Our ongoing sponsors help us get great speakers in and provide drinks at our monthly events.</p>
             </header>
             <ul class="sponsor-list">
                 <li class="sponsor">
@@ -160,6 +156,10 @@
                  <li class="sponsor">
                      <a href="http://www.first-enterprise.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-firstenterprise.png" alt="First Enterprise"></a>
                      <a href="http://www.first-enterprise.co.uk/" target="_blank">First Enterprise</a> is a leading business support organisation which supports the needs of pre-start and existing business owners in Nottingham and the East Midlands.
+                 </li>
+                 <li class="sponsor">
+                    <a href="http://www.wearejh.com/" target="_blank"><img class="sponsor__logo" src="img/logo-jh.png" alt="JH"></a>
+                    <a href="http://www.wearejh.com/" target="_blank">JH</a> is a web agency working with working with exciting clients on challenging projects. They specialise in producing attractive, effective ecommerce websites.
                  </li>
             </ul>
         </section><!-- end .sponsors -->
