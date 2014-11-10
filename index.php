@@ -134,11 +134,11 @@
             <ul class="sponsor-list">
                 <li class="sponsor">
                     <a href="http://www.skeletonproductions.com/" target="_blank"><img class="sponsor__logo" src="img/logo-skeletonproductions.png" alt="Skeleton Productions"></a>
-                    <a href="http://www.skeletonproductions.com/" target="_blank">Skeleton Productions</a> produces engaging creative videos for UK businesses and brands. They have donated an animation worth &pound;750 for each winner.
+                    <a href="http://www.skeletonproductions.com/" target="_blank">Skeleton Productions</a> produces engaging creative videos for UK businesses and brands. They have donated an animation worth &pound;4,000 for one of our winners.
                  </li>
                  <li class="sponsor">
                     <a href="http://www.shoosmiths.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-shoosmiths.png" alt="Shoosmiths"></a>
-                    <a href="http://www.shoosmiths.co.uk/" target="_blank">Shoosmiths</a> is a major UK law firm working with startups to FTSE 250. They have donated legal advice worth &pound;750 for each winner.
+                    <a href="http://www.shoosmiths.co.uk/" target="_blank">Shoosmiths</a> is a major UK law firm working with startups to FTSE 250. They have donated legal advice worth &pound;750 for one of our winners.
                  </li>
             </ul>
         </section><!-- end .sponsors -->
