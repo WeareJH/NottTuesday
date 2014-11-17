@@ -110,19 +110,19 @@
                 <li class="sponsor">
                     <a href="http://www.g2innovation.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-g2innovation.png" alt="G2 Innovation"></a>
                     <a href="http://www.g2innovation.co.uk/" target="_blank">G2 Innovation</a> is a design innovation consultancy thats supports businesses by providing the tools and resources that take the pain out of developing new ideas.
-                 </li>
-                 <li class="sponsor">
+                </li>
+                <li class="sponsor">
                     <a href="http://www.esendex.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-esendex.png" alt="Esendex"></a>
                     <a href="http://www.esendex.co.uk/" target="_blank">Esendex</a> provides SMS services to thousands of businesses around the world, from retailers and financial institutions to government bodies and education providers.
-                 </li>
-                 <li class="sponsor">
+                </li>
+                <li class="sponsor">
                     <a href="http://www.nextbusinessgeneration.org/" target="_blank"><img class="sponsor__logo" src="img/logo-nextbusinessgeneration.png" alt="Next Business Generation"></a>
                     <a href="http://www.nextbusinessgeneration.org/" target="_blank">Next Business Generation</a> is a business-accelerator programme designed to create successful start-ups in Nottingham&rsquo;s digital, clean-tech and life sciences sectors.
                 </li>
-                 <li class="sponsor">
+                <li class="sponsor">
                     <a href="http://www.creativequarter.com/" target="_blank"><img class="sponsor__logo" src="img/logo-creativequarter.png" alt="Creative Quarter"></a>
                     <a href="http://www.creativequarter.com/" target="_blank">Creative Quarter</a> is Nottingham&rsquo;s flagship project for economic growth, enterprise and entrepreneurial spirit in and around the city&rsquo;s Lace Market and Hockley areas.
-                 </li>
+                </li>
             </ul>
         </section><!-- end .sponsors -->
 
@@ -135,11 +135,15 @@
                 <li class="sponsor">
                     <a href="http://www.skeletonproductions.com/" target="_blank"><img class="sponsor__logo" src="img/logo-skeletonproductions.png" alt="Skeleton Productions"></a>
                     <a href="http://www.skeletonproductions.com/" target="_blank">Skeleton Productions</a> produces engaging creative videos for UK businesses and brands. They have donated an animation worth &pound;4,000 for one of our winners.
-                 </li>
-                 <li class="sponsor">
+                </li>
+                <li class="sponsor">
                     <a href="http://www.shoosmiths.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-shoosmiths.png" alt="Shoosmiths"></a>
                     <a href="http://www.shoosmiths.co.uk/" target="_blank">Shoosmiths</a> is a major UK law firm working with startups to FTSE 250. They have donated legal advice worth &pound;750 for one of our winners.
-                 </li>
+                </li>
+                <li class="sponsor">
+                    <a href="http://www.securityaware.biz/" target="_blank"><img class="sponsor__logo" src="img/logo-securityaware.png" alt="Security Aware"></a>
+                    <a href="http://www.securityaware.biz/" target="_blank">Security Aware</a> is a data security and compliance specialist, helping businesses keep information safe through monitoring, testing and training.
+                </li>
             </ul>
         </section><!-- end .sponsors -->
 
@@ -152,15 +156,15 @@
                 <li class="sponsor">
                      <a href="http://www.paypal.com/" target="_blank"><img class="sponsor__logo" src="paypal.png" alt="Paypal"></a>
                      <a href="http://www.paypal.com/" target="_blank">Paypal</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
-                 </li>
-                 <li class="sponsor">
-                     <a href="http://www.first-enterprise.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-firstenterprise.png" alt="First Enterprise"></a>
-                     <a href="http://www.first-enterprise.co.uk/" target="_blank">First Enterprise</a> is a leading business support organisation which supports the needs of pre-start and existing business owners in Nottingham and the East Midlands.
-                 </li>
-                 <li class="sponsor">
+                </li>
+                <li class="sponsor">
+                    <a href="http://www.first-enterprise.co.uk/" target="_blank"><img class="sponsor__logo" src="img/logo-firstenterprise.png" alt="First Enterprise"></a>
+                    <a href="http://www.first-enterprise.co.uk/" target="_blank">First Enterprise</a> is a leading business support organisation which supports the needs of pre-start and existing business owners in Nottingham and the East Midlands.
+                </li>
+                <li class="sponsor">
                     <a href="http://www.wearejh.com/" target="_blank"><img class="sponsor__logo" src="img/logo-jh.png" alt="JH"></a>
                     <a href="http://www.wearejh.com/" target="_blank">JH</a> is a web agency working with exciting clients on challenging projects. They specialise in producing attractive, effective ecommerce websites.
-                 </li>
+                </li>
             </ul>
         </section><!-- end .sponsors -->
 
