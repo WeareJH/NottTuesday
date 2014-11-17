@@ -90,7 +90,7 @@
                 </li>
                 <li class="finalist">
                     <a href="http://tickityboom.com/" target="_blank"><img class="finalist__logo" src="img/logo-tickityboom.png" alt="Tickityboom"></a>
-                    <a href="http://tickityboom.com/" target="_blank">Tickityboom</a> make mobile games for the largest audience: women aged 35 and older. They&rsquo;re developing new apps with irresistable characters and compulsive narrative hooks.
+                    <a href="http://tickityboom.com/" target="_blank">Tickityboom</a> make mobile games for the largest audience: women aged 35 and older. They&rsquo;re developing new apps with irresistible characters and compulsive narrative hooks.
                 </li>
             </ul>
         </section>
