@@ -60,7 +60,8 @@ $tangaroa: #0c1c36;
 $malachite: #0BDA51;
 $french: #0074b4;
 
-$grey: #cccccc;
+$grey: #ccc;
+$smoke: #eee;
 
 
 $body-font: "gesta", Helvetica, Arial, sans-serif;
@@ -147,20 +148,23 @@ h1, h2, h3 {
     font-family: $heading-font;
 }
 h1 {
-    font-size: 38px;
+    // font-size: 38px;
+    font-size: 36px;
 }
 h2 {
     margin-bottom: 2*$space;
     padding-top: $space;
-    font-weight: normal;
-    font-size: 26px;
+    // font-weight: normal;
+    // font-size: 26px;
+    font-size: 24px;
 
     @media only screen and (min-width: $lap) {
         // font-size: 36px;
     }
 }
 h3 {
-    font-size: 22px;
+    // font-size: 22px;
+    font-size: 20px;
 
     @media only screen and (min-width: $lap) {
         // font-size: 24px;
@@ -205,9 +209,13 @@ img {
 }
 
 hr {
-    border-bottom: 1px solid $grey;
-    padding-top:2*$space;
-    margin-bottom:3*$space;
+    border-bottom: 1px solid $smoke;
+    // padding-top: 2*$space;
+    margin-bottom: 2*$space;
+
+    &.bold {
+        border-color: $grey;
+    }
 }
 
 
@@ -257,7 +265,7 @@ HEADER
 
 
 .header__bg {
-    background: url('bg.png') right center no-repeat;
+    background: url('../img/header-bg.png') right center no-repeat;
     background-size: cover;
 }
 
@@ -449,7 +457,7 @@ SPONSORS
 .sponsors {
     margin-bottom: 2*$space;
     // + .sponsors {
-    border-top: 1px solid #eee;
+    // border-top: 1px solid #eee;
     padding-top: 2*$space;
     // }
 }
@@ -573,8 +581,98 @@ FOOTER
 COMPETITION
 ======================================== */
 
+/* ========================================
+SPONSORS
+======================================== */
+
+.finalists {
+    margin-bottom: 2*$space;
+    // + .finalists {
+    // border-top: 1px solid #eee;
+    padding-top: 2*$space;
+    // }
+
+    h2 {
+        small {
+            display: block;
+            margin-bottom: $space;
+            font-weight: normal;
+            font-size: 18px;
+        }
+    }
+}
+
+.finalist-list {
+    @include cf;
+    margin-bottom: 0;
+    list-style: none;
+}
+.finalist {
+    @include cf;
+    margin-bottom: 2*$space;
+
+    h2 {
+        text-align: left;
+
+        @media only screen and (min-width: $lap) {
+            text-align: right;
+            margin-top: 32px;
+
+        }
+
+    }
+
+}
+.finalist__logo {
+    float: right;
+    margin: 0 0 $space 2*$space;
+    border: 1px solid #eee;
+    padding: 2*$space;
+    width: 40%;
+    max-width: 200px;
+}
+
+@media only screen and (min-width: $lap) {
+    .finalist__logo {
+        float: left;
+        width: 40%;
+        margin: 0 2*$space 0 0;
+    }
+}
+
+@media only screen and (min-width: $desk) {
+    .finalists {
+        @include cf;
+
+        header {
+            float: left;
+            width: 38.8%;
+        }
+    }
+
+    .finalist-list {
+        float: left;
+        width: 59.2%;
+        margin-left: 2%;
+    }
+
+    .finalist {
+        @include cf;
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .finalist__logo {
+        width: (100/60)*18.4%;
+    }
+}
+
+
 .judges {
     margin-bottom: 2*$space;
+    // border-top: 1px solid #eee;
+    padding-top: 2*$space;
 }
 
 .judge-list {

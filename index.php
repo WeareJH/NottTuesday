@@ -24,7 +24,7 @@
     <!-- CSS -->
     <script src="//use.typekit.net/htk0tvr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" href="nt.css">
+    <link rel="stylesheet" href="css/nt.css">
     <?php /*
     <script src="assets/js/dist/modernizr.custom.min.js"></script>
     <link rel="stylesheet" href="assets/css/core.min.css">
@@ -38,7 +38,7 @@
 <header class="wrapper site-header header__bg" role="banner">
     <div class="container">
 
-        <img class="logo" src="logo.png" alt="Nott Tuesday">
+        <img class="logo" src="img/logo.png" alt="Nott Tuesday">
         <h1>The meetup for Nottingham&rsquo;s tech scene.</h1>
         <p>Our free, monthly event features a guest speaker and time to meet fellow founders, entrepreneurs and technologists. Come share, support and unwind with us.</p>
 
@@ -70,36 +70,84 @@
             </div>
         </div>
 
+        <section class="finalists">
+            <header>
+                <h2><small>Finalists:</small> New Startup of the Year</h2>
+                <p class="lede">Fresh startups (less than a year old) who are about to or have just launched a new service/product. They can pre-revenue and the emphasis here is on potential.</p>
+            </header>
+            <ul class="finalist-list">
+                <li class="finalist">
+                    <a href="https://www.callforparticipants.com/" target="_blank"><img class="finalist__logo" src="img/logo-callforparticipants.png" alt="Call for Participants"></a>
+                    <a href="https://www.callforparticipants.com/" target="_blank">Call for Participants</a> offers a global place for researchers to advertise their research and for participants to find research studies to take part in.
+                </li>
+                <li class="finalist">
+                    <a href="http://www.onediary.com/" target="_blank"><img class="finalist__logo" src="img/logo-chronofy.png" alt="One Diary: Cronofy"></a>
+                    <a href="http://www.onediary.com/" target="_blank">Cronofy (One Diary)</a> is a platform for organising time, produced by the team at One Diary who are building tools to manage the flexible work-life balance of the 21st century.
+                </li>
+                <li class="finalist">
+                    <a href="http://summus.co.uk/" target="_blank"><img class="finalist__logo" src="img/logo-summus.png" alt="Summus: LockDock"></a>
+                    <a href="http://summus.co.uk/" target="_blank">LockDock (Summus)</a> integrates into existing electronic locks, turning your smartphone into a digital key for doors, garages and gates, plus a padlock in development.
+                </li>
+                <li class="finalist">
+                    <a href="http://tickityboom.com/" target="_blank"><img class="finalist__logo" src="img/logo-tickityboom.png" alt="Tickityboom"></a>
+                    <a href="http://tickityboom.com/" target="_blank">Tickityboom</a> make mobile games for the largest audience: women aged 35 and older. They&rsquo;re developing new apps with irresistable characters and compulsive narrative hooks.
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="finalists">
+            <header>
+                <h2><small>Finalists:</small> Emerging Startup of the Year</h2>
+                <p class="lede">Mature startups (up to 5 years old) who have gained traction in their market and show potential for further success.</p>
+            </header>
+            <ul class="finalist-list">
+                <li class="finalist">
+                    <a href="http://www.ensek.co.uk/" target="_blank"><img class="finalist__logo" src="img/logo-ensek.png" alt="ENSEK"></a>
+                    <a href="http://www.ensek.co.uk/" target="_blank">ENSEK</a> provide analytics solutions to energy suppliers and industry participants, allowing them to manage data and use it to enable trusted and informed decision making.
+                </li>
+                <li class="finalist">
+                    <a href="http://www.highclereinteriors.co.uk/" target="_blank"><img class="finalist__logo" src="img/logo-highclere.png" alt="Highclere Interiors"></a>
+                    <a href="http://www.highclereinteriors.co.uk/" target="_blank">Highclere Interiors</a> are shaking up the traditional interiors sector by combining their cozy showroom with digital tools like PatternRefernce; a wallpaper identifier.
+                </li>
+            </ul>
+        </section>
+
+        <hr class="bold">
+
         <div class="judges">
             <h2>Judging Panel</h2>
             <ul class="judge-list">
                 <li class="judge">
-                    <a href="https://www.linkedin.com/profile/view?id=464506"><img class="judge__photo" src="img/judge-butt.jpg" alt="Aamir Butt"></a>
-                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=464506">Aamir Butt</a>
+                    <a href="https://www.linkedin.com/profile/view?id=464506" target="_blank"><img class="judge__photo" src="img/judge-butt.jpg" alt="Aamir Butt"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=464506" target="_blank">Aamir Butt</a>
                     <span class="judge__role">Programme Director, Next Business Generation</span>
                 </li>
                 <li class="judge">
-                    <a href="https://www.linkedin.com/profile/view?id=5534028"><img class="judge__photo" src="img/judge-cawdron.jpg" alt="Robert Cawdron"></a>
-                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=5534028">Robert Cawdron</a>
+                    <a href="https://www.linkedin.com/profile/view?id=5534028" target="_blank"><img class="judge__photo" src="img/judge-cawdron.jpg" alt="Robert Cawdron"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=5534028" target="_blank">Robert Cawdron</a>
                     <span class="judge__role">Finance Growth Manager, Grant Thornton</span>
                 </li>
                 <li class="judge">
-                    <a href="https://www.linkedin.com/profile/view?id=51164259"><img class="judge__photo" src="img/judge-duffy.jpg" alt="Aisling Duffy"></a>
-                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=51164259">Aisling Duffy</a>
+                    <a href="https://www.linkedin.com/profile/view?id=51164259" target="_blank"><img class="judge__photo" src="img/judge-duffy.jpg" alt="Aisling Duffy"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=51164259" target="_blank">Aisling Duffy</a>
                     <span class="judge__role">Head of Data Protection, Shoosmiths</span>
                 </li>
                 <li class="judge">
-                    <a href="https://www.linkedin.com/profile/view?id=1028472"><img class="judge__photo" src="img/judge-english.jpg" alt="Jonathan English"></a>
-                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=1028472">Jonathan English</a>
+                    <a href="https://www.linkedin.com/profile/view?id=1028472" target="_blank"><img class="judge__photo" src="img/judge-english.jpg" alt="Jonathan English"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=1028472" target="_blank">Jonathan English</a>
                     <span class="judge__role">Managing Director, Skeleton Productions</span>
                 </li>
                 <li class="judge">
-                    <a href="https://www.linkedin.com/profile/view?id=5223403"><img class="judge__photo" src="img/judge-porter.jpg" alt="Andrew Porter"></a>
-                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=5223403">Andrew Porter</a>
+                    <a href="https://www.linkedin.com/profile/view?id=5223403" target="_blank"><img class="judge__photo" src="img/judge-porter.jpg" alt="Andrew Porter"></a>
+                    <a class="judge__name" href="https://www.linkedin.com/profile/view?id=5223403" target="_blank">Andrew Porter</a>
                     <span class="judge__role">Entrepreneur and Angel Investor</span>
                 </li>
             </ul>
         </div>
+
+        <hr class="bold">
 
         <section class="sponsors">
             <header>
@@ -126,6 +174,8 @@
             </ul>
         </section><!-- end .sponsors -->
 
+        <hr>
+
         <section class="sponsors">
             <header>
                 <h2>Gold Sponsors</h2>
@@ -147,6 +197,8 @@
             </ul>
         </section><!-- end .sponsors -->
 
+        <hr>
+
         <section class="sponsors">
             <header>
                 <h2>Silver Sponsors</h2>
@@ -154,7 +206,7 @@
             </header>
             <ul class="sponsor-list">
                 <li class="sponsor">
-                     <a href="http://www.paypal.com/" target="_blank"><img class="sponsor__logo" src="paypal.png" alt="Paypal"></a>
+                     <a href="http://www.paypal.com/" target="_blank"><img class="sponsor__logo" src="img/logo-paypal.png" alt="Paypal"></a>
                      <a href="http://www.paypal.com/" target="_blank">Paypal</a> makes it easy for businesses to get paid. Whether you&rsquo;re online or offline, in your shop or on the road, one simple PayPal account is all you need.
                 </li>
                 <li class="sponsor">
