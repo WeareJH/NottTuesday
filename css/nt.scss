@@ -334,13 +334,12 @@ EVENT DETAILS
     padding: 2*$space;
 
     .photo {
-        float: left;
-        margin: 0 $space $space 0;
+        float: right;
+        margin: 0 0 $space $space;
         width: 30%;
+        max-width: 200px;
     }
     .topic {
-        font-weight: normal;
-
         strong {
             display: block;
             margin-bottom: $space/2;
@@ -355,7 +354,7 @@ EVENT DETAILS
 
     @media only screen and (min-width: $lap) {
         .photo {
-            margin: 0 2*$space 2*$space 0;
+            margin: 0 0 2*$space 2*$space;
         }
         .topic {
             overflow: hidden;
@@ -368,11 +367,7 @@ EVENT DETAILS
     @media only screen and (min-width: $desk) {
         float: right;
         width: 70%;
-        padding-left: 4*$space;
 
-        .photo {
-            margin: -2*$space 2*$space -2*$space -2*$space;
-        }
         .topic {
             line-height: 1.5;
         }

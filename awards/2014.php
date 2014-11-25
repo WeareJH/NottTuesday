@@ -29,7 +29,7 @@
 <header class="wrapper site-header header__bg" role="banner">
     <div class="container">
 
-        <a href="/"><img class="logo" src="/img/logo.png" alt="Nott Tuesday"></a>
+        <a class="logo" href="/"><img src="/img/logo.png" alt="Nott Tuesday"></a>
         <h1>Tech Startup of the Year Awards 2014</h1>
         <p>We searched for Nottingham&rsquo;s most promising <em>New Startup</em> and <em>Emerging Startup</em> of the year. On the night, finalists pitched their business to our panel of expert judges, who selected our winners: Chronofy and ENSEK</p>
 
@@ -38,28 +38,6 @@
 
 <div class="wrapper site-main" role="main">
     <div class="container">
-
-        <?php/*<div class="event">
-            <div class="summary">
-                <h2 class="title">Next Event:</h2>
-                <ul class="details">
-                    <li class="date"><i class="date-icon"></i> 18th November</li>
-                    <li class="time"><i class="icon time-icon"></i> 6:30pm&ndash;11pm</li>
-                    <li class="venue"><i class="icon location-icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
-                </ul>
-                <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">RSVP on Meetup</a></p>
-            </div>
-            <div class="speaker">
-                <!-- <img class="photo" src="/img/scene.jpg" alt="Nottingham Tech Startup of the Year Awards 2014"> -->
-                <h3 class="topic"><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">Tech Startup of the Year Awards 2014</a></h3>
-                <div class="bio">
-                    <p>We&rsquo;ve been searching for Nottingham&rsquo;s most promising <em>New Startup</em> and <em>Emerging Startup</em> of the year &mdash; the finalists will be announced soon.</p>
-                    <p>On the night, contenders will pitch their business to our panel of expert judges, who then deliberate in a separate room and return to announce the winners.</p>
-                    <!-- <p>As with last year we'll have two categories: New Startup of the Year and Emerging Startup of the Year.</p> -->
-                    <p><a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/206139632/">Attending? RSVP and we&rsquo;ll have your drink ready.</a></p>
-                </div>
-            </div>
-        </div>*/ ?>
 
         <section class="finalists">
             <header>
