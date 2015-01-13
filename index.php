@@ -53,7 +53,7 @@
                 <img class="photo" src="/img/lawrence-knowles.jpg" alt="Sherif Malak">
                 <h3 class="topic">People and how to mine the gold</h3>
                 <div class="bio">
-                    <p><a href="https://twitter.com/lozknowles">Lawrence Knowles</a> is Vice Chairman of Technology at <a href=" http://www.midlandhr.com/Thought-Leadership/Events/2014/November/CIPD-Annual-Conference-2014.aspx#sthash.wX3Ngzpk.dpuf">MidlandHR</a>. This session explores social and attitudinal mining in the global search for talent, cementing the science behind HR and business success.</p>
+                    <p><a href="https://twitter.com/lozknowles">Lawrence Knowles</a>, Vice Chairman of Technology at MidlandHR. This session explores social and attitudinal mining in the global search for talent, cementing the science behind HR and business success. Despite automation and robotics driving job displacement at an ever accelerating rate, we will all be searching for the right talent to augment the machines.</p>
                 </div>
             </div>
         </div>
