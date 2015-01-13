@@ -43,17 +43,17 @@
             <div class="summary">
                 <h2 class="title">Next Event:</h2>
                 <ul class="details">
-                    <li class="date"><i class="date-icon"></i> 16th December</li>
+                    <li class="date"><i class="date-icon"></i> 20th January</li>
                     <li class="time"><i class="icon time-icon"></i> 6:30pm&ndash;10:30pm</li>
                     <li class="venue"><i class="icon location-icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
                 </ul>
                 <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/209826492/">RSVP on Meetup</a></p>
             </div>
             <div class="speaker">
-                <img class="photo" src="/img/sherif-malak.jpg" alt="Sherif Malak">
-                <h3 class="topic">The digital legal compliance landscape</h3>
+                <img class="photo" src="/img/lawrence-knowles.jpg" alt="Sherif Malak">
+                <h3 class="topic">People and how to mine the gold</h3>
                 <div class="bio">
-                    <p><a href="http://www.shoosmiths.co.uk/contact-us/cvdetails-1487.aspx?empemail=sherif.malak@shoosmiths.co.uk">Sherif Malak</a>, a digital media lawyer at Shoosmiths, will be covering the fundamentals of a broad range of e-compliance issues, including information provision requirements, data protection, privacy, cookies and marketing consents, unfair terms and practices, distance selling and advertising and promotions.</p>
+                    <p><a href="https://twitter.com/lozknowles">Lawrence Knowles</a> is Vice Chairman of Technology at <a href=" http://www.midlandhr.com/Thought-Leadership/Events/2014/November/CIPD-Annual-Conference-2014.aspx#sthash.wX3Ngzpk.dpuf">MidlandHR</a>. This session explores social and attitudinal mining in the global search for talent, cementing the science behind HR and business success.</p>
                 </div>
             </div>
         </div>
