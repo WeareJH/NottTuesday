@@ -47,7 +47,7 @@
                     <li class="time"><i class="icon time-icon"></i> 6:30pm&ndash;10:30pm</li>
                     <li class="venue"><i class="icon location-icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
                 </ul>
-                <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/209826492/">RSVP on Meetup</a></p>
+                <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/219311518/">RSVP on Meetup</a></p>
             </div>
             <div class="speaker">
                 <img class="photo" src="/img/lawrence-knowles.jpg" alt="Sherif Malak">
