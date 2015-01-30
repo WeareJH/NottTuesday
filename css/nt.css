@@ -348,8 +348,11 @@ SPONSORS
 FOOTER
 ======================================== */
 .site-footer {
-  background: #181d24;
-  color: white; }
+  background: #181d24; }
+  .site-footer h2 {
+    color: white; }
+  .site-footer p {
+    color: #e3e3e3; }
   .site-footer a {
     color: white; }
 

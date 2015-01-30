@@ -474,7 +474,14 @@ FOOTER
 
 .site-footer {
     background: $purple;
-    color: white;
+
+    h2 {
+        color: white;
+    }
+
+    p {
+        color: $light-grey;
+    }
 
     a {
         color: white;

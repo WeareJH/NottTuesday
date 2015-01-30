@@ -43,17 +43,17 @@
             <div class="summary">
                 <h2 class="title">Next Event:</h2>
                 <ul class="details">
-                    <li class="date"><i class="date-icon"></i> 20th January</li>
+                    <li class="date"><i class="date-icon"></i> 17th February</li>
                     <li class="time"><i class="icon time-icon"></i> 6:30pm&ndash;10:30pm</li>
                     <li class="venue"><i class="icon location-icon"></i> <a href="https://www.google.co.uk/maps/place/Antenna,+9A+Beck+St,+Nottingham+NG1+1EQ/@52.955938,-1.143181,17z/data=!4m2!3m1!1s0x4879c17de0dc5f45:0x4d78304762fccbec" target="_blank">Antenna</a></li>
                 </ul>
-                <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/219311518/">RSVP via Meetup</a></p>
+                <p class="rsvp"><a class="button" href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/events/219899944/">RSVP via Meetup</a></p>
             </div>
             <div class="speaker">
-                <!--<img class="photo" src="/img/lawrence-knowles.jpg" alt="Sherif Malak">-->
-                <h3 class="topic">Destails of the next speaker will be added soon</h3>
+                <img class="photo" src="/img/antenna.jpg" alt="Antenna">
+                <h3 class="topic">Speaker details coming soon</h3>
                 <div class="bio">
-                    <p>Jamie to supply copy for this bit.</p>
+                    <p>Please check out our <a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/">Meetup page</a> in the meantime to subscribe for notifications of the announcement.</p>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
         <div class="about">
             <h2>About Nott Tuesday</h2>
             <p>Each month we have stimulating speakers giving talks on the challenges of starting and running a technology business, practical guidance on operating a business such as finding funding and exploring future technologies for new opportunities.</p>
-            <p>The goal of our <a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/ ">Meetup</a> is to bring together technology people, startups and companies. Our vision is to fill the Nottingham tech scene with networking and opportunities.</p>
+            <p>The goal of our <a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/">Meetup</a> is to bring together technology people, startups and companies. Our vision is to fill the Nottingham tech scene with networking and opportunities.</p>
             <p>We also run the <a href="/awards/2014.php">Tech Startup Awards</a> which celebrates the most promising new tech businesses in Nottingham.</p>
         </div>
 
