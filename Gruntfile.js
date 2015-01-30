@@ -2,15 +2,13 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         watch: {
-            files: "*.scss",
-            tasks: ['compass']
+            files: "css/*.scss",
+            tasks: ['sass']
         },
-        compass: {
-            dist: {
-                options: {
-                    sassDir: '/',
-                    cssDir: '/',
-                    outputStyle: 'compressed'
+        sass: {
+            dev: {
+                files: {
+                    'css/nt.css': 'css/nt.scss'
                 }
             }
         },
@@ -20,17 +18,35 @@ module.exports = function (grunt) {
                     src : '*.css'
                 },
                 options: {
-                    watchTask: true // < VERY important
+                    watchTask: true, // < VERY important,
+                    proxy: "http://nott-tuesday.static/"
                 }
             }
         }
     });
 
+    /**
+     * Init BrowserSync
+     */
+    grunt.registerTask("bs-init", function () {
+        var browserSync = require('browser-sync');
+        var done = this.async();
+        browserSync({
+            files: [ // File globs that cause full reload
+                "**/*.php",
+                "css/*.css"
+            ],
+            proxy: "http://nott-tuesday.static/"
+        }, function (err, bs) {
+            done();
+        });
+    });
+
     // load npm tasks
-    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-browser-sync');
 
     // define default task
-    grunt.registerTask('default', ["browserSync", "watch"]);
+    grunt.registerTask('dev-watch', ["bs-init", "watch"]);
 };
