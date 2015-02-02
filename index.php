@@ -23,6 +23,9 @@
     <script src="//use.typekit.net/htk0tvr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="css/nt.css">
+
+    <!-- optimizely -->
+    <script src="//cdn.optimizely.com/js/2419150379.js"></script>
 </head>
 <body>
 
