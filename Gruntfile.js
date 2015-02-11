@@ -2,8 +2,13 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         watch: {
-            files: "css/*.scss",
-            tasks: ['sass']
+            options: {
+                spawn: false
+            },
+            sass: {
+                files: "css/*.scss",
+                tasks: ['sass']
+            }
         },
         sass: {
             dev: {
@@ -15,31 +20,18 @@ module.exports = function (grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src : '*.css'
+                    src: [
+                        "css/*.css",
+                        "*.html",
+                        "awards/*.html"
+                    ]
                 },
                 options: {
-                    watchTask: true, // < VERY important,
-                    proxy: "http://nott-tuesday.static/"
+                    watchTask: true,
+                    server: true
                 }
             }
         }
-    });
-
-    /**
-     * Init BrowserSync
-     */
-    grunt.registerTask("bs-init", function () {
-        var browserSync = require('browser-sync');
-        var done = this.async();
-        browserSync({
-            files: [ // File globs that cause full reload
-                "**/*.php",
-                "css/*.css"
-            ],
-            proxy: "http://nott-tuesday.static/"
-        }, function (err, bs) {
-            done();
-        });
     });
 
     // load npm tasks
@@ -48,5 +40,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
 
     // define default task
-    grunt.registerTask('dev-watch', ["bs-init", "watch"]);
+    grunt.registerTask('dev-watch', ["browserSync", "watch"]);
 };

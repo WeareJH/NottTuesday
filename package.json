@@ -7,8 +7,8 @@
     "grunt-browser-sync": "^1.5.3"
   },
   "devDependencies": {
-    "browser-sync": "^2.0.0-rc1",
     "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.0.0",
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1"
   },
