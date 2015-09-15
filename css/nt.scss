@@ -119,6 +119,10 @@ h3 {
     font-size: 20px;
 }
 
+p small {
+    line-height: 10px !important;
+}
+
 
 .button {
     display: inline-block;
@@ -159,6 +163,10 @@ hr {
     &.bold {
         border-color: $grey;
     }
+}
+
+ul li {
+    margin-left: 24px;
 }
 
 
@@ -389,9 +397,10 @@ INFO
 
 
 /* ========================================
-SPONSORS
+SPONSORS, CATEGORIES
 ======================================== */
 
+.categories,
 .sponsors {
     margin-bottom: 2*$space;
     // + .sponsors {
@@ -400,11 +409,14 @@ SPONSORS
     // }
 }
 
+.category-list,
 .sponsor-list {
     @include cf;
     margin-bottom: 0;
     list-style: none;
 }
+
+.category,
 .sponsor {
     @include cf;
     margin-bottom: 2*$space;
@@ -421,6 +433,8 @@ SPONSORS
     }
 
 }
+
+.category__logo,
 .sponsor__logo {
     float: right;
     margin: 0 0 $space 2*$space;
@@ -431,6 +445,7 @@ SPONSORS
 }
 
 @media only screen and (min-width: $lap) {
+    .category__logo,
     .sponsor__logo {
         float: left;
         width: 40%;
@@ -439,6 +454,7 @@ SPONSORS
 }
 
 @media only screen and (min-width: $desk) {
+    .categories,
     .sponsors {
         @include cf;
 
@@ -448,12 +464,14 @@ SPONSORS
         }
     }
 
+    .category-list,
     .sponsor-list {
         float: left;
         width: 59.2%;
         margin-left: 2%;
     }
 
+    .category,
     .sponsor {
         @include cf;
         float: none;
@@ -461,6 +479,7 @@ SPONSORS
         padding: 0;
     }
 
+    .category__logo,
     .sponsor__logo {
         width: (100/60)*18.4%;
     }

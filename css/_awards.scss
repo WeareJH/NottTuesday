@@ -159,6 +159,7 @@ SPONSORS
     width: 20%;
     max-width: 60px;
     margin-right: $space;
+    border-radius: 125px;
 }
 .judge__name {
     font-size: 18px;
@@ -205,3 +206,164 @@ SPONSORS
         margin-bottom: $space;
     }
 }
+
+.background__green {
+    background-color: $green;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.background__dark {
+    background: $purple;
+    color: #fff;
+
+    ul {
+        color: #fff;
+    }
+}
+
+.background__light {
+    background-color: #f9f9fa;
+}
+
+.note {
+    color: $green;
+    line-height: 1;
+}
+
+.format {
+
+    ul li {
+        margin-left: 34px;
+    }
+
+    @media only screen and (min-width: $lap) {
+        float: left;
+        width: 48%;
+    }
+}
+
+.pitch {
+
+    ul li {
+        margin-left: 34px;
+    }
+
+    @media only screen and (min-width: $lap) {
+        float: right;
+        width: 48%;
+    }
+}
+
+.call-for-sponsors {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
+.awards-event {
+    @include cf;
+    margin-bottom: 2*$space;
+    background: white;
+    box-shadow: 0 0 1px rgba(0,0,0,0.25), 0 1px 10px rgba(0,0,0,0.1);
+
+    @media only screen and (min-width: $lap) {
+        margin: -8*$space 0 2*$space;
+    }
+
+    @media only screen and (min-width: $desk) {
+        margin: -8*$space -2*$space 2*$space;
+    }
+}
+
+.awards-summary {
+    position: relative;
+    padding: 2*$space;
+    background: $purple;
+    color: white;
+    text-align: center;
+
+    .awards-title {
+        margin-bottom: 0;
+        padding-top: 0;
+        color: $green;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .awards-details {
+        margin-bottom: 0;
+        list-style: none;
+        font-size: 20px;
+
+        a {
+            color: white;
+            font-weight: normal;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 $space/2;
+        }
+    }
+    .awards-rsvp {
+        margin: 2*$space 0 0;
+    }
+
+    @media only screen and (min-width: $lap) {
+        text-align: left;
+
+        .awards-details {
+            li {
+                margin: 0 $space/2 0 0;
+            }
+        }
+        .awards-rsvp {
+            position: absolute;
+            right: 2*$space;
+            // top: 50%;
+            top: 2*$space;
+            margin-top: 0;
+            // @include prefix(transform, translateY(-50%));
+        }
+    }
+
+    @media only screen and (min-width: $desk) {
+        @include cf;
+
+        float: left;
+        width: 30%;
+
+        .awards-title,
+        .awards-details {
+            // float: left;
+            // padding: $space 0;
+
+            // display: inline-block;
+            // margin: 0 $space;
+        }
+        .awards-title {
+            margin-bottom: $space;
+            font-size: 22px;
+        }
+        .awards-details {
+            font-size: 20px;
+
+            li {
+                display: block;
+                // margin: 0 0 0 $space;
+                margin: 0 0 $space;
+            }
+        }
+        .awards-rsvp {
+            position: static;
+            margin-top: 2*$space;
+            // float: right;
+            // @include prefix(transform, none);
+        }
+    }
+
+}
+
