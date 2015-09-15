@@ -347,9 +347,44 @@ SPONSORS
     p {
         font-size: 20px;
         font-weight: normal;
+        margin-bottom: $space;
     }
-
 }
+
+
+#mc_embed_signup #mce-success-response {
+    color: $green;
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: $space $space*2;
+    margin: 0 auto;
+    margin-bottom: $space;
+}
+
+#mc_embed_signup div#mce-responses {
+    float: inherit !important;
+    width: 90%;
+    margin: 0 auto !important;
+    clear: both;
+}
+
+
+#mc_embed_signup div.response {
+    margin: 1em 0;
+    padding: 1em .5em .5em 0;
+    font-weight: bold;
+    float: left;
+    top: -1.5em;
+    width: 100% !important;
+    margin-bottom: $space;
+}
+
+#mc_embed_signup div.mce_inline_error {
+    background-color: #FF4956 !important;
+}
+
+
 
 
 
