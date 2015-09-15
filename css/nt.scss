@@ -1,9 +1,6 @@
 /*!* Nott Tuesday by Joseph Russell and Chris Bailey at JH */
-
 @import 'vars';
 @import 'mixins';
-
-
 /* ========================================
 RESET
 ======================================== */
@@ -14,8 +11,6 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
-
-
 /* ========================================
 ROOT
 ======================================== */
@@ -30,21 +25,19 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 body {
     font-size: 100%;
     text-rendering: optimizeLegibility;
 
-//    @media only screen and (min-width: $lap) {
-//         font-size: 112.5%;
-//    }
+    //    @media only screen and (min-width: $lap) {
+    //         font-size: 112.5%;
+    //    }
 
     @media only screen and (min-width: $desk) {
         padding: 20px;
     }
 
 }
-
 a {
     color: $green;
     font-weight: bold;
@@ -56,8 +49,6 @@ a {
         text-decoration: underline;
     }
 }
-
-
 /* ========================================
 BASE STYLES
 ======================================== */
@@ -66,7 +57,6 @@ BASE STYLES
     /*overflow: hidden;*/
     width: 100%;
 }
-
 .container {
     position: relative;
     margin: 0 auto;
@@ -78,13 +68,11 @@ BASE STYLES
         // padding: 40px;
     }
 }
-
 h1, h2, h3,
 p,
 ul {
     margin-bottom: $space;
 }
-
 h1, h2, h3 {
     // padding-top: 10px;
     line-height: 1;
@@ -113,17 +101,13 @@ h3 {
         // font-size: 24px;
     }
 }
-
 .lede {
     margin-bottom: 2*$space;
     font-size: 20px;
 }
-
 p small {
     line-height: 10px !important;
 }
-
-
 .button {
     display: inline-block;
     padding: $space 2*$space;
@@ -137,7 +121,7 @@ p small {
     letter-spacing: 0.05em;
     border-radius: 3px;
     //box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     transition: background-color .3s ease;
 
     &:hover, &:focus {
@@ -146,15 +130,14 @@ p small {
     }
 }
 
+
 img {
     display: block;
     max-width: 100%;
 }
-
 .cf {
     @include cf;
 }
-
 hr {
     border-bottom: 1px solid $smoke;
     // padding-top: 2*$space;
@@ -164,12 +147,15 @@ hr {
         border-color: $grey;
     }
 }
-
-ul li {
-    margin-left: 24px;
+/**
+ * Horizontal using inline-block
+ */
+.nav--inline > li {
+    display: inline-block;
 }
-
-
+.nav--inline > li > a {
+    display: inline-block;
+}
 /* ========================================
 HEADER
 ======================================== */
@@ -213,11 +199,19 @@ HEADER
         }
     }
 }
-
-
 .header__bg {
     background: url('../img/header-bg.png') right center no-repeat;
     background-size: cover;
+}
+
+.home-header {
+
+    padding-bottom: $space;
+
+    @media only screen and (min-width: $lap) {
+        padding-bottom: 72px;
+    }
+
 }
 
 
@@ -225,15 +219,11 @@ HEADER
 MAIN
 ======================================== */
 
-.site-main {}
-
-
-
-
+.site-main {
+}
 /* ========================================
 EVENT DETAILS
 ======================================== */
-
 .event {
     @include cf;
     margin-bottom: 2*$space;
@@ -244,9 +234,9 @@ EVENT DETAILS
         margin: -8*$space 0 2*$space;
     }
 
-    @media only screen and (min-width: $desk) {
-        margin: -8*$space -2*$space 2*$space;
-    }
+    //@media only screen and (min-width: $desk) {
+    //    margin: -8*$space -2*$space 2*$space;
+    //}
 }
 
 .summary {
@@ -300,40 +290,40 @@ EVENT DETAILS
         }
     }
 
-    @media only screen and (min-width: $desk) {
-        @include cf;
-
-        float: left;
-        width: 30%;
-
-        .title,
-        .details {
-            // float: left;
-            // padding: $space 0;
-
-            // display: inline-block;
-            // margin: 0 $space;
-        }
-        .title {
-            margin-bottom: $space;
-            font-size: 22px;
-        }
-        .details {
-            font-size: 20px;
-
-            li {
-                display: block;
-                // margin: 0 0 0 $space;
-                margin: 0 0 $space;
-            }
-        }
-        .rsvp {
-            position: static;
-            margin-top: 2*$space;
-            // float: right;
-            // @include prefix(transform, none);
-        }
-    }
+    //@media only screen and (min-width: $desk) {
+    //    @include cf;
+    //
+    //    float: left;
+    //    width: 30%;
+    //
+    //    .title,
+    //    .details {
+    //        // float: left;
+    //        // padding: $space 0;
+    //
+    //        // display: inline-block;
+    //        // margin: 0 $space;
+    //    }
+    //    .title {
+    //        margin-bottom: $space;
+    //        font-size: 22px;
+    //    }
+    //    .details {
+    //        font-size: 20px;
+    //
+    //        li {
+    //            display: block;
+    //            // margin: 0 0 0 $space;
+    //            margin: 0 0 $space;
+    //        }
+    //    }
+    //    .rsvp {
+    //        position: static;
+    //        margin-top: 2*$space;
+    //        // float: right;
+    //        // @include prefix(transform, none);
+    //    }
+    //}
 
 }
 
@@ -372,14 +362,14 @@ EVENT DETAILS
         }
     }
 
-    @media only screen and (min-width: $desk) {
-        float: right;
-        width: 70%;
-
-        .topic {
-            line-height: 1.5;
-        }
-    }
+    //@media only screen and (min-width: $desk) {
+    //    float: right;
+    //    width: 70%;
+    //
+    //    .topic {
+    //        line-height: 1.5;
+    //    }
+    //}
 }
 
 
@@ -389,13 +379,11 @@ EVENT DETAILS
 INFO
 ======================================== */
 
-.info{
-        ul{
-            margin-left: 2*$space;
-        }
+.info {
+    ul {
+        margin-left: 2*$space;
     }
-
-
+}
 /* ========================================
 SPONSORS, CATEGORIES
 ======================================== */
@@ -408,14 +396,12 @@ SPONSORS, CATEGORIES
     padding-top: 2*$space;
     // }
 }
-
 .category-list,
 .sponsor-list {
     @include cf;
     margin-bottom: 0;
     list-style: none;
 }
-
 .category,
 .sponsor {
     @include cf;
@@ -433,7 +419,6 @@ SPONSORS, CATEGORIES
     }
 
 }
-
 .category__logo,
 .sponsor__logo {
     float: right;
@@ -443,7 +428,6 @@ SPONSORS, CATEGORIES
     width: 40%;
     max-width: 200px;
 }
-
 @media only screen and (min-width: $lap) {
     .category__logo,
     .sponsor__logo {
@@ -452,7 +436,6 @@ SPONSORS, CATEGORIES
         margin: 0 2*$space 0 0;
     }
 }
-
 @media only screen and (min-width: $desk) {
     .categories,
     .sponsors {
@@ -484,9 +467,68 @@ SPONSORS, CATEGORIES
         width: (100/60)*18.4%;
     }
 }
+/* ========================================
+Past events
+======================================== */
 
-
-
+.past-event {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+.past-event:last-child {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.past-event .speaker-photo {
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    .past-event .speaker-photo {
+        display: block;
+        width: 14%;
+        float: left;
+        padding-top: 6px;
+        margin-bottom: 14px;
+    }
+}
+.past-event .speaker-info {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    .past-event .speaker-info {
+        width: 82%;
+        float: right;
+        text-align: left;
+    }
+}
+.past-event .date {
+    padding-top: 1.5px;
+    font-size: 14px;
+}
+/* ========================================
+Archive
+======================================== */
+.archive-wrapper {
+    background-color: #f9f9fa;
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+}
+.archive-wrapper a {
+    color: #cacaca;
+}
+.archive-wrapper ul {
+    margin: 0;
+    text-align: center;
+}
+.archive-wrapper li {
+    color: #cacaca;
+    padding: 0 3px;
+}
 /* ========================================
 FOOTER
 ======================================== */
@@ -500,28 +542,25 @@ FOOTER
 
     p {
         color: $light-grey;
+
     }
 
     a {
         color: white;
     }
 }
-
 .about {
     margin-bottom: 2*$space;
 }
-
 .contact {
     margin-bottom: 2*$space;
 }
-
 .legal {
     // margin-bottom: 0;
     border-top: 1px solid rgba(white, 0.1);
     padding-top: 2*$space;
     color: rgba(white, 0.5);
 }
-
 @media only screen and (min-width: $desk) {
     .about {
         float: left;
@@ -537,5 +576,4 @@ FOOTER
         clear: both;
     }
 }
-
 @import 'awards';

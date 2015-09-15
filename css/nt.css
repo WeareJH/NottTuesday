@@ -58,7 +58,7 @@ BASE STYLES
 h1, h2, h3,
 p,
 ul {
-  margin-bottom: 10px; }
+  margin-bottom: 12px; }
 
 h1, h2, h3 {
   line-height: 1;
@@ -68,15 +68,15 @@ h1 {
   font-size: 36px; }
 
 h2 {
-  margin-bottom: 20px;
-  padding-top: 10px;
+  margin-bottom: 24px;
+  padding-top: 12px;
   font-size: 24px; }
 
 h3 {
   font-size: 20px; }
 
 .lede {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 20px; }
 
 p small {
@@ -84,7 +84,7 @@ p small {
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: #1acd55;
   color: white;
   font-weight: bold;
@@ -113,12 +113,18 @@ img {
 
 hr {
   border-bottom: 1px solid #eee;
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
   hr.bold {
     border-color: #ccc; }
 
-ul li {
-  margin-left: 24px; }
+/**
+ * Horizontal using inline-block
+ */
+.nav--inline > li {
+  display: inline-block; }
+
+.nav--inline > li > a {
+  display: inline-block; }
 
 /* ========================================
 HEADER
@@ -129,20 +135,20 @@ HEADER
   text-align: center; }
   .site-header .logo {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
     width: 150px; }
   .site-header h1 {
     font-size: 24px; }
   @media only screen and (min-width: 600px) {
     .site-header {
-      padding-bottom: 60px; }
+      padding-bottom: 72px; }
       .site-header h1 {
         font-size: 32px; }
       .site-header p {
         font-size: 22px; } }
   @media only screen and (min-width: 1000px) {
     .site-header .logo {
-      margin: 20px auto 40px; }
+      margin: 24px auto 48px; }
     .site-header h1 {
       font-size: 44px;
       font-weight: normal; } }
@@ -151,6 +157,12 @@ HEADER
   background: url("../img/header-bg.png") right center no-repeat;
   background-size: cover; }
 
+.home-header {
+  padding-bottom: 12px; }
+  @media only screen and (min-width: 600px) {
+    .home-header {
+      padding-bottom: 72px; } }
+
 /* ========================================
 MAIN
 ======================================== */
@@ -158,7 +170,7 @@ MAIN
 EVENT DETAILS
 ======================================== */
 .event {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   background: white;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 10px rgba(0, 0, 0, 0.1); }
   .event:before, .event:after {
@@ -170,14 +182,11 @@ EVENT DETAILS
     *zoom: 1; }
   @media only screen and (min-width: 600px) {
     .event {
-      margin: -80px 0 20px; } }
-  @media only screen and (min-width: 1000px) {
-    .event {
-      margin: -80px -20px 20px; } }
+      margin: -96px 0 24px; } }
 
 .summary {
   position: relative;
-  padding: 20px;
+  padding: 24px;
   background: #181d24;
   color: white;
   text-align: center; }
@@ -196,44 +205,22 @@ EVENT DETAILS
       font-weight: normal; }
     .summary .details li {
       display: inline-block;
-      margin: 0 5px; }
+      margin: 0 6px; }
   .summary .rsvp {
-    margin: 20px 0 0; }
+    margin: 24px 0 0; }
   @media only screen and (min-width: 600px) {
     .summary {
       text-align: left; }
       .summary .details li {
-        margin: 0 5px 0 0; }
+        margin: 0 6px 0 0; }
       .summary .rsvp {
         position: absolute;
-        right: 20px;
-        top: 20px;
+        right: 24px;
+        top: 24px;
         margin-top: 0; } }
-  @media only screen and (min-width: 1000px) {
-    .summary {
-      float: left;
-      width: 30%; }
-      .summary:before, .summary:after {
-        content: " ";
-        display: table; }
-      .summary:after {
-        clear: both; }
-      .summary {
-        *zoom: 1; }
-      .summary .title {
-        margin-bottom: 10px;
-        font-size: 22px; }
-      .summary .details {
-        font-size: 20px; }
-        .summary .details li {
-          display: block;
-          margin: 0 0 10px; }
-      .summary .rsvp {
-        position: static;
-        margin-top: 20px; } }
 
 .speaker {
-  padding: 20px; }
+  padding: 24px; }
   .speaker:before, .speaker:after {
     content: " ";
     display: table; }
@@ -243,42 +230,36 @@ EVENT DETAILS
     *zoom: 1; }
   .speaker .photo {
     float: right;
-    margin: 0 0 10px 10px;
+    margin: 0 0 12px 12px;
     width: 30%;
     max-width: 200px; }
   .speaker .topic strong {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-size: 30px; }
   .speaker .bio > :last-child {
     margin-bottom: 0; }
   @media only screen and (min-width: 600px) {
     .speaker .photo {
-      margin: 0 0 20px 20px; }
+      margin: 0 0 24px 24px; }
     .speaker .topic {
       overflow: hidden; }
     .speaker .bio {
       overflow: hidden; } }
-  @media only screen and (min-width: 1000px) {
-    .speaker {
-      float: right;
-      width: 70%; }
-      .speaker .topic {
-        line-height: 1.5; } }
 
 /* ========================================
 INFO
 ======================================== */
 .info ul {
-  margin-left: 20px; }
+  margin-left: 24px; }
 
 /* ========================================
 SPONSORS, CATEGORIES
 ======================================== */
 .categories,
 .sponsors {
-  margin-bottom: 20px;
-  padding-top: 20px; }
+  margin-bottom: 24px;
+  padding-top: 24px; }
 
 .category-list,
 .sponsor-list {
@@ -298,7 +279,7 @@ SPONSORS, CATEGORIES
 
 .category,
 .sponsor {
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
   .category:before, .category:after,
   .sponsor:before,
   .sponsor:after {
@@ -322,9 +303,9 @@ SPONSORS, CATEGORIES
 .category__logo,
 .sponsor__logo {
   float: right;
-  margin: 0 0 10px 20px;
+  margin: 0 0 12px 24px;
   border: 1px solid #eee;
-  padding: 20px;
+  padding: 24px;
   width: 40%;
   max-width: 200px; }
 
@@ -333,7 +314,7 @@ SPONSORS, CATEGORIES
   .sponsor__logo {
     float: left;
     width: 40%;
-    margin: 0 20px 0 0; } }
+    margin: 0 24px 0 0; } }
 @media only screen and (min-width: 1000px) {
   .categories:before, .categories:after,
   .sponsors:before,
@@ -378,6 +359,63 @@ SPONSORS, CATEGORIES
   .sponsor__logo {
     width: 30.66667%; } }
 /* ========================================
+Past events
+======================================== */
+.past-event {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 6px;
+  margin-bottom: 6px; }
+
+.past-event:last-child {
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.past-event .speaker-photo {
+  display: none; }
+
+@media only screen and (min-width: 600px) {
+  .past-event .speaker-photo {
+    display: block;
+    width: 14%;
+    float: left;
+    padding-top: 6px;
+    margin-bottom: 14px; } }
+.past-event .speaker-info {
+  width: 100%; }
+
+@media only screen and (min-width: 600px) {
+  .past-event .speaker-info {
+    width: 82%;
+    float: right;
+    text-align: left; } }
+.past-event .date {
+  padding-top: 1.5px;
+  font-size: 14px; }
+
+/* ========================================
+Archive
+======================================== */
+.archive-wrapper {
+  background-color: #f9f9fa;
+  padding: 12px;
+  font-size: 18px;
+  width: 100%; }
+
+.archive-wrapper a {
+  color: #cacaca; }
+
+.archive-wrapper ul {
+  margin: 0;
+  text-align: center; }
+
+.archive-wrapper li {
+  color: #cacaca;
+  padding: 0 3px; }
+
+/* ========================================
 FOOTER
 ======================================== */
 .site-footer {
@@ -390,14 +428,14 @@ FOOTER
     color: white; }
 
 .about {
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
 
 .contact {
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
 
 .legal {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 20px;
+  padding-top: 24px;
   color: rgba(255, 255, 255, 0.5); }
 
 @media only screen and (min-width: 1000px) {
@@ -421,11 +459,11 @@ AWARDS
 SPONSORS
 ======================================== */
 .finalists {
-  margin-bottom: 20px;
-  padding-top: 20px; }
+  margin-bottom: 24px;
+  padding-top: 24px; }
   .finalists h2 small {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-weight: normal;
     font-size: 18px; }
 
@@ -441,7 +479,7 @@ SPONSORS
     *zoom: 1; }
 
 .finalist {
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
   .finalist:before, .finalist:after {
     content: " ";
     display: table; }
@@ -458,28 +496,28 @@ SPONSORS
 
 .finalist__logo {
   float: right;
-  margin: 0 0 10px 20px;
+  margin: 0 0 12px 24px;
   border: 1px solid #eee;
-  padding: 20px;
+  padding: 24px;
   width: 40%;
   max-width: 200px;
   background: #fff; }
 
 .finalist--winner {
-  padding: 20px;
+  padding: 24px;
   border: 2px solid #1acd55;
   background: #f5f5f5; }
   .finalist--winner .label {
     display: block;
-    margin: -22px -22px 20px;
-    padding: 10px 20px;
+    margin: -26px -26px 24px;
+    padding: 12px 24px;
     background: #1acd55;
     color: #fff;
     text-transform: uppercase; }
   .finalist--winner .finalist__logo {
     display: block;
     float: none;
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
     width: 100%;
     max-width: none; }
 
@@ -487,12 +525,12 @@ SPONSORS
   .finalist__logo {
     float: left;
     width: 40%;
-    margin: 0 20px 0 0; }
+    margin: 0 24px 0 0; }
 
   .finalist--winner .finalist__logo {
     float: left;
     width: 40%;
-    margin: 0 20px 0 0;
+    margin: 0 24px 0 0;
     max-width: 200px; } }
 @media only screen and (min-width: 1000px) {
   .finalists:before, .finalists:after {
@@ -528,11 +566,11 @@ SPONSORS
   .finalist--winner .finalist__logo {
     float: none;
     width: 100%;
-    margin: 0 0 20px;
+    margin: 0 0 24px;
     max-width: none; } }
 .judges {
-  margin-bottom: 20px;
-  padding-top: 20px; }
+  margin-bottom: 24px;
+  padding-top: 24px; }
 
 .judge-list {
   margin-bottom: 0;
@@ -546,7 +584,7 @@ SPONSORS
     *zoom: 1; }
 
 .judge {
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
   .judge:before, .judge:after {
     content: " ";
     display: table; }
@@ -560,7 +598,7 @@ SPONSORS
   border: 1px solid #eee;
   width: 20%;
   max-width: 60px;
-  margin-right: 10px;
+  margin-right: 12px;
   border-radius: 125px; }
 
 .judge__name {
@@ -595,7 +633,7 @@ SPONSORS
     float: none;
     width: 100%;
     max-width: none;
-    margin-bottom: 10px; } }
+    margin-bottom: 12px; } }
 .background__green {
   background-color: #1acd55;
   color: #fff;
@@ -634,79 +672,67 @@ SPONSORS
   margin-bottom: 20px;
   font-size: 20px; }
 
-.awards-event {
-  margin-bottom: 20px;
-  background: white;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 10px rgba(0, 0, 0, 0.1); }
-  .awards-event:before, .awards-event:after {
-    content: " ";
-    display: table; }
-  .awards-event:after {
-    clear: both; }
-  .awards-event {
-    *zoom: 1; }
-  @media only screen and (min-width: 600px) {
-    .awards-event {
-      margin: -80px 0 20px; } }
-  @media only screen and (min-width: 1000px) {
-    .awards-event {
-      margin: -80px -20px 20px; } }
+.trophy {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-bottom: -5px;
+  margin-right: 5px; }
 
-.awards-summary {
+.signup__form .form__email {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #999999;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 3px;
+  transition: background-color .3s ease; }
+
+.form__submit {
+  background: #17b64c;
+  cursor: pointer; }
+  .form__submit:hover, .form__submit:focus {
+    background: #14a042; }
+
+#mc_embed_signup {
+  background: #1acd55 !important;
+  clear: left; }
+
+#mc_embed_signup form {
+  display: block;
   position: relative;
-  padding: 20px;
-  background: #181d24;
-  color: white;
+  text-align: center !important;
+  padding: 10px 0 10px 3%; }
+
+#mc_embed_signup .mc-field-group input {
+  display: block;
+  width: 80% !important;
+  padding: 8px 0;
+  text-indent: 2%;
+  margin: 0 auto; }
+
+#mc_embed_signup div.mce_inline_error {
+  width: 80% !important;
+  margin: 0 auto !important; }
+
+#mc_embed_signup .mc-field-group input {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #999999;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 3px;
+  transition: background-color .3s ease;
+  border: 0; }
+
+#mc_embed_signup .button {
+  background: #17b64c !important;
   text-align: center; }
-  .awards-summary .awards-title {
-    margin-bottom: 0;
-    padding-top: 0;
-    color: #1acd55;
-    font-size: 20px;
-    line-height: 1.5; }
-  .awards-summary .awards-details {
-    margin-bottom: 0;
-    list-style: none;
-    font-size: 20px; }
-    .awards-summary .awards-details a {
-      color: white;
-      font-weight: normal; }
-    .awards-summary .awards-details li {
-      display: inline-block;
-      margin: 0 5px; }
-  .awards-summary .awards-rsvp {
-    margin: 20px 0 0; }
-  @media only screen and (min-width: 600px) {
-    .awards-summary {
-      text-align: left; }
-      .awards-summary .awards-details li {
-        margin: 0 5px 0 0; }
-      .awards-summary .awards-rsvp {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        margin-top: 0; } }
-  @media only screen and (min-width: 1000px) {
-    .awards-summary {
-      float: left;
-      width: 30%; }
-      .awards-summary:before, .awards-summary:after {
-        content: " ";
-        display: table; }
-      .awards-summary:after {
-        clear: both; }
-      .awards-summary {
-        *zoom: 1; }
-      .awards-summary .awards-title {
-        margin-bottom: 10px;
-        font-size: 22px; }
-      .awards-summary .awards-details {
-        font-size: 20px; }
-        .awards-summary .awards-details li {
-          display: block;
-          margin: 0 0 10px; }
-      .awards-summary .awards-rsvp {
-        position: static;
-        margin-top: 20px; } }
+  #mc_embed_signup .button:hover, #mc_embed_signup .button:focus {
+    background: #14a042 !important; }
+
+.entry-form p {
+  font-size: 20px;
+  font-weight: normal; }
 
 /*# sourceMappingURL=nt.css.map */

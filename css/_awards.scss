@@ -262,108 +262,94 @@ SPONSORS
     font-size: 20px;
 }
 
+.trophy {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-right: 5px;
+}
 
+.signup__form .form__email {
+    display: inline-block;
+    padding: $space 2*$space;
+    color: darken($grey, 20%);
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: background-color .3s ease;
+}
 
-.awards-event {
-    @include cf;
-    margin-bottom: 2*$space;
-    background: white;
-    box-shadow: 0 0 1px rgba(0,0,0,0.25), 0 1px 10px rgba(0,0,0,0.1);
+.form__submit {
+    background: darken($green, 5%);
+    cursor: pointer;
 
-    @media only screen and (min-width: $lap) {
-        margin: -8*$space 0 2*$space;
-    }
-
-    @media only screen and (min-width: $desk) {
-        margin: -8*$space -2*$space 2*$space;
+    &:hover, &:focus {
+        background: darken($green, 10%);
     }
 }
 
-.awards-summary {
+#mc_embed_signup {
+    background: $green !important;
+    clear: left;
+}
+
+#mc_embed_signup form {
+    display: block;
     position: relative;
-    padding: 2*$space;
-    background: $purple;
-    color: white;
+    text-align: center !important;
+    padding: 10px 0 10px 3%;
+}
+
+#mc_embed_signup .mc-field-group input {
+     display: block;
+     width: 80% !important;
+     padding: 8px 0;
+     text-indent: 2%;
+     margin: 0 auto;
+ }
+
+#mc_embed_signup div.mce_inline_error {
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: inline-block;
+    padding: $space 2*$space;
+    color: darken($grey, 20%);
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: background-color .3s ease;
+    border: 0;
+}
+
+#mc_embed_signup .button  {
+    background: darken($green, 5%) !important;
+    //padding: $space 2*$space !important;
     text-align: center;
+    //color: white !important;
+    //font-weight: bold !important;
+    //font-size: 18px !important;
+    //cursor: pointer;
 
-    .awards-title {
-        margin-bottom: 0;
-        padding-top: 0;
-        color: $green;
+    &:hover, &:focus {
+        background: darken($green, 10%) !important;
+    }
+}
+
+.entry-form {
+
+    h2 {}
+    p {
         font-size: 20px;
-        line-height: 1.5;
-    }
-    .awards-details {
-        margin-bottom: 0;
-        list-style: none;
-        font-size: 20px;
-
-        a {
-            color: white;
-            font-weight: normal;
-        }
-
-        li {
-            display: inline-block;
-            margin: 0 $space/2;
-        }
-    }
-    .awards-rsvp {
-        margin: 2*$space 0 0;
-    }
-
-    @media only screen and (min-width: $lap) {
-        text-align: left;
-
-        .awards-details {
-            li {
-                margin: 0 $space/2 0 0;
-            }
-        }
-        .awards-rsvp {
-            position: absolute;
-            right: 2*$space;
-            // top: 50%;
-            top: 2*$space;
-            margin-top: 0;
-            // @include prefix(transform, translateY(-50%));
-        }
-    }
-
-    @media only screen and (min-width: $desk) {
-        @include cf;
-
-        float: left;
-        width: 30%;
-
-        .awards-title,
-        .awards-details {
-            // float: left;
-            // padding: $space 0;
-
-            // display: inline-block;
-            // margin: 0 $space;
-        }
-        .awards-title {
-            margin-bottom: $space;
-            font-size: 22px;
-        }
-        .awards-details {
-            font-size: 20px;
-
-            li {
-                display: block;
-                // margin: 0 0 0 $space;
-                margin: 0 0 $space;
-            }
-        }
-        .awards-rsvp {
-            position: static;
-            margin-top: 2*$space;
-            // float: right;
-            // @include prefix(transform, none);
-        }
+        font-weight: normal;
     }
 
 }
+
+
 
