@@ -159,6 +159,7 @@ SPONSORS
     width: 20%;
     max-width: 60px;
     margin-right: $space;
+    border-radius: 125px;
 }
 .judge__name {
     font-size: 18px;
@@ -205,3 +206,185 @@ SPONSORS
         margin-bottom: $space;
     }
 }
+
+.background__green {
+    background-color: $green;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.background__dark {
+    background: $purple;
+    color: #fff;
+
+    ul {
+        color: #fff;
+    }
+}
+
+.background__light {
+    background-color: #f9f9fa;
+}
+
+.note {
+    color: $green;
+    line-height: 1;
+}
+
+.format {
+
+    ul li {
+        margin-left: 34px;
+    }
+
+    @media only screen and (min-width: $lap) {
+        float: left;
+        width: 48%;
+    }
+}
+
+.pitch {
+
+    ul li {
+        margin-left: 34px;
+    }
+
+    @media only screen and (min-width: $lap) {
+        float: right;
+        width: 48%;
+    }
+}
+
+.call-for-sponsors {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.trophy {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-right: 5px;
+}
+
+.signup__form .form__email {
+    display: inline-block;
+    padding: $space 2*$space;
+    color: darken($grey, 20%);
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: background-color .3s ease;
+}
+
+.form__submit {
+    background: darken($green, 5%);
+    cursor: pointer;
+
+    &:hover, &:focus {
+        background: darken($green, 10%);
+    }
+}
+
+#mc_embed_signup {
+    background: $green !important;
+    clear: left;
+}
+
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: center !important;
+    padding: 10px 0 10px 3%;
+}
+
+#mc_embed_signup .mc-field-group input {
+     display: block;
+     width: 80% !important;
+     padding: 8px 0;
+     text-indent: 2%;
+     margin: 0 auto;
+ }
+
+#mc_embed_signup div.mce_inline_error {
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: inline-block;
+    padding: $space 2*$space;
+    color: darken($grey, 20%);
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: background-color .3s ease;
+    border: 0;
+}
+
+#mc_embed_signup .button  {
+    background: darken($green, 5%) !important;
+    //padding: $space 2*$space !important;
+    text-align: center;
+    //color: white !important;
+    //font-weight: bold !important;
+    //font-size: 18px !important;
+    //cursor: pointer;
+
+    &:hover, &:focus {
+        background: darken($green, 10%) !important;
+    }
+}
+
+.entry-form {
+
+    h2 {}
+    p {
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: $space;
+    }
+}
+
+
+#mc_embed_signup #mce-success-response {
+    color: $green;
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: $space $space*2;
+    margin: 0 auto;
+    margin-bottom: $space;
+}
+
+#mc_embed_signup div#mce-responses {
+    float: inherit !important;
+    width: 90%;
+    margin: 0 auto !important;
+    clear: both;
+}
+
+
+#mc_embed_signup div.response {
+    margin: 1em 0;
+    padding: 1em .5em .5em 0;
+    font-weight: bold;
+    float: left;
+    top: -1.5em;
+    width: 100% !important;
+    margin-bottom: $space;
+}
+
+#mc_embed_signup div.mce_inline_error {
+    background-color: #FF4956 !important;
+}
+
+
+
+
+
