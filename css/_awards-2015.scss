@@ -1,0 +1,182 @@
+.text--center {
+    text-align: center;
+}
+
+.award {
+    padding-top: $space*3;
+    padding-bottom: $space*3;
+}
+
+.award-title {
+    font-size: 24px;
+    text-align: center;
+    @media only screen and (min-width: $lap) {
+        font-size: 32px;
+    }
+    @media only screen and (min-width: $desk) {
+
+    }
+}
+
+.award-desc {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0;
+
+    @media only screen and (min-width: $lap) {
+        font-size: 22px;
+    }
+}
+
+.award-cash {
+    color: $green;
+    font-weight: 700;
+}
+
+.award-short-list {
+
+}
+
+.prizes {
+    padding-top: $double-space*2;
+    @media only screen and (min-width: $lap) {
+        margin-left: -$double-space;
+        overflow: hidden;
+    }
+}
+
+.award-prize {
+    text-align: center;
+    margin-bottom: $double-space;
+
+        img {
+            width: 50%;
+            margin: 0 auto $space;
+            //border: 1px solid $smoke;
+        }
+
+    @media only screen and (min-width: $lap) {
+        width: 33.33%;
+        float: left;
+        padding-left: $double-space;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.award-sponsor {
+    overflow: hidden;
+    padding-top: $double-space*2;
+    text-align: center;
+
+    @media only screen and (min-width: $lap) {
+        text-align: left;
+    }
+
+    p {
+        overflow: hidden;
+    }
+
+    img {
+        width: 50%;
+        border: 1px solid $smoke;
+        padding: $double-space;
+        margin: 0 auto $space;
+
+        @media only screen and (min-width: $lap) {
+            width: 25%;
+            float: left;
+            margin: 0 $double-space 0 0;
+        }
+    }
+}
+
+.refreshments {
+    padding-top: $space*3;
+    padding-bottom: $space*3;
+    @media only screen and (min-width: $lap) {
+        margin-left: -$double-space;
+        overflow: hidden;
+    }
+}
+
+.refreshments__item {
+    margin-bottom: $double-space*2;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media only screen and (min-width: $lap) {
+        padding-left: $double-space;
+        width: 50%;
+        float: left;
+        margin-bottom: 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    img {
+        width: 30%;
+        display: block;
+        margin: 0 auto $space;
+    }
+}
+
+.award-entry__desc {
+    font-size: 16px;
+    font-weight: 100;
+
+    @media only screen and (min-width: $lap) {
+        font-size: 20px;
+    }
+}
+
+.award-entry__email {
+    font-size: 20px;
+}
+
+
+.award-details {
+    @media only screen and (min-width: $desk) {
+        margin-bottom: $double-space;
+        margin-left: -$double-space;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+}
+.award-details__info {
+    @media only screen and (min-width: $desk) {
+        width: 50%;
+        float: left;
+        padding-left: $double-space;
+    }
+}
+
+
+.judge-title {
+    font-size: 24px;
+    text-align: center;
+    padding-top: $double-space;
+    @media only screen and (min-width: $lap) {
+        font-size: 32px;
+    }
+    @media only screen and (min-width: $desk) {
+
+    }
+}
+
+.judge-desc {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: $space ;
+
+    @media only screen and (min-width: $lap) {
+        font-size: 22px;
+    }
+}

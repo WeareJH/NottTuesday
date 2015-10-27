@@ -78,7 +78,7 @@ h1, h2, h3 {
     line-height: 1;
     font-family: $heading-font;
 }
-h1 {
+h1, .h1 {
     // font-size: 38px;
     font-size: 36px;
 }
@@ -577,3 +577,4 @@ FOOTER
     }
 }
 @import 'awards';
+@import 'awards-2015';
