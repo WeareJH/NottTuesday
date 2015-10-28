@@ -767,8 +767,12 @@ SPONSORS
   text-align: center; }
 
 .award {
-  padding-top: 36px;
-  padding-bottom: 36px; }
+  padding-top: 24px;
+  padding-bottom: 24px; }
+  @media only screen and (min-width: 600px) {
+    .award {
+      padding-top: 36px;
+      padding-bottom: 36px; } }
 
 .award-title {
   font-size: 24px;
@@ -790,15 +794,18 @@ SPONSORS
   font-weight: 700; }
 
 .prizes {
-  padding-top: 48px; }
+  padding-top: 24px; }
   @media only screen and (min-width: 600px) {
     .prizes {
       margin-left: -24px;
-      overflow: hidden; } }
+      overflow: hidden;
+      padding-top: 48px; } }
 
 .award-prize {
   text-align: center;
   margin-bottom: 24px; }
+  .award-prize:last-child {
+    margin-bottom: 0; }
   .award-prize img {
     width: 50%;
     margin: 0 auto 12px; }
@@ -820,16 +827,16 @@ SPONSORS
       text-align: left; } }
   .award-sponsor p {
     overflow: hidden; }
-  .award-sponsor img {
-    width: 50%;
-    border: 1px solid #eee;
-    padding: 24px;
-    margin: 0 auto 12px; }
-    @media only screen and (min-width: 600px) {
-      .award-sponsor img {
-        width: 25%;
-        float: left;
-        margin: 0 24px 0 0; } }
+
+.award-sponsor__image {
+  width: 50%;
+  margin: 0 auto 12px; }
+  @media only screen and (min-width: 600px) {
+    .award-sponsor__image {
+      width: 25%;
+      float: left;
+      margin: 0 24px 0 0;
+      min-height: 100px; } }
 
 .refreshments {
   padding-top: 36px;
@@ -866,26 +873,14 @@ SPONSORS
 .award-entry__email {
   font-size: 20px; }
 
-@media only screen and (min-width: 1000px) {
-  .award-details {
-    margin-bottom: 24px;
-    margin-left: -24px; } }
-.award-details ul {
-  margin-left: 20px; }
-
-@media only screen and (min-width: 1000px) {
-  .award-details__info {
-    width: 50%;
-    float: left;
-    padding-left: 24px; } }
-
 .judge-title {
   font-size: 24px;
   text-align: center;
   padding-top: 24px; }
   @media only screen and (min-width: 600px) {
     .judge-title {
-      font-size: 32px; } }
+      font-size: 32px;
+      padding-top: 48px; } }
 
 .judge-desc {
   text-align: center;
@@ -894,5 +889,20 @@ SPONSORS
   @media only screen and (min-width: 600px) {
     .judge-desc {
       font-size: 22px; } }
+
+.award-details {
+  margin-bottom: 24px; }
+  @media only screen and (min-width: 1000px) {
+    .award-details {
+      margin-bottom: 48px;
+      margin-left: -24px; } }
+  .award-details ul {
+    margin-left: 20px; }
+
+@media only screen and (min-width: 1000px) {
+  .award-details__info {
+    width: 50%;
+    float: left;
+    padding-left: 24px; } }
 
 /*# sourceMappingURL=nt.css.map */
