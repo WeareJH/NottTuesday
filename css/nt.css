@@ -64,7 +64,7 @@ h1, h2, h3 {
   line-height: 1;
   font-family: "gesta", Helvetica, Arial, sans-serif; }
 
-h1 {
+h1, .h1 {
   font-size: 36px; }
 
 h2 {
@@ -595,7 +595,6 @@ SPONSORS
 
 .judge__photo {
   float: left;
-  border: 1px solid #eee;
   width: 20%;
   max-width: 60px;
   margin-right: 12px;
@@ -762,5 +761,147 @@ SPONSORS
 
 #mc_embed_signup div.mce_inline_error {
   background-color: #FF4956 !important; }
+
+.text--center {
+  text-align: center; }
+
+.award {
+  padding-top: 24px;
+  padding-bottom: 24px; }
+  @media only screen and (min-width: 600px) {
+    .award {
+      padding-top: 36px;
+      padding-bottom: 36px; } }
+
+.award-title {
+  font-size: 24px;
+  text-align: center; }
+  @media only screen and (min-width: 600px) {
+    .award-title {
+      font-size: 32px; } }
+
+.award-desc {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 0; }
+  @media only screen and (min-width: 600px) {
+    .award-desc {
+      font-size: 22px; } }
+
+.award-cash {
+  color: #1acd55;
+  font-weight: 700; }
+
+.prizes {
+  padding-top: 24px; }
+  @media only screen and (min-width: 600px) {
+    .prizes {
+      margin-left: -24px;
+      overflow: hidden;
+      padding-top: 48px; } }
+
+.award-prize {
+  text-align: center;
+  margin-bottom: 24px; }
+  .award-prize:last-child {
+    margin-bottom: 0; }
+  .award-prize img {
+    width: 50%;
+    margin: 0 auto 12px; }
+  @media only screen and (min-width: 600px) {
+    .award-prize {
+      width: 33.33%;
+      float: left;
+      padding-left: 24px;
+      margin-bottom: 0; } }
+  .award-prize p {
+    margin: 0; }
+
+.award-sponsor {
+  overflow: hidden;
+  padding-top: 48px;
+  text-align: center; }
+  @media only screen and (min-width: 600px) {
+    .award-sponsor {
+      text-align: left; } }
+  .award-sponsor p {
+    overflow: hidden; }
+
+.award-sponsor__image {
+  width: 50%;
+  margin: 0 auto 12px; }
+  @media only screen and (min-width: 600px) {
+    .award-sponsor__image {
+      width: 25%;
+      float: left;
+      margin: 0 24px 0 0;
+      min-height: 100px; } }
+
+.refreshments {
+  padding-top: 36px;
+  padding-bottom: 36px; }
+  @media only screen and (min-width: 600px) {
+    .refreshments {
+      margin-left: -24px;
+      overflow: hidden; } }
+
+.refreshments__item {
+  margin-bottom: 48px; }
+  .refreshments__item:last-child {
+    margin-bottom: 0; }
+  @media only screen and (min-width: 600px) {
+    .refreshments__item {
+      padding-left: 24px;
+      width: 50%;
+      float: left;
+      margin-bottom: 0; } }
+  .refreshments__item p {
+    margin-bottom: 0; }
+  .refreshments__item img {
+    width: 30%;
+    display: block;
+    margin: 0 auto 12px; }
+
+.award-entry__desc {
+  font-size: 16px;
+  font-weight: 100; }
+  @media only screen and (min-width: 600px) {
+    .award-entry__desc {
+      font-size: 20px; } }
+
+.award-entry__email {
+  font-size: 20px; }
+
+.judge-title {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 24px; }
+  @media only screen and (min-width: 600px) {
+    .judge-title {
+      font-size: 32px;
+      padding-top: 48px; } }
+
+.judge-desc {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 12px; }
+  @media only screen and (min-width: 600px) {
+    .judge-desc {
+      font-size: 22px; } }
+
+.award-details {
+  margin-bottom: 24px; }
+  @media only screen and (min-width: 1000px) {
+    .award-details {
+      margin-bottom: 48px;
+      margin-left: -24px; } }
+  .award-details ul {
+    margin-left: 20px; }
+
+@media only screen and (min-width: 1000px) {
+  .award-details__info {
+    width: 50%;
+    float: left;
+    padding-left: 24px; } }
 
 /*# sourceMappingURL=nt.css.map */
