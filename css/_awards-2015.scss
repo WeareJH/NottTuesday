@@ -7,18 +7,13 @@
 //==============================================
 
 .award {
-    padding-top: $double-space;
-    padding-bottom: $double-space;
-
-    @media only screen and (min-width: $lap) {
-        padding-top: $space*3;
-        padding-bottom: $space*3;
-    }
+    padding: $double-space 0;
 }
 
 .award-title {
     font-size: 24px;
     text-align: center;
+
     @media only screen and (min-width: $lap) {
         font-size: 32px;
     }
@@ -27,7 +22,7 @@
 .award-desc {
     text-align: center;
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: $double-space;
 
     @media only screen and (min-width: $lap) {
         font-size: 22px;
@@ -44,11 +39,14 @@
 }
 
 .prizes {
-    padding-top: $double-space;
+    margin-bottom: $double-space;
+    padding-bottom: $double-space;
+
     @media only screen and (min-width: $lap) {
         margin-left: -$double-space;
-        overflow: hidden;
-        padding-top: $double-space*2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -73,14 +71,13 @@
     }
 
     p {
-        margin: 0;
+        //margin: 0;
     }
 }
 
 .award-sponsor {
-    overflow: hidden;
-    padding-top: $double-space*2;
     text-align: center;
+    padding-top: $double-space;
 
     @media only screen and (min-width: $lap) {
         text-align: left;
@@ -109,11 +106,10 @@
 //==============================================
 
 .refreshments {
-    padding-top: $space*3;
-    padding-bottom: $space*3;
+    padding: $double-space 0;
+
     @media only screen and (min-width: $lap) {
-        margin-left: -$double-space;
-        overflow: hidden;
+        margin-left: -$double-space*2;
     }
 }
 
@@ -125,7 +121,7 @@
     }
 
     @media only screen and (min-width: $lap) {
-        padding-left: $double-space;
+        padding-left: $double-space*2;
         width: 50%;
         float: left;
         margin-bottom: 0;
@@ -135,7 +131,6 @@
     }
     img {
         width: 30%;
-        display: block;
         margin: 0 auto $space;
     }
 }
@@ -143,6 +138,12 @@
 //==============================================
 // ENTRY
 //==============================================
+
+.award-entry {
+    a {
+        color: $white;
+    }
+}
 
 .award-entry__desc {
     font-size: 16px;
@@ -165,12 +166,9 @@
     font-size: 24px;
     text-align: center;
     padding-top: $double-space;
+
     @media only screen and (min-width: $lap) {
         font-size: 32px;
-        padding-top: $double-space*2;
-    }
-    @media only screen and (min-width: $desk) {
-
     }
 }
 
@@ -189,10 +187,11 @@
 //==============================================
 
 .award-details {
+    padding: $double-space;
     margin-bottom: $double-space;
+
     @media only screen and (min-width: $desk) {
-        margin-bottom: $double-space*2;
-        margin-left: -$double-space;
+        margin-left: -$double-space*2;
     }
 
     ul {
@@ -204,7 +203,7 @@
     @media only screen and (min-width: $desk) {
         width: 50%;
         float: left;
-        padding-left: $double-space;
+        padding-left: $double-space*2;
     }
 }
 
