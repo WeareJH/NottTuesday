@@ -139,7 +139,6 @@ SPONSORS
 
 .judges {
     margin-bottom: 2*$space;
-    // border-top: 1px solid #eee;
     padding-top: 2*$space;
 }
 
@@ -166,7 +165,7 @@ SPONSORS
 }
 .judge__role {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 @media only screen and (min-width: $lap) {
@@ -190,6 +189,7 @@ SPONSORS
     .judge {
         width: 18.4%;
         margin-left: 2%;
+        text-align: center;
 
         &:nth-child(odd) {
             clear: none;
@@ -201,9 +201,12 @@ SPONSORS
     }
     .judge__photo {
         float: none;
-        width: 100%;
+        width: 85%;
         max-width: none;
-        margin-bottom: $space;
+        margin: 0 auto $space;
+    }
+    .judge__role {
+        padding: 0 $space/3;
     }
 }
 

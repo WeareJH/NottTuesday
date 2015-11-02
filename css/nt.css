@@ -605,7 +605,7 @@ SPONSORS
 
 .judge__role {
   display: block;
-  font-size: 12px; }
+  font-size: 14px; }
 
 @media only screen and (min-width: 600px) {
   .judge {
@@ -621,7 +621,8 @@ SPONSORS
 
   .judge {
     width: 18.4%;
-    margin-left: 2%; }
+    margin-left: 2%;
+    text-align: center; }
     .judge:nth-child(odd) {
       clear: none;
       margin-left: 2%; }
@@ -630,9 +631,12 @@ SPONSORS
 
   .judge__photo {
     float: none;
-    width: 100%;
+    width: 85%;
     max-width: none;
-    margin-bottom: 12px; } }
+    margin: 0 auto 12px; }
+
+  .judge__role {
+    padding: 0 4px; } }
 .background__green {
   background-color: #1acd55;
   color: #fff;
@@ -766,12 +770,7 @@ SPONSORS
   text-align: center; }
 
 .award {
-  padding-top: 24px;
-  padding-bottom: 24px; }
-  @media only screen and (min-width: 600px) {
-    .award {
-      padding-top: 36px;
-      padding-bottom: 36px; } }
+  padding: 24px 0; }
 
 .award-title {
   font-size: 24px;
@@ -783,7 +782,7 @@ SPONSORS
 .award-desc {
   text-align: center;
   font-size: 16px;
-  margin-bottom: 0; }
+  margin-bottom: 24px; }
   @media only screen and (min-width: 600px) {
     .award-desc {
       font-size: 22px; } }
@@ -793,12 +792,14 @@ SPONSORS
   font-weight: 700; }
 
 .prizes {
-  padding-top: 24px; }
+  margin-bottom: 24px;
+  padding-bottom: 24px; }
   @media only screen and (min-width: 600px) {
     .prizes {
       margin-left: -24px;
-      overflow: hidden;
-      padding-top: 48px; } }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; } }
 
 .award-prize {
   text-align: center;
@@ -814,13 +815,10 @@ SPONSORS
       float: left;
       padding-left: 24px;
       margin-bottom: 0; } }
-  .award-prize p {
-    margin: 0; }
 
 .award-sponsor {
-  overflow: hidden;
-  padding-top: 48px;
-  text-align: center; }
+  text-align: center;
+  padding-top: 24px; }
   @media only screen and (min-width: 600px) {
     .award-sponsor {
       text-align: left; } }
@@ -838,12 +836,10 @@ SPONSORS
       min-height: 100px; } }
 
 .refreshments {
-  padding-top: 36px;
-  padding-bottom: 36px; }
+  padding: 24px 0; }
   @media only screen and (min-width: 600px) {
     .refreshments {
-      margin-left: -24px;
-      overflow: hidden; } }
+      margin-left: -48px; } }
 
 .refreshments__item {
   margin-bottom: 48px; }
@@ -851,7 +847,7 @@ SPONSORS
     margin-bottom: 0; }
   @media only screen and (min-width: 600px) {
     .refreshments__item {
-      padding-left: 24px;
+      padding-left: 48px;
       width: 50%;
       float: left;
       margin-bottom: 0; } }
@@ -859,8 +855,10 @@ SPONSORS
     margin-bottom: 0; }
   .refreshments__item img {
     width: 30%;
-    display: block;
     margin: 0 auto 12px; }
+
+.award-entry a {
+  color: #fff; }
 
 .award-entry__desc {
   font-size: 16px;
@@ -878,8 +876,7 @@ SPONSORS
   padding-top: 24px; }
   @media only screen and (min-width: 600px) {
     .judge-title {
-      font-size: 32px;
-      padding-top: 48px; } }
+      font-size: 32px; } }
 
 .judge-desc {
   text-align: center;
@@ -890,11 +887,11 @@ SPONSORS
       font-size: 22px; } }
 
 .award-details {
+  padding: 24px;
   margin-bottom: 24px; }
   @media only screen and (min-width: 1000px) {
     .award-details {
-      margin-bottom: 48px;
-      margin-left: -24px; } }
+      margin-left: -48px; } }
   .award-details ul {
     margin-left: 20px; }
 
@@ -902,6 +899,6 @@ SPONSORS
   .award-details__info {
     width: 50%;
     float: left;
-    padding-left: 24px; } }
+    padding-left: 48px; } }
 
 /*# sourceMappingURL=nt.css.map */
