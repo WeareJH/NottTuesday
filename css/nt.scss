@@ -428,6 +428,11 @@ SPONSORS, CATEGORIES
     width: 40%;
     max-width: 200px;
 }
+
+.sponsor__content {
+    overflow: hidden;
+}
+
 @media only screen and (min-width: $lap) {
     .category__logo,
     .sponsor__logo {
