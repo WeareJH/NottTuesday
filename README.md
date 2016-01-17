@@ -1,6 +1,6 @@
-# Nott Tuesday event assets
+# Nott Tuesday website and event assets
 
-This repository holds the source code for http://www.notttuesday.com/ which is maintained internally by Jamie Huskisson ([@jhuskisson](https://twitter.com/jhuskisson)) and our design team on behalf of the Tech Startup community in Nottingham.
+This repository holds the source code for http://www.notttuesday.com/ which is maintained internally by Jamie Huskisson ([@jhuskisson](https://twitter.com/jhuskisson)) and the design team at [JH](http://wearejh.com) on behalf of the Tech Startup community in Nottingham.
 
 In addition to the website and all files related to it this repository contains all event assets:
 * branding source files
