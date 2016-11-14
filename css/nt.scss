@@ -1,4 +1,5 @@
 /*!* Nott Tuesday by Joseph Russell and Chris Bailey at JH */
+@import 'normalize';
 @import 'vars';
 @import 'mixins';
 /* ========================================
@@ -329,7 +330,7 @@ EVENT DETAILS
 
 .speaker {
     @include cf;
-    padding: 2*$space;
+    padding: 30px;
 
     .photo {
         float: right;
@@ -370,6 +371,10 @@ EVENT DETAILS
     //        line-height: 1.5;
     //    }
     //}
+    p{
+    margin-bottom: 20px;
+    line-height: 25px;
+    }
 }
 
 
@@ -583,3 +588,4 @@ FOOTER
 }
 @import 'awards';
 @import 'awards-2015';
+@import 'jon';
