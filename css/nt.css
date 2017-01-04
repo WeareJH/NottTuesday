@@ -459,16 +459,21 @@ BASE STYLES
   padding: 20px;
   max-width: 900px; }
 
-h1, h2, h3,
+h1,
+h2,
+h3,
 p,
 ul {
   margin-bottom: 12px; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1;
   font-family: "gesta", Helvetica, Arial, sans-serif; }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 36px; }
 
 h2 {
@@ -588,6 +593,16 @@ EVENT DETAILS
     .event {
       margin: -96px 0 24px; } }
 
+.speaker__icon {
+  float: left;
+  margin: 0 30px 0 0;
+  width: 250px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 10px rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 600px) {
+    .speaker__icon {
+      width: 80%;
+      margin: 0 10% 10% 10%; } }
+
 .summary {
   position: relative;
   padding: 24px;
@@ -637,10 +652,13 @@ EVENT DETAILS
     margin: 0 0 12px 12px;
     width: 30%;
     max-width: 200px; }
-  .speaker .topic strong {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 30px; }
+  .speaker .topic {
+    line-height: 150%;
+    padding: 0 0 20px 0; }
+    .speaker .topic strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 30px; }
   .speaker .bio > :last-child {
     margin-bottom: 0; }
   @media only screen and (min-width: 600px) {
@@ -661,113 +679,114 @@ INFO
   margin-left: 24px; }
 
 /* ========================================
-SPONSORS, CATEGORIES
+CATEGORIES
 ======================================== */
-.categories,
-.sponsors {
+.categories {
   margin-bottom: 24px;
   padding-top: 24px; }
 
-.category-list,
-.sponsor-list {
+.category-list {
   margin-bottom: 0;
   list-style: none; }
-  .category-list:before, .category-list:after,
-  .sponsor-list:before,
-  .sponsor-list:after {
+  .category-list:before, .category-list:after {
     content: " ";
     display: table; }
-  .category-list:after,
-  .sponsor-list:after {
+  .category-list:after {
     clear: both; }
-  .category-list,
-  .sponsor-list {
+  .category-list {
     *zoom: 1; }
 
-.category,
-.sponsor {
+.category {
   margin-bottom: 24px; }
-  .category:before, .category:after,
-  .sponsor:before,
-  .sponsor:after {
+  .category:before, .category:after {
     content: " ";
     display: table; }
-  .category:after,
-  .sponsor:after {
+  .category:after {
     clear: both; }
-  .category,
-  .sponsor {
+  .category {
     *zoom: 1; }
-  .category h2,
-  .sponsor h2 {
+  .category h2 {
     text-align: left; }
     @media only screen and (min-width: 600px) {
-      .category h2,
-      .sponsor h2 {
+      .category h2 {
         text-align: right;
         margin-top: 32px; } }
 
-.category__logo,
-.sponsor__logo {
-  float: right;
-  margin: 0 0 12px 24px;
-  border: 1px solid #eee;
-  padding: 24px;
-  width: 40%;
-  max-width: 200px; }
-
-.sponsor__content {
-  overflow: hidden; }
-
 @media only screen and (min-width: 600px) {
-  .category__logo,
-  .sponsor__logo {
+  .category__logo {
     float: left;
     width: 40%;
     margin: 0 24px 0 0; } }
 @media only screen and (min-width: 1000px) {
-  .categories:before, .categories:after,
-  .sponsors:before,
-  .sponsors:after {
+  .categories:before, .categories:after {
     content: " ";
     display: table; }
-  .categories:after,
-  .sponsors:after {
+  .categories:after {
     clear: both; }
-  .categories,
-  .sponsors {
+  .categories {
     *zoom: 1; }
-  .categories header,
-  .sponsors header {
+  .categories header {
     float: left;
     width: 38.8%; }
 
-  .category-list,
-  .sponsor-list {
+  .category-list {
     float: left;
     width: 59.2%;
     margin-left: 2%; }
 
-  .category,
-  .sponsor {
+  .category {
     float: none;
     width: 100%;
     padding: 0; }
-    .category:before, .category:after,
-    .sponsor:before,
-    .sponsor:after {
+    .category:before, .category:after {
       content: " ";
       display: table; }
-    .category:after,
-    .sponsor:after {
+    .category:after {
       clear: both; }
-    .category,
-    .sponsor {
+    .category {
       *zoom: 1; }
 
-  .category__logo,
-  .sponsor__logo {
-    width: 30.66667%; } }
+  .category__logo {
+    width: 100%; } }
+/* ========================================
+SPONSORS
+======================================== */
+.sponsor-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 600px) {
+    .sponsor-list {
+      justify-content: center; } }
+  .sponsor-list .sponsor {
+    width: calc(100% / 3);
+    padding: 0 10px 30px 10px;
+    max-width: 260px;
+    list-style: none; }
+    @media only screen and (max-width: 600px) {
+      .sponsor-list .sponsor {
+        width: 100%;
+        max-width: none;
+        padding: 20px 0; } }
+  .sponsor-list .sponsor__logo {
+    border: 1px solid #eee;
+    padding: 24px;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 600px) {
+      .sponsor-list .sponsor__logo {
+        width: 100%;
+        padding: 24px 20%; } }
+
+/* ========================================
+Location
+======================================== */
+.location {
+  padding: 24px 0; }
+
+#map {
+  width: 100%;
+  height: 400px; }
+
 /* ========================================
 Past events
 ======================================== */
@@ -829,7 +848,8 @@ Archive
 FOOTER
 ======================================== */
 .site-footer {
-  background: #181d24; }
+  background: #181d24 url("../img/logo-blue-flush.png");
+  background-repeat: no-repeat; }
   .site-footer h2 {
     color: white; }
   .site-footer p {

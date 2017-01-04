@@ -1,7 +1,9 @@
 /*!* Nott Tuesday by Joseph Russell and Chris Bailey at JH */
+
 @import 'normalize';
 @import 'vars';
 @import 'mixins';
+
 /* ========================================
 RESET
 ======================================== */
@@ -12,6 +14,8 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /* ========================================
 ROOT
 ======================================== */
@@ -26,30 +30,30 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 body {
     font-size: 100%;
     text-rendering: optimizeLegibility;
-
     //    @media only screen and (min-width: $lap) {
     //         font-size: 112.5%;
     //    }
-
     @media only screen and (min-width: $desk) {
         padding: 20px;
     }
-
 }
+
 a {
     color: $green;
     font-weight: bold;
     text-decoration: none;
     transition: background 0.3s ease, color 0.3s ease;
-
     &:hover,
     &:focus {
         text-decoration: underline;
     }
 }
+
+
 /* ========================================
 BASE STYLES
 ======================================== */
@@ -58,57 +62,68 @@ BASE STYLES
     /*overflow: hidden;*/
     width: 100%;
 }
+
 .container {
     position: relative;
     margin: 0 auto;
     padding: 20px;
     // max-width: $desk;
     max-width: 900px;
-
     @media only screen and (min-width: $lap) {
         // padding: 40px;
     }
 }
-h1, h2, h3,
+
+h1,
+h2,
+h3,
 p,
 ul {
     margin-bottom: $space;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     // padding-top: 10px;
     line-height: 1;
     font-family: $heading-font;
 }
-h1, .h1 {
+
+h1,
+.h1 {
     // font-size: 38px;
     font-size: 36px;
 }
+
 h2 {
     margin-bottom: 2*$space;
     padding-top: $space;
     // font-weight: normal;
     // font-size: 26px;
     font-size: 24px;
-
     @media only screen and (min-width: $lap) {
         // font-size: 36px;
     }
 }
+
 h3 {
     // font-size: 22px;
     font-size: 20px;
-
     @media only screen and (min-width: $lap) {
         // font-size: 24px;
     }
 }
+
 .lede {
     margin-bottom: 2*$space;
     font-size: 20px;
 }
+
 p small {
     line-height: 10px !important;
 }
+
 .button {
     display: inline-block;
     padding: $space 2*$space;
@@ -124,39 +139,45 @@ p small {
     //box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     transition: background-color .3s ease;
-
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background: darken($green, 5%);
         text-decoration: none;
     }
 }
 
-
 img {
     display: block;
     max-width: 100%;
 }
+
 .cf {
     @include cf;
 }
+
 hr {
     border-bottom: 1px solid $smoke;
     // padding-top: 2*$space;
     margin-bottom: 2*$space;
-
     &.bold {
         border-color: $grey;
     }
 }
+
+
 /**
  * Horizontal using inline-block
  */
+
 .nav--inline > li {
     display: inline-block;
 }
+
 .nav--inline > li > a {
     display: inline-block;
 }
+
+
 /* ========================================
 HEADER
 ======================================== */
@@ -165,54 +186,45 @@ HEADER
     background: darken($purple, 10%);
     color: white;
     text-align: center;
-
     .logo {
         display: block;
         margin: 0 auto 2*$space;
         width: 150px;
     }
-
     h1 {
         // font-weight: normal;
         font-size: 24px;
     }
-
     @media only screen and (min-width: $lap) {
         padding-bottom: 6*$space;
-
         h1 {
             font-size: 32px;
         }
-
         p {
             font-size: 22px;
         }
     }
-
     @media only screen and (min-width: $desk) {
         .logo {
             margin: 2*$space auto 4*$space;
         }
-
         h1 {
             font-size: 44px;
             font-weight: normal;
         }
     }
 }
+
 .header__bg {
     background: url('../img/header-bg.png') right center no-repeat;
     background-size: cover;
 }
 
 .home-header {
-
     padding-bottom: $space;
-
     @media only screen and (min-width: $lap) {
         padding-bottom: 72px;
     }
-
 }
 
 
@@ -220,24 +232,35 @@ HEADER
 MAIN
 ======================================== */
 
-.site-main {
-}
+.site-main {}
+
+
 /* ========================================
 EVENT DETAILS
 ======================================== */
+
 .event {
     @include cf;
     margin-bottom: 2*$space;
     background: white;
-    box-shadow: 0 0 1px rgba(0,0,0,0.25), 0 1px 10px rgba(0,0,0,0.1);
-
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 10px rgba(0, 0, 0, 0.1);
     @media only screen and (min-width: $lap) {
         margin: -8*$space 0 2*$space;
     }
-
     //@media only screen and (min-width: $desk) {
     //    margin: -8*$space -2*$space 2*$space;
     //}
+}
+
+.speaker__icon {
+    float: left;
+    margin: 0 30px 0 0;
+    width: 250px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 10px rgba(0, 0, 0, 0.1);
+    @media only screen and (max-width: $lap) {
+        width: 80%;
+        margin: 0 10% 10% 10%;
+    }
 }
 
 .summary {
@@ -246,7 +269,6 @@ EVENT DETAILS
     background: $purple;
     color: white;
     text-align: center;
-
     .title {
         margin-bottom: 0;
         padding-top: 0;
@@ -258,12 +280,10 @@ EVENT DETAILS
         margin-bottom: 0;
         list-style: none;
         font-size: 20px;
-
         a {
             color: white;
             font-weight: normal;
         }
-
         li {
             display: inline-block;
             margin: 0 $space/2;
@@ -272,10 +292,8 @@ EVENT DETAILS
     .rsvp {
         margin: 2*$space 0 0;
     }
-
     @media only screen and (min-width: $lap) {
         text-align: left;
-
         .details {
             li {
                 margin: 0 $space/2 0 0;
@@ -290,7 +308,6 @@ EVENT DETAILS
             // @include prefix(transform, translateY(-50%));
         }
     }
-
     //@media only screen and (min-width: $desk) {
     //    @include cf;
     //
@@ -325,13 +342,11 @@ EVENT DETAILS
     //        // @include prefix(transform, none);
     //    }
     //}
-
 }
 
 .speaker {
     @include cf;
     padding: 30px;
-
     .photo {
         float: right;
         margin: 0 0 $space $space;
@@ -339,6 +354,8 @@ EVENT DETAILS
         max-width: 200px;
     }
     .topic {
+        line-height: 150%;
+        padding: 0 0 20px 0;
         strong {
             display: block;
             margin-bottom: $space/2;
@@ -346,11 +363,10 @@ EVENT DETAILS
         }
     }
     .bio {
-        > :last-child {
+        >:last-child {
             margin-bottom: 0;
         }
     }
-
     @media only screen and (min-width: $lap) {
         .photo {
             margin: 0 0 2*$space 2*$space;
@@ -362,7 +378,6 @@ EVENT DETAILS
             overflow: hidden;
         }
     }
-
     //@media only screen and (min-width: $desk) {
     //    float: right;
     //    width: 70%;
@@ -371,13 +386,11 @@ EVENT DETAILS
     //        line-height: 1.5;
     //    }
     //}
-    p{
-    margin-bottom: 20px;
-    line-height: 25px;
+    p {
+        margin-bottom: 20px;
+        line-height: 25px;
     }
 }
-
-
 
 
 /* ========================================
@@ -389,94 +402,119 @@ INFO
         margin-left: 2*$space;
     }
 }
+
+
 /* ========================================
-SPONSORS, CATEGORIES
+CATEGORIES
 ======================================== */
 
-.categories,
-.sponsors {
+.categories {
     margin-bottom: 2*$space;
     // + .sponsors {
     // border-top: 1px solid #eee;
     padding-top: 2*$space;
     // }
 }
-.category-list,
-.sponsor-list {
+
+.category-list {
     @include cf;
     margin-bottom: 0;
     list-style: none;
 }
-.category,
-.sponsor {
+
+.category {
     @include cf;
     margin-bottom: 2*$space;
-
     h2 {
         text-align: left;
-
         @media only screen and (min-width: $lap) {
             text-align: right;
             margin-top: 32px;
-
         }
-
     }
-
-}
-.category__logo,
-.sponsor__logo {
-    float: right;
-    margin: 0 0 $space 2*$space;
-    border: 1px solid #eee;
-    padding: 2*$space;
-    width: 40%;
-    max-width: 200px;
-}
-
-.sponsor__content {
-    overflow: hidden;
 }
 
 @media only screen and (min-width: $lap) {
-    .category__logo,
-    .sponsor__logo {
+    .category__logo {
         float: left;
         width: 40%;
         margin: 0 2*$space 0 0;
     }
 }
-@media only screen and (min-width: $desk) {
-    .categories,
-    .sponsors {
-        @include cf;
 
+@media only screen and (min-width: $desk) {
+    .categories {
+        @include cf;
         header {
             float: left;
             width: 38.8%;
         }
     }
-
-    .category-list,
-    .sponsor-list {
+    .category-list {
         float: left;
         width: 59.2%;
         margin-left: 2%;
     }
-
-    .category,
-    .sponsor {
+    .category {
         @include cf;
         float: none;
         width: 100%;
         padding: 0;
     }
-
-    .category__logo,
-    .sponsor__logo {
-        width: (100/60)*18.4%;
+    .category__logo {
+        width: 100%;
     }
 }
+
+
+/* ========================================
+SPONSORS
+======================================== */
+
+.sponsor-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $lap) {
+        justify-content: center;
+    }
+    .sponsor {
+        width: calc(100% / 3);
+        padding: 0 10px 30px 10px;
+        max-width: 260px;
+        list-style: none;
+        @media only screen and (max-width: $lap) {
+            width: 100%;
+            max-width: none;
+            padding: 20px 0;
+        }
+    }
+    .sponsor__logo {
+        border: 1px solid #eee;
+        padding: 24px;
+        margin-bottom: 20px;
+        @media only screen and (max-width: $lap) {
+            width: 100%;
+            padding: 24px 20%;
+        }
+    }
+}
+
+
+/* ========================================
+Location
+======================================== */
+
+.location{
+    padding: 24px 0; 
+}
+
+#map{
+    width: 100%;
+    height: 400px; 
+     
+}
+
 /* ========================================
 Past events
 ======================================== */
@@ -488,14 +526,17 @@ Past events
     padding-bottom: 6px;
     margin-bottom: 6px;
 }
+
 .past-event:last-child {
     border: none;
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
 .past-event .speaker-photo {
     display: none;
 }
+
 @media only screen and (min-width: 600px) {
     .past-event .speaker-photo {
         display: block;
@@ -505,9 +546,11 @@ Past events
         margin-bottom: 14px;
     }
 }
+
 .past-event .speaker-info {
     width: 100%;
 }
+
 @media only screen and (min-width: 600px) {
     .past-event .speaker-info {
         width: 82%;
@@ -515,77 +558,86 @@ Past events
         text-align: left;
     }
 }
+
 .past-event .date {
     padding-top: 1.5px;
     font-size: 14px;
 }
+
+
 /* ========================================
 Archive
 ======================================== */
+
 .archive-wrapper {
     background-color: #f9f9fa;
     padding: 12px;
     font-size: 18px;
     width: 100%;
 }
+
 .archive-wrapper a {
     color: #cacaca;
 }
+
 .archive-wrapper ul {
     margin: 0;
     text-align: center;
 }
+
 .archive-wrapper li {
     color: #cacaca;
     padding: 0 3px;
 }
+
+
 /* ========================================
 FOOTER
 ======================================== */
 
 .site-footer {
-    background: $purple;
-
+    background: $purple url('../img/logo-blue-flush.png');
+    background-repeat: no-repeat;
     h2 {
         color: white;
     }
-
     p {
         color: $light-grey;
-
     }
-
     a {
         color: white;
     }
 }
+
 .about {
     margin-bottom: 2*$space;
 }
+
 .contact {
     margin-bottom: 2*$space;
 }
+
 .legal {
     // margin-bottom: 0;
     border-top: 1px solid rgba(white, 0.1);
     padding-top: 2*$space;
     color: rgba(white, 0.5);
 }
+
 @media only screen and (min-width: $desk) {
     .about {
         float: left;
         width: 48%;
     }
-
     .contact {
         float: right;
         width: 48%;
     }
-
     .legal {
         clear: both;
     }
 }
+
 @import 'awards';
 @import 'awards-2015';
 @import 'jon';
