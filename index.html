@@ -10,7 +10,6 @@
 
     <!-- TiTo Initialise -->
     <script src='https://js.tito.io/v1' async></script>
-
     <!-- META -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -26,6 +25,7 @@
     <script src="//use.typekit.net/htk0tvr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="css/nt.css">
+    <meta name="google-site-verification" content="RgNc7JEajINPqJMgGUYFmkwdEfesvIUPOxKrJOr3DLI" />
 </head>
 <body>
 
@@ -56,6 +56,7 @@
             </p>
         </div>
         <div class="speaker">
+            <img src="https://pbs.twimg.com/profile_images/650332968527990784/_TdStfBI.png" alt="Rob Wilmot photo" class="speaker__icon">
             <h3 class="topic">"Crowdsourcing­ and the Democratisation of Innovation" with  <a href="https://twitter.com/RobWilmot">Rob Wilmot</a></h3>
             <div class="bio">
                 <p>This month's talk and speaker: "Crowdsourcing and the Democratisation of Innovation" with Rob Wilmot </p>
@@ -90,7 +91,7 @@
             </ul>
         </section><!-- end .sponsors -->
 
-        <div class="container">
+<!--        <div class="container">
             <hr><article class="award">
 
                 <h1 class="award-title">Tech Startup of the Year Awards 2016</h1>
@@ -104,7 +105,14 @@
 
                 <p class="award-desc">Prizes will be announced over the coming months. To enter send an email to <a href="mailto:nick.barker@awaremonitoring.com">nick.barker@awaremonitoring.com</a> and he'll send you your application form. To check out prizes from last year take a look at the <a href="awards/2015.html">Tech Startup Awards 2015</a> site.</p>
             </article>
-        </div>
+        </div> -->
+
+        <section class="location">
+            <h2>How to find us?</h2>
+            <p>Don't get lost coming to our events</p>
+
+            <div id="map"></div>
+        </section>
 
     </div>
 </div><!-- end .site-main -->
@@ -122,23 +130,26 @@
 <footer class="wrapper site-footer" role="contentinfo">
     <div class="container">
       <div class="about">
-          <h2>About Nott Tuesday</h2>
-          <p>Each month we have stimulating speakers giving talks on the challenges of starting and running a technology business, practical guidance on operating a business such as finding funding and exploring future technologies for new opportunities.</p>
-          <p>The goal of <a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/">our Meetup</a> is to bring together technology people, startups and companies. Our vision is to bring the Nottingham tech scene together to create great conversations and fascinating insight.</p>
-          <p>Each year we also run the <a href="/awards/2015.html">Tech Startup Awards</a> which celebrates the most promising new tech startup businesses in Nottingham.</p>
+      <h2>About</h2>
+          <p>Nott Tuesday, bringing together people in technology, startups and companies to create conversation, innovation & insight</p>
       </div>
 
-      <div class="contact">
-          <h2>Contact The Organisers</h2>
-          <p>Nott Tuesday is jointly organised on a voluntary basis by Nick Barker and <a href="https://twitter.com/jhuskisson">Jamie Huskisson</a>.</p>
-          <p>If you&rsquo;d like to feedback, propose a talk or recommend a speaker, please contact <a href="mailto:nick.barker@awaremonitoring.com">nick.barker@awaremonitoring.com</a>, <a href="mailto:jamie@wearejh.com">jamie@wearejh.com</a> or <a href="http://twitter.com/notttuesday">@notttuesday</a>.</p>
-          <p>We recommend subscribing to our social accounts:<br/>
-            - <a href="http://www.meetup.com/Nott-Tuesday-Getting-Nottinghams-tech-scene-together/">Meetup</a> (for notifications on events)<br/>
-            - <a href="https://twitter.com/NottTuesday">Twitter</a> (for the latest news)</p>
-      </div>
+<div class="contact">
+    <h2>Contact The Organisers</h2>
+    <p>Nott Tuesday is run by Nick Barker, <a href="https://twitter.com/jhuskisson">Jamie Huskisson</a> &amp; <a href="https://twitter.com/martinsandhu">Martin Sandhu</a> .</p>
+    <p>If you’d like to feedback about a previous event, propose a talk or recommend a speaker you can reach out to us in the following ways</p>
+    <p>
+    <br>- Email: <a href="mailto:nick.barker@awaremonitoring.com">nick.barker@awaremonitoring.com</a> 
+    <br>- Tweet us: <a href="http://twitter.com/notttuesday">@notttuesday</a>.</p>
+</div>
 
-      <p class="legal">&copy;2008-2016 <a href="http://notttuesday.com/">Nott Tuesday</a>. <a href="https://github.com/WeareJH/notttuesday">Fork this site on Github</a>.</p>
-    </div>
+
+ <p class="legal">&copy;2008-
+    <script type="text/javascript">
+    document.write(new Date().getFullYear());
+    </script> <a href="http://notttuesday.com/">Nott Tuesday</a>.</p>
+</div>
+
 </footer><!-- end .site-footer -->
 
 <!-- Google Analytics -->
@@ -151,6 +162,44 @@
     ga('create', 'UA-9801978-12', 'auto');
     ga('send', 'pageview');
 </script>
+
+    
+    <script>
+      function initMap() {
+        var uluru = {lat: 52.955781, lng: -1.142951};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru,
+          scrollwheel:false,
+          styles:[{"stylers":[{"hue":"#1acd55"},{"saturation":0}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]}]
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+
+
+
+
+        google.maps.event.addListener(map, 'mousedown', function(event){
+          this.setOptions({scrollwheel:true});
+        });
+        google.maps.event.addListener(map, 'onclick', function(event){
+          self = this;
+          timer = setTimeout(function() {
+            self.setOptions({scrollwheel:true});
+          }, 750);
+        });
+        google.maps.event.addListener(map, 'mouseout', function(event){
+          this.setOptions({scrollwheel:false});
+          clearTimeout(timer);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf1aTknX_lskpM7XlD4LgHdKZqIpKJE9A&callback=initMap">
+    </script>
+
 
 </body>
 </html>
